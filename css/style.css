@@ -1,0 +1,198 @@
+/* Sub nav, menu */
+.subnav{
+	background-color: #A633D7;
+	height: 21px;
+}
+
+.submenu>li>a {
+	padding: 3px;
+	color: #E2C5EF;
+	font-size: 12px;
+	padding-right: 25px;
+}
+
+.submenu>li>a:hover, .btndrop:hover, .btndrop:focus {
+	background-color: #A633D7;
+	color: #FFFFFF;
+
+}
+
+.btndrop{
+	border: none;
+	outline: none; 
+	background-color: #A633D7;
+	color: #E2C5EF;
+	font-size: 12px;
+	padding-right: 25px;
+}
+
+/* Tùy chỉnh dropdown CSKH */
+.dropdown-menu>li{
+	text-indent: -7px;
+	font-size: 12px;
+	margin: 3px;
+}
+
+.dropdown-menu>li>a:hover{
+	color: #84079A;
+}
+
+/* Form kiểm tra đơn hàng */
+#form-ktdonhang{
+	padding: 10px;
+	width: 200px;
+}
+
+/* Form Đăng kí thành viên */
+#form-dangki>.form-group>label{
+	font-weight: normal;
+}
+
+.btnmodal:focus{
+	background-color: #A633D7;
+	color: #E2C5EF;
+}
+
+/* Thay đổi vị trí hiển thị của modal*/
+.modal-content{
+	border-radius: 0px;
+}
+
+.modal-dialog{
+	padding-top: 60px;
+}
+
+/* Button Close modal */
+.close1{
+	border: 1px solid #DA0000;
+	float: right;
+	background-color: #FFFFFF;
+	outline: none;
+}
+
+.close1 > span {
+	color: #DA0000;
+}
+
+
+/* Tùy chỉnh button */
+.btntim{
+	background-color: #9D3CAE;
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+.btntim:hover, .btntim:focus {
+	color: #FFFFFF;
+}
+
+
+/* Main Nav */
+#top-nav{
+	height: 70px;
+	background-color: #FFFFFF;
+	border: 1px solid #A633D7;
+	border-radius: 0px;
+	border-right: none;
+	border-left: none;
+}
+
+#top-nav img {
+	height: 50px;
+	width: 160px;
+	margin-top: -5px;
+	position: relative;
+}
+
+/* Input group Search */
+#mainnav{
+	padding-top: 10px;
+	padding-left: 205px;
+}
+
+#mainnav input {
+	width: 550px;
+	height: 36px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	outline: none;
+	padding-left: 10px;
+	border: 2px solid #A633D7;
+	border-right-style: none;
+	font-size: 12px;
+}
+
+#mainnav .btn-search {
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border: 2px solid #A633D7;
+	border-left-style: none;
+	background-color: #A633D7;
+	outline: none;
+}
+
+#mainnav .btn-search > span {
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+/* Nav Right bao gồm Cart, yêu thích */
+/* Button Cart */
+.nav-right .btn-cart{
+	margin-right: 30px;
+	outline: none;
+	border: none;
+	font-size: 14px;
+	border-radius: 3px;
+	padding: 6px;
+}
+
+.btn-cart .fa-shopping-cart {
+	font-size: 22px;
+}
+
+.btn-cart .badge {
+	margin-top: -5px;
+	margin-left: -10px;
+}
+
+/* Button Yêu thích */
+.nav-right .btn-yeuthich{
+	background-color: #FFFFFF;
+	border: 1px solid #D5CDD5;
+	outline: none;
+	font-size: 14px;
+	padding: 6px;
+	border-radius: 3px;
+	outline: none;
+	margin-right: 5px;
+}
+
+.btn-yeuthich:hover {
+	background-color: #FF9FFF;
+	border: 1px solid #A633D7;
+}
+
+.btn-yeuthich .fa-heart-o {
+	font-size: 18px;
+}
+
+.btn-yeuthich .badge {
+	background-color: #EF1E3A;
+	border-color: #A633D7;
+	margin-top: -5px;
+}
+
+/* Giỏ hàng */
+#modalCart .fa-shopping-cart {
+	font-size: 24px;
+	color: #C31010;
+}
+
+#modalCart .modal-dialog {
+	width: 800px;
+}
+
+#modalCart .modal-content {
+	height: 450px;
+}
