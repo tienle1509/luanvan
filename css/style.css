@@ -194,5 +194,15 @@
 }
 
 #modalCart .modal-content {
-	height: 450px;
+	max-height: 450px;
+}
+
+#modalCart .modal-body {
+	background-color: #F4F4F4;
+}
+
+.name-shop-cart {
+	background-color: #FFFFFF;
+	padding: 5px;
+	margin-top: -15px;
 }

@@ -164,14 +164,19 @@
 	  				</h5>	  				
 	  			</div>
 	  			<div class="modal-body">
+	  				<div class="row name-shop-cart">
+	  					Bán từ shop: <a href="#">AhihiShop</a>
+	  				</div>
 	  				<div class="row">
 	  					<div class="col-md-6">Sản phẩm</div>
 	  					<div class="col-md-2">Giá</div>
 	  					<div class="col-md-2">Số lượng</div>
 	  					<div class="col-md-2">Thành tiền</div>
 	  				</div>
-	  				<div class="panel panel-default">
-	  					haha
+	  				<div id="box-scroll">
+	  					<div>
+	  						
+	  					</div>
 	  				</div>
 	  			</div>
 	  			<div class="modal-footer">
