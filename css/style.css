@@ -201,8 +201,20 @@
 	background-color: #F4F4F4;
 }
 
-.name-shop-cart {
-	background-color: #FFFFFF;
-	padding: 5px;
-	margin-top: -15px;
+/* Tùy chỉnh panel giỏ hàng */
+.table-cart {
+	background-color: yellow;
+	margin: -10px;
+	width: 787px;
+	max-height: 320px;
 }
+
+.table-cart thead {
+	background-color: #EBE8E8;
+}
+
+.table-cart tbody {
+	background-color: #FFFFFF;
+	border: none;
+}
+

@@ -159,26 +159,42 @@
 	  				</button>
 	  				<h5 class="modal-title">
 	  					<span class="fa fa-shopping-cart"></span>
-	  					&nbsp;<b style="font-size: 14px; color: #C31010;">GIỎ HÀNG </b>
+	  					&nbsp;<b style="font-size: 14px; color: #C31010; text-align: center;">GIỎ HÀNG </b>
 	  					( <b style="color: #C31010">0</b> sản phẩm )
 	  				</h5>	  				
 	  			</div>
 	  			<div class="modal-body">
-	  				<div class="row name-shop-cart">
-	  					Bán từ shop: <a href="#">AhihiShop</a>
-	  				</div>
-	  				<div class="row">
-	  					<div class="col-md-6">Sản phẩm</div>
-	  					<div class="col-md-2">Giá</div>
-	  					<div class="col-md-2">Số lượng</div>
-	  					<div class="col-md-2">Thành tiền</div>
-	  				</div>
-	  				<div id="box-scroll">
-	  					<div>
-	  						
-	  					</div>
-	  				</div>
-	  			</div>
+	  				<table class="table table-cart">
+					    <thead>
+					      <tr>
+					        <th class="col-md-6">Sản phẩm</th>
+					        <th class="col-md-2">Giá</th>
+					        <th class="col-md-2">Số lượng</th>
+					        <th class="col-md-2">Thành tiền</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      <tr>
+					        <td>John</td>
+					        <td>Doe</td>
+					        <td>john@example.com</td>
+					        <td>john@example.com</td>
+					      </tr>
+					      <tr>
+					        <td>Mary</td>
+					        <td>Moe</td>
+					        <td>mary@example.com</td>
+					        <td>john@example.com</td>
+					      </tr>
+					      <tr>
+					        <td>July</td>
+					        <td>Dooley</td>
+					        <td>july@example.com</td>
+					        <td>john@example.com</td>
+					      </tr>
+					    </tbody>
+					</table>
+		  		</div>
 	  			<div class="modal-footer">
 	  				<button type="submit" class="btn btn-danger">Thanh toán</button>
 	  			</div>
