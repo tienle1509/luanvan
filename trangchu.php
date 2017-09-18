@@ -104,7 +104,7 @@
 	  <div class="container">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnav" style="color: red">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnav">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
@@ -129,7 +129,7 @@
 	      </form>
 	      <ul class="nav-right nav navbar-nav navbar-right">
 	        <li>
-	        	<button class="btn-cart btn-danger navbar-btn" data-toggle="modal" data-target="#modalCart" data-backdrop="static">
+	        	<button class="btn-cart navbar-btn" data-toggle="modal" data-target="#modalCart" data-backdrop="static">
 		          	<span class="fa fa-shopping-cart"></span>&nbsp;&nbsp;Giỏ hàng&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		          	<span class="badge">9</span>
 		        </button> 
@@ -258,13 +258,27 @@
 	  			</div>
 	  		</div>
 	  	</div>
-	  </div>
+	  </div> <!-- end modal giỏ hàng -->
+	</nav> <!-- end main nav -->
 
 
 
-
-	</nav>
-
+	<!-- Nav bottom  -->
+	<div class="container-fluid" style="background-color: #A633D7; margin-top: -20px;">
+		<div class="container">
+			<ul class="nav nav-pills  navbar-right">
+				<li><a href="">KÊNH NGƯỜI BÁN</a></li>
+				<li>
+					<button class="btndrop dropdown-toggle" data-toggle="dropdown">CHĂM SÓC KHÁCH HÀNG</button>
+				</li>
+				<li>
+					<button class="btndrop dropdown-toggle" data-toggle="dropdown">KIỂM TRA ĐƠN HÀNG</button>
+				</li>
+				<li><a href="">ĐĂNG NHẬP</a></li>
+				<li><button class="btndrop btnmodal" data-toggle="modal" data-target="#modalRegister" data-backdrop="static">ĐĂNG KÍ</button></li>	
+			</ul>
+		</div>
+	</div>
 
 
 

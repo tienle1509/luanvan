@@ -1,27 +1,27 @@
 /* Sub nav, menu */
 .subnav{
-	background-color: #A633D7;
+	background-color: #FBF6FB;
 	height: 21px;
 }
 
 .submenu>li>a {
 	padding: 3px;
-	color: #E2C5EF;
+	color: black;
 	font-size: 12px;
 	padding-right: 25px;
 }
 
 .submenu>li>a:hover, .btndrop:hover, .btndrop:focus {
-	background-color: #A633D7;
-	color: #FFFFFF;
+	background-color: #FFFFFF;
+	color: #8523AC;
 
 }
 
 .btndrop{
 	border: none;
 	outline: none; 
-	background-color: #A633D7;
-	color: #E2C5EF;
+	background-color: ;
+	color: #8523AC;
 	font-size: 12px;
 	padding-right: 25px;
 }
@@ -87,11 +87,13 @@
 }
 
 
+
+
+
 /* Main Nav */
 #top-nav{
 	height: 70px;
-	background-color: #FFFFFF;
-	border: 1px solid #A633D7;
+	background-color: #FBF6FB;
 	border-radius: 0px;
 	border-right: none;
 	border-left: none;
@@ -117,7 +119,7 @@
 	border-bottom-left-radius: 3px;
 	outline: none;
 	padding-left: 10px;
-	border: 2px solid #A633D7;
+	border: 1px solid #A633D7;
 	border-right-style: none;
 	font-size: 12px;
 }
@@ -145,15 +147,24 @@
 	font-size: 14px;
 	border-radius: 3px;
 	padding: 6px;
+	background-color: #A633D7;
+	color: #FFFFFF;
+}
+
+.nav-right .btn-cart:hover {
+	background-color: #8523AC;
 }
 
 .btn-cart .fa-shopping-cart {
 	font-size: 22px;
+	color: #FFFFFF;
 }
 
 .btn-cart .badge {
 	margin-top: -5px;
 	margin-left: -10px;
+	color: #8523AC;
+	background-color: #FFFFFF;
 }
 
 /* Button Yêu thích */
@@ -178,15 +189,18 @@
 }
 
 .btn-yeuthich .badge {
-	background-color: #EF1E3A;
+	background-color: #8523AC;
 	border-color: #A633D7;
 	margin-top: -5px;
 }
 
+
+
+
 /* Giỏ hàng */
 #modalCart .fa-shopping-cart {
 	font-size: 24px;
-	color: #C31010;
+	color: #DA0000;
 }
 
 #modalCart .modal-dialog {
@@ -250,10 +264,11 @@
 
 .box-scroll .ten-sp a {
 	font-size: 14px;
+	color: #16B3C4;
 }
 
 .box-scroll .ten-sp a:hover {
-	color: red;
+	color: #590A95;
 }
 
 .box-scroll .gia-cart {
@@ -313,3 +328,8 @@
 .footer-cart .thanhtoan-cart {
 	font-size: 14px;
 }
+
+
+
+
+/* Nav bottom */
