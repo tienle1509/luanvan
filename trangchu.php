@@ -18,10 +18,6 @@
 	<!-- Font Awesome -->
 	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
 
-	<!-- jQuery, Bootstrap JS -->
-	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
 
 
 </head>
@@ -115,7 +111,7 @@
 	        <span class="icon-bar"></span>
 	      </button>
 	      <a class="navbar-brand" href="#">
-	      	<img src="img/logo2.png" alt="logoMobileStore">
+	      	<img id="logo" src="img/logo2.png" alt="logoMobileStore">
 	      </a>
 	    </div>
 
@@ -159,49 +155,106 @@
 	  				</button>
 	  				<h5 class="modal-title">
 	  					<span class="fa fa-shopping-cart"></span>
-	  					&nbsp;<b style="font-size: 14px; color: #C31010; text-align: center;">GIỎ HÀNG </b>
-	  					( <b style="color: #C31010">0</b> sản phẩm )
+	  					&nbsp;<b style="font-size: 14px; color: #DA0000; text-align: center;">GIỎ HÀNG </b>
+	  					( <b style="color: #DA0000">9</b> sản phẩm )
 	  				</h5>	  				
 	  			</div>
 	  			<div class="modal-body">
-	  				<div class="container-fluid" style="background-color: red; margin: -5px; padding: 5px;">
-	  					<div class="col-md-6">
-	  						Sản phẩm
+	  				<div class="container-fluid list-cart">
+	  					<div class="title-cart">
+		  					<div class="row">
+			  					<div class="col-md-6">Sản phẩm</div>
+			  					<div class="col-md-2" style="text-align: center;">Số lượng</div>
+			  					<div class="col-md-2" style="text-align: right;">Giá thành</div>
+			  					<div class="col-md-2"></div>
+		  					</div> 
 	  					</div>
-	  					<div class="col-md-2">
-	  						Giá
-	  					</div>
-	  					<div class="col-md-2">
-	  						Số lượng 
-	  					</div>
-	  					<div class="col-md-2">
-	  						Thành tiền
-	  					</div>
-	  				</div>
-	  				<div class="container-fluid" style="background-color: yellow; margin: -5px; padding: 20px">
-	  					<div class="col-md-6" style="font-size: 12px;">
-	  						<img src="sanpham/GalaxyS7_32GB.jpg" style="width: 70px; height: 70px; padding-left: 5px;">
-	  						ĐIỆN THOẠI SAMSUNG GALAXY S7 32GB
-	  					</div>
-	  					<div class="col-md-2">
-	  						<label>3.790.000 đ</label>
-	  					</div>
-	  					<div class="col-md-2">
-	  						<select name="" id="">
-	  							<option value="1">1</option>
-	  							<option selected="" value="2">2</option>
-	  							<option value="3">3</option>
-	  							<option value="4">4</option>
-	  							<option value="5">5</option>
-	  						</select>
-	  					</div>
-	  					<div class="col-md-2">
-	  						<label>3.790.000 đ</label>
-	  					</div>
+	  					<div class="box-scroll">			
+			  				<div class="row detail-cart">
+			  					<div class="col-md-6">
+			  						<img id="imageProduct" src="sanpham/GalaxyS7_32GB.jpg" alt="imageProduct">
+			  						<div class="ten-sp">
+				  						<label>ĐIỆN THOẠI SAMSUNG GALAXY S7 Edge 32GB (BẠC) FULL BOX</label>
+				  						<a href="#"><span class="fa fa-heart-o">&nbsp;&nbsp;Thêm vào danh sách yêu thích</span></a>
+			  						</div>
+			  					</div>
+			  					<div class="col-md-2 sl-cart">
+			  						<select name="" id="">
+			  							<option value="1">1</option>
+			  							<option selected="" value="2">2</option>
+			  							<option value="3">3</option>
+			  							<option value="4">4</option>
+			  							<option value="5">5</option>
+			  						</select>
+			  					</div>
+			  					<div class="col-md-2 gia-cart">
+			  						<label>3.790.000 đ</label>
+			  					</div>			  					
+			  					<div class="col-md-2 xoasp-cart">
+			  						<button type="submit"><span class="fa fa-trash-o"></span></button>
+			  					</div>
+			  				</div>
+			  				
+			  				<div class="row detail-cart">
+			  					<div class="col-md-6">
+			  						<img id="imageProduct" src="sanpham/GalaxyS7_32GB.jpg" alt="imageProduct">
+			  						<div class="ten-sp">
+				  						<label>ĐIỆN THOẠI SAMSUNG GALAXY S7 Edge 32GB (BẠC) FULL BOX</label>
+				  						<a href="#"><span class="fa fa-heart-o">&nbsp;&nbsp;Thêm vào danh sách yêu thích</span></a>
+			  						</div>
+			  					</div>
+			  					<div class="col-md-2 sl-cart">
+			  						<select name="" id="">
+			  							<option value="1">1</option>
+			  							<option selected="" value="2">2</option>
+			  							<option value="3">3</option>
+			  							<option value="4">4</option>
+			  							<option value="5">5</option>
+			  						</select>
+			  					</div>
+			  					<div class="col-md-2 gia-cart">
+			  						<label>3.790.000 đ</label>
+			  					</div>			  					
+			  					<div class="col-md-2 xoasp-cart">
+			  						<button type="submit"><span class="fa fa-trash-o"></span></button>
+			  					</div>
+			  				</div>
+
+			  				<div class="row detail-cart">
+			  					<div class="col-md-6">
+			  						<img id="imageProduct" src="sanpham/GalaxyS7_32GB.jpg" alt="imageProduct">
+			  						<div class="ten-sp">
+				  						<label>ĐIỆN THOẠI SAMSUNG GALAXY S7 Edge 32GB (BẠC) FULL BOX</label>
+				  						<a href="#"><span class="fa fa-heart-o">&nbsp;&nbsp;Thêm vào danh sách yêu thích</span></a>
+			  						</div>
+			  					</div>
+			  					<div class="col-md-2 sl-cart">
+			  						<select name="" id="">
+			  							<option value="1">1</option>
+			  							<option selected="" value="2">2</option>
+			  							<option value="3">3</option>
+			  							<option value="4">4</option>
+			  							<option value="5">5</option>
+			  						</select>
+			  					</div>
+			  					<div class="col-md-2 gia-cart">
+			  						<label>3.790.000 đ</label>
+			  					</div>			  					
+			  					<div class="col-md-2 xoasp-cart">
+			  						<button type="submit"><span class="fa fa-trash-o"></span></button>
+			  					</div>
+			  				</div>	  				
+			  			</div>	
 	  				</div>
 		  		</div>
 	  			<div class="modal-footer">
-	  				<button type="submit" class="btn btn-danger">Thanh toán</button>
+	  				<label class="label-thanhtien">Thành tiền:</label>
+	  				<label class="label-tong"> 17.980.000 VND</label>
+	  				<div class="label-vat">(Đã bao gồm VAT)</div>
+	  				<div class="footer-cart">
+	  					<a class="tieptuc-cart" href="trangchu.php"><span class="fa fa-undo">&nbsp;&nbsp;Tiếp tục mua hàng</span></a>
+	  					<button class="thanhtoan-cart btn btn-danger" type="submit">TIẾN HÀNH THANH TOÁN</button>
+	  				</div>
 	  			</div>
 	  		</div>
 	  	</div>
@@ -217,10 +270,9 @@
 
 
 
-
-
-
-
+    <!-- jQuery, Bootstrap JS -->
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 
 </body>

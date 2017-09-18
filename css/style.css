@@ -97,7 +97,7 @@
 	border-left: none;
 }
 
-#top-nav img {
+#top-nav #logo {
 	height: 50px;
 	width: 160px;
 	margin-top: -5px;
@@ -194,34 +194,122 @@
 }
 
 #modalCart .modal-content {
-	max-height: 450px;
+	max-height: 485px;
 }
 
 #modalCart .modal-body {
 	background-color: #F4F4F4;
 }
 
-/* Tùy chỉnh panel giỏ hàng */
-.table-cart {
-	background-color: yellow;
-	margin: -10px;
-	width: 787px;
-	max-height: 320px;
+#modalCart .modal-header .close1,  #modalCart .modal-header .modal-title {
+	margin: -5px;
 }
 
-.table-cart thead {
-	background-color: #EBE8E8;
+/* Tùy chỉnh danh sách sản phẩm trong giỏ hàng */
+.modal-body  .list-cart{
+	margin: -8px;
+	padding: 5px;
+	background-color: #FFFFFF;
+	border-radius: 3px;
+	border: 1px solid #DBD6D6;}
+
+	/* Chỉnh dòng header */
+.modal-body .title-cart {
+	padding: 5px;
+	background-color: #EEEDED;
+	margin-top: -5px;
+	margin-right: -5px;
+	margin-left: -5px;
+}
+	/* Chỉnh hiển thị 1 dòng chi tiết sản phẩm */
+.modal-body .detail-cart {
+	border-bottom: 1px dashed #DBD6D6;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	padding-left: 5px;
+}
+	/* Tạo hộp danh sách và hiển thị scrollbar */
+.modal-body .box-scroll {
+	max-height: 280px;
+	font-size: 12px;
+	overflow-x: hidden;
+	margin-right: -5px;
+	margin-left: -5px;
+}
+	/* Chỉnh ảnh */
+.box-scroll #imageProduct {
+	width: 70px;
+	height: 70px;
+}
+	/* Chỉnh tên, sản phẩm yêu thích */
+.box-scroll .ten-sp {
+	float: right;
+	width: 270px;
+	margin-top: 5px;	
 }
 
-.table-cart tbody {
-	
+.box-scroll .ten-sp a {
+	font-size: 14px;
+}
+
+.box-scroll .ten-sp a:hover {
+	color: red;
+}
+
+.box-scroll .gia-cart {
+	text-align: right;
+	margin-top: 20px;
+	font-size: 13px;
+}
+
+.box-scroll .sl-cart{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.box-scroll .xoasp-cart {
+	color: #DA0000;
+	padding-left: 60px;
+	font-size: 19px;
+}
+
+.box-scroll .xoasp-cart button {
 	border: none;
+	background-color: #FFFFFF;
+	margin-top: 14px;
+	outline: none;
 }
 
-.table-cart tbody {
-	height: 10px;
-	width: 90px;
-	overflow: auto;
-	background-color: yellow;
+/* Footer của giỏ hàng */
+.modal-footer .label-thanhtien {
+	font-weight: normal;
 }
 
+.modal-footer .label-tong {
+	font-size: 16px;
+	color: #DA0000;
+	width: 150px;
+}
+
+.modal-footer .label-vat {
+	font-size: 13px;
+	margin-top: -5px;
+}
+
+.footer-cart {
+	margin: 5px;
+}
+
+.footer-cart .tieptuc-cart {
+	float: left;
+	font-size: 16px;
+	
+}
+
+.footer-cart span:hover {
+	color: #DA0000;
+}
+
+.footer-cart .thanhtoan-cart {
+	font-size: 14px;
+}
