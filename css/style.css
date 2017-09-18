@@ -214,7 +214,14 @@
 }
 
 .table-cart tbody {
-	background-color: #FFFFFF;
+	
 	border: none;
+}
+
+.table-cart tbody {
+	height: 10px;
+	width: 90px;
+	overflow: auto;
+	background-color: yellow;
 }
 

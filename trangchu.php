@@ -148,7 +148,7 @@
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 
-	  <!-- Dialog Giỏ hàng -->
+	  <!-- Modal Giỏ hàng -->
 	  <div class="modal" id="modalCart" tabindex="-1" role="dialog">
 	  	<div class="modal-dialog">
 	  		<div class="modal-content">
@@ -164,36 +164,41 @@
 	  				</h5>	  				
 	  			</div>
 	  			<div class="modal-body">
-	  				<table class="table table-cart">
-					    <thead>
-					      <tr>
-					        <th class="col-md-6">Sản phẩm</th>
-					        <th class="col-md-2">Giá</th>
-					        <th class="col-md-2">Số lượng</th>
-					        <th class="col-md-2">Thành tiền</th>
-					      </tr>
-					    </thead>
-					    <tbody>
-					      <tr>
-					        <td>John</td>
-					        <td>Doe</td>
-					        <td>john@example.com</td>
-					        <td>john@example.com</td>
-					      </tr>
-					      <tr>
-					        <td>Mary</td>
-					        <td>Moe</td>
-					        <td>mary@example.com</td>
-					        <td>john@example.com</td>
-					      </tr>
-					      <tr>
-					        <td>July</td>
-					        <td>Dooley</td>
-					        <td>july@example.com</td>
-					        <td>john@example.com</td>
-					      </tr>
-					    </tbody>
-					</table>
+	  				<div class="container-fluid" style="background-color: red; margin: -5px; padding: 5px;">
+	  					<div class="col-md-6">
+	  						Sản phẩm
+	  					</div>
+	  					<div class="col-md-2">
+	  						Giá
+	  					</div>
+	  					<div class="col-md-2">
+	  						Số lượng 
+	  					</div>
+	  					<div class="col-md-2">
+	  						Thành tiền
+	  					</div>
+	  				</div>
+	  				<div class="container-fluid" style="background-color: yellow; margin: -5px; padding: 20px">
+	  					<div class="col-md-6" style="font-size: 12px;">
+	  						<img src="sanpham/GalaxyS7_32GB.jpg" style="width: 70px; height: 70px; padding-left: 5px;">
+	  						ĐIỆN THOẠI SAMSUNG GALAXY S7 32GB
+	  					</div>
+	  					<div class="col-md-2">
+	  						<label>3.790.000 đ</label>
+	  					</div>
+	  					<div class="col-md-2">
+	  						<select name="" id="">
+	  							<option value="1">1</option>
+	  							<option selected="" value="2">2</option>
+	  							<option value="3">3</option>
+	  							<option value="4">4</option>
+	  							<option value="5">5</option>
+	  						</select>
+	  					</div>
+	  					<div class="col-md-2">
+	  						<label>3.790.000 đ</label>
+	  					</div>
+	  				</div>
 		  		</div>
 	  			<div class="modal-footer">
 	  				<button type="submit" class="btn btn-danger">Thanh toán</button>
