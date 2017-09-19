@@ -1,29 +1,39 @@
 /* Sub nav, menu */
 .subnav{
 	background-color: #FBF6FB;
-	height: 21px;
+	height: 22px;
 }
 
 .submenu>li>a {
 	padding: 3px;
-	color: black;
-	font-size: 12px;
+	color: #696969;
+	font-size: 13px;
 	padding-right: 25px;
 }
 
 .submenu>li>a:hover, .btndrop:hover, .btndrop:focus {
-	background-color: #FFFFFF;
-	color: #8523AC;
-
+	background-color: #FBF6FB;
+	color: #2930FF;
 }
+
+.submenu .fa-handshake-o, .submenu .fa-phone-square {
+	color: #2930FF;
+	font-size: 16px;
+}
+
+ .submenu .fa-user, .submenu .fa-user-plus {
+ 	color: #2930FF;
+	font-size: 15px;
+ }
 
 .btndrop{
 	border: none;
 	outline: none; 
-	background-color: ;
-	color: #8523AC;
-	font-size: 12px;
+	background-color: #FBF6FB;
+	color: #696969;
+	font-size: 13px;
 	padding-right: 25px;
+	margin-top: 2px;
 }
 
 /* Tùy chỉnh dropdown CSKH */
@@ -49,8 +59,8 @@
 }
 
 .btnmodal:focus{
-	background-color: #A633D7;
-	color: #E2C5EF;
+	background-color: #FBF6FB;
+	color: #696969;
 }
 
 /* Thay đổi vị trí hiển thị của modal*/
@@ -119,9 +129,10 @@
 	border-bottom-left-radius: 3px;
 	outline: none;
 	padding-left: 10px;
-	border: 1px solid #A633D7;
+	border: 2px solid #A633D7;
 	border-right-style: none;
 	font-size: 12px;
+	background-color: #FBF6FB;
 }
 
 #mainnav .btn-search {
@@ -333,3 +344,67 @@
 
 
 /* Nav bottom */
+.nav-bottom {
+	background-color: #A633D7;
+	margin-top: -20px;
+}
+
+
+/* Tùy chỉnh button danh mục */
+.nav-bottom .btn-danhmuc {
+	color: #FFFFFF;
+	background-color: #9030BA;
+	padding: 11px 20px 9px 15px;
+	border: none;
+	font-weight: bold;
+	font-size: 13px;
+	position: relative;
+	outline: none;
+	margin-right: 5px;
+}
+
+.nav-bottom .btn-danhmuc .fa-navicon, .nav-bottom .btn-danhmuc .fa-angle-down {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.nav-bottom .danhmuc {
+	position: relative;
+	display: inline-block;
+}
+
+.nav-bottom .danhmuc:hover .dropdown-content {
+	display: block;
+}
+
+.nav-bottom .dropdown-content {
+	display: none;
+	position: absolute;
+	width: 239px;
+	background-color: #3C3A3D;
+	padding: 5px;
+}
+
+.nav-bottom .dropdown-content a {
+	display: block;
+	transition: all 3s;
+	text-decoration: none;
+	padding: 5px 0px 5px 15px;
+	color: #FFFFFF;
+}
+
+
+/* Tùy chỉnh khuyến mãi, bán chạy, hàng mới */
+.nav-bottom .nav-bottom-km, .nav-bottom .nav-bottom-banchay, .nav-bottom .nav-bottom-hangmoi {
+	font-weight: bold;
+	font-size: 13px;
+	color: #FFFFFF;
+	padding-left: 40px;
+	padding-right:40px;
+	border-radius: 0px;
+	border-right: 1px solid #B329EE;
+}
+
+.nav-bottom .nav-bottom-km:hover, .nav-bottom .nav-bottom-banchay:hover, .nav-bottom .nav-bottom-hangmoi:hover {
+	background-color: #9030BA;
+}

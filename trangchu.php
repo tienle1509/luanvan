@@ -29,9 +29,13 @@
 	<div class="subnav container-fluid">
 		<div class="container">
 			<ul class="submenu nav nav-pills  navbar-right">
-				<li><a href="">KÊNH NGƯỜI BÁN</a></li>
+				<li><a href=""><span class="fa fa-handshake-o"></span>&nbsp;&nbsp;Bán hàng cùng Mobile Store</a></li>
 				<li>
-					<button class="btndrop dropdown-toggle" data-toggle="dropdown">CHĂM SÓC KHÁCH HÀNG</button>
+					<button class="btndrop dropdown-toggle" data-toggle="dropdown">
+						<span class="fa fa-phone-square"></span>
+						&nbsp;&nbsp;Chăm sóc khách hàng&nbsp;
+						<span class="fa fa-angle-down"></span>
+					</button>
 					<ul class="dropdown-menu dropdown-menu-left" role="menu">
 						<li><a href="#"><i class="fa fa-angle-double-right"></i>&nbsp;&nbsp;&nbsp;Trung tâm hỗ trợ</a></li>
 						<li><a href="#"><i class="fa fa-angle-double-right"></i>&nbsp;&nbsp;&nbsp;Đơn hàng và thanh toán</a></li>
@@ -41,7 +45,10 @@
 					</ul>
 				</li>
 				<li>
-					<button class="btndrop dropdown-toggle" data-toggle="dropdown">KIỂM TRA ĐƠN HÀNG</button>
+					<button class="btndrop dropdown-toggle" data-toggle="dropdown">
+						Kiểm tra đơn hàng&nbsp;
+						<span class="fa fa-angle-down"></span>
+					</button>
 					<ul class="dropdown-menu dropdown-menu-left" role="menu">
 						<form id="form-ktdonhang">
 							<div class="form-group form-group-sm">
@@ -54,8 +61,12 @@
 						</form>
 					</ul>
 				</li>
-				<li><a href="">ĐĂNG NHẬP</a></li>
-				<li><button class="btndrop btnmodal" data-toggle="modal" data-target="#modalRegister" data-backdrop="static">ĐĂNG KÍ</button></li>
+				<li><a href=""><span class="fa fa-user"></span>&nbsp;&nbsp;Đăng nhập</a></li>
+				<li>
+					<button class="btndrop btnmodal" data-toggle="modal" data-target="#modalRegister" data-backdrop="static">
+						<span class="fa fa-user-plus"></span>&nbsp;&nbsp;Đăng ký
+					</button>
+				</li>
 
 				<!-- Modal Đăng Kí -->
 				<div class="modal" id="modalRegister" tabindex="-1" role="dialog">
@@ -264,18 +275,31 @@
 
 
 	<!-- Nav bottom  -->
-	<div class="container-fluid" style="background-color: #A633D7; margin-top: -20px;">
+	<div class="nav-bottom container-fluid">
 		<div class="container">
-			<ul class="nav nav-pills  navbar-right">
-				<li><a href="">KÊNH NGƯỜI BÁN</a></li>
-				<li>
-					<button class="btndrop dropdown-toggle" data-toggle="dropdown">CHĂM SÓC KHÁCH HÀNG</button>
+			<ul class="nav nav-pills">
+				<li class="danhmuc">
+					<button type="button" class="btn-danhmuc">
+						<span class="fa fa-navicon"></span>&nbsp;&nbsp;&nbsp;DANH MỤC SẢN PHẨM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span class="fa fa-angle-down"></span>
+					</button>
+					<div class="dropdown-content">
+						<a href="#">Iphone</a>
+						<a href="#">Apple</a>
+						<a href="#">Nokia</a>
+						<a href="#">Samsung</a>
+						<a href="#">Oppo</a>
+						<a href="#">Sony</a>
+						<a href="#">Asus</a>
+					</div>
 				</li>
 				<li>
-					<button class="btndrop dropdown-toggle" data-toggle="dropdown">KIỂM TRA ĐƠN HÀNG</button>
+					<a class="nav-bottom-km" href="#">
+					<span class="glyphicon glyphicon-fire""></span>&nbsp;&nbsp;KHUYẾN MÃI
+					</a>
 				</li>
-				<li><a href="">ĐĂNG NHẬP</a></li>
-				<li><button class="btndrop btnmodal" data-toggle="modal" data-target="#modalRegister" data-backdrop="static">ĐĂNG KÍ</button></li>	
+				<li><a class="nav-bottom-banchay" href="#"><span class=""></span>&nbsp;&nbsp;BÁN CHẠY</a></li>
+				<li><a class="nav-bottom-hangmoi" href="#"><span class=""></span>&nbsp;&nbsp;HÀNG MỚI</a></li>	
 			</ul>
 		</div>
 	</div>
