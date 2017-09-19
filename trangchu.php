@@ -111,7 +111,7 @@
 	        <span class="icon-bar"></span>
 	      </button>
 	      <a class="navbar-brand" href="#">
-	      	<img id="logo" src="img/logo2.png" alt="logoMobileStore">
+	      	<img id="logo" src="img/logo.png" alt="logoMobileStore">
 	      </a>
 	    </div>
 
