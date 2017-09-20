@@ -8,7 +8,7 @@
 	padding: 3px;
 	color: #696969;
 	font-size: 13px;
-	padding-right: 25px;
+	padding-right: 20px;
 }
 
 .submenu>li>a:hover, .btndrop:hover, .btndrop:focus {
@@ -16,7 +16,7 @@
 	color: #2930FF;
 }
 
-.submenu .fa-handshake-o, .submenu .fa-phone-square {
+.submenu .fa-handshake-o, .submenu .fa-phone-square, .submenu .fa-list-alt {
 	color: #2930FF;
 	font-size: 16px;
 }
@@ -32,7 +32,7 @@
 	background-color: #FBF6FB;
 	color: #696969;
 	font-size: 13px;
-	padding-right: 25px;
+	padding-right: 20px;
 	margin-top: 2px;
 }
 
@@ -124,14 +124,14 @@
 
 #mainnav input {
 	width: 550px;
-	height: 36px;
+	height: 37px;
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
 	outline: none;
 	padding-left: 10px;
 	border: 2px solid #A633D7;
 	border-right-style: none;
-	font-size: 12px;
+	font-size: 13px;
 	background-color: #FBF6FB;
 }
 
@@ -146,7 +146,7 @@
 
 #mainnav .btn-search > span {
 	color: #FFFFFF;
-	font-size: 18px;
+	font-size: 19px;
 }
 
 /* Nav Right bao gồm Cart, yêu thích */
@@ -274,8 +274,8 @@
 }
 
 .box-scroll .ten-sp a {
-	font-size: 14px;
-	color: #16B3C4;
+	font-size: 13px;
+	color: #2930FF;
 }
 
 .box-scroll .ten-sp a:hover {
@@ -333,7 +333,7 @@
 }
 
 .footer-cart span:hover {
-	color: #DA0000;
+	color:  #2930FF;
 }
 
 .footer-cart .thanhtoan-cart {
@@ -380,7 +380,8 @@
 .nav-bottom .dropdown-content {
 	display: none;
 	position: absolute;
-	width: 239px;
+	width: 1150px;
+	height: 250px;
 	background-color: #3C3A3D;
 	padding: 5px;
 }
@@ -397,14 +398,30 @@
 /* Tùy chỉnh khuyến mãi, bán chạy, hàng mới */
 .nav-bottom .nav-bottom-km, .nav-bottom .nav-bottom-banchay, .nav-bottom .nav-bottom-hangmoi {
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 12px;
 	color: #FFFFFF;
-	padding-left: 40px;
-	padding-right:40px;
+	padding-left: 30px;
+	padding-right:30px;
 	border-radius: 0px;
 	border-right: 1px solid #B329EE;
 }
 
 .nav-bottom .nav-bottom-km:hover, .nav-bottom .nav-bottom-banchay:hover, .nav-bottom .nav-bottom-hangmoi:hover {
 	background-color: #9030BA;
+}
+
+.nav-bottom .fa-gift, .nav-bottom .fa-tag, .nav-bottom .fa-tags {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+/* Tùy chỉnh Body */
+.body {
+	background-color: #FBF6FB;
 }

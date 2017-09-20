@@ -15,9 +15,14 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	<!-- Font Awesome -->
 	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
 
+
+	<!-- jQuery, Bootstrap JS -->
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 
 </head>
@@ -26,14 +31,14 @@
 <body>
 
 	<!-- Sub nav -->
-	<div class="subnav container-fluid">
+	<div class="subnav">
 		<div class="container">
 			<ul class="submenu nav nav-pills  navbar-right">
 				<li><a href=""><span class="fa fa-handshake-o"></span>&nbsp;&nbsp;Bán hàng cùng Mobile Store</a></li>
 				<li>
 					<button class="btndrop dropdown-toggle" data-toggle="dropdown">
 						<span class="fa fa-phone-square"></span>
-						&nbsp;&nbsp;Chăm sóc khách hàng&nbsp;
+						&nbsp;Chăm sóc khách hàng&nbsp;
 						<span class="fa fa-angle-down"></span>
 					</button>
 					<ul class="dropdown-menu dropdown-menu-left" role="menu">
@@ -46,7 +51,7 @@
 				</li>
 				<li>
 					<button class="btndrop dropdown-toggle" data-toggle="dropdown">
-						Kiểm tra đơn hàng&nbsp;
+						<span class="fa fa-list-alt"></span>&nbsp;&nbsp;Kiểm tra đơn hàng&nbsp;
 						<span class="fa fa-angle-down"></span>
 					</button>
 					<ul class="dropdown-menu dropdown-menu-left" role="menu">
@@ -295,11 +300,11 @@
 				</li>
 				<li>
 					<a class="nav-bottom-km" href="#">
-					<span class="glyphicon glyphicon-fire""></span>&nbsp;&nbsp;KHUYẾN MÃI
+					<span class="fa fa-gift"></span>&nbsp;&nbsp;&nbsp;KHUYẾN MÃI
 					</a>
 				</li>
-				<li><a class="nav-bottom-banchay" href="#"><span class=""></span>&nbsp;&nbsp;BÁN CHẠY</a></li>
-				<li><a class="nav-bottom-hangmoi" href="#"><span class=""></span>&nbsp;&nbsp;HÀNG MỚI</a></li>	
+				<li><a class="nav-bottom-banchay" href="#"><span class="fa fa-tags"></span>&nbsp;&nbsp;&nbsp;BÁN CHẠY</a></li>
+				<li><a class="nav-bottom-hangmoi" href="#"><span class="fa fa-tag"></span>&nbsp;&nbsp;&nbsp;HÀNG MỚI</a></li>	
 			</ul>
 		</div>
 	</div>
@@ -307,10 +312,54 @@
 
 
 
+	<!-- Body -->
+	<div class="body container-fluid">
+		<div class="container">
+			<!-- Carousel -->
+			<div id="myCarousel" class="carousel slide" data-rice="carousel" >
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
 
-    <!-- jQuery, Bootstrap JS -->
-	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="img-promotion/1.png" alt="slide1">
+					</div>
+
+					<div class="item active">
+						<img src="img-promotion/2.jpg" alt="slide2">
+					</div>
+
+					<div class="item active">
+						<img src="img-promotion/3.jpg" alt="slide3">
+					</div>
+				</div>
+
+				<!-- Left and right controls -->
+				<a href="#myCarousel" class="left carousel-control" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a href="#myCarousel" class="right carousel-control" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div> <!-- end carousel -->
+
+
+
+		</div>
+	</div>
+
+
+
+
+
+    
 
 
 </body>
