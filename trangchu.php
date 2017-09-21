@@ -13,16 +13,21 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+
+  	<!-- jQuery, Bootstrap JS -->
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
 
-
-	<!-- jQuery, Bootstrap JS -->
-	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
 
 
 </head>
@@ -322,20 +327,25 @@
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="#myCarousel" data-slide-to="1"></li>
 					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
 				</ol>
 
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="img-promotion/1.png" alt="slide1">
+						<img src="img-promotion/2.jpg" alt="slide1">
 					</div>
 
-					<div class="item active">
-						<img src="img-promotion/2.jpg" alt="slide2">
+					<div class="item">
+						<img src="img-promotion/note8.jpg" alt="slide2">
 					</div>
 
-					<div class="item active">
-						<img src="img-promotion/3.jpg" alt="slide3">
+					<div class="item">
+						<img src="img-promotion/mia1.png" alt="slide3">
+					</div>
+
+					<div class="item">
+						<img src="img-promotion/sony.png" alt="slide3">
 					</div>
 				</div>
 
@@ -351,10 +361,54 @@
 			</div> <!-- end carousel -->
 
 
+			<!-- Panel vận chuyển, giao hàng, đổi trả -->
+			<div class="panel-ship">
+				<div>
+					<a href="#"><img src="img/banner1.jpg" alt="banner1" style="margin-right: 1px;"></a>
+				</div>
+				<div>
+					<a href=""><img src="img/banner2.jpg" alt="banner1" style="margin-right: 1px;"></a>
+				</div>
+				<div>
+					<a href=""><img src="img/banner3.jpg" alt="banner1"></a>
+				</div>
+			</div>
+		</div>
 
+		<div class="container">
+			<!-- Panel sản phẩm -->
+			<div class="panel-product">
+				<div class="panel-ProCare">
+					<div class="row title-panel-ProCare">Sản phẩm được quan tâm</div>
+					<div class="row list-ProCare">
+						<div class="col-sm-2">
+							<img src="sanpham/iphone4s.jpg">
+							<div class="detail-ProCare">
+								<div>
+									<label class="priceProm-ProCare">1.700.000 đ</label>
+									<label class="price-ProCare">2.500.000 đ</label>
+								</div>								
+								<label><a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a></label>
+								<div>
+									<label class="number-buy" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 1 lượt mua"><span class="fa fa-tag">1</span></label>
+									<label class="number-view"><span class="fa fa-eye">5</span></label>
+									<label class="number-cmt"><span class="fa fa-comments">0</span></label>
+								</div>
+								<div>
+									<label class="name-shop">ANHDUY</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">hihi</div>
+						<div class="col-md-2" style="background-color: yellow">hihi</div>
+						<div class="col-md-2">hihi</div>
+						<div class="col-md-2" style="background-color: blue">hihi</div>
+						<div class="col-md-2">hihi</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-
 
 
 

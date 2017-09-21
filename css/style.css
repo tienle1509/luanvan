@@ -354,7 +354,7 @@
 .nav-bottom .btn-danhmuc {
 	color: #FFFFFF;
 	background-color: #9030BA;
-	padding: 11px 20px 9px 15px;
+	padding: 10px 20px 9px 15px;
 	border: none;
 	font-weight: bold;
 	font-size: 13px;
@@ -384,6 +384,8 @@
 	height: 250px;
 	background-color: #3C3A3D;
 	padding: 5px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 .nav-bottom .dropdown-content a {
@@ -410,6 +412,10 @@
 	background-color: #9030BA;
 }
 
+.nav-bottom .nav-bottom-km:focus, .nav-bottom .nav-bottom-banchay:focus, .nav-bottom .nav-bottom-hangmoi:focus {
+	background-color: #A633D7;
+}
+
 .nav-bottom .fa-gift, .nav-bottom .fa-tag, .nav-bottom .fa-tags {
 	font-size: 16px;
 	font-weight: bold;
@@ -424,4 +430,96 @@
 /* Tùy chỉnh Body */
 .body {
 	background-color: #FBF6FB;
+	margin-top: 5px;
 }
+
+.panel-carousel {
+	padding-left: 0px;
+}
+
+#myCarousel{
+	width: 1140px;
+}
+
+#myCarousel img {
+	width: 1140px;
+	height: 370px;
+}
+
+.panel-ship {
+	margin-top: 2px;
+}
+
+.panel-ship img {
+	float: left;
+	width: 379px;
+}
+
+
+/* Tùy chỉnh panel sản phẩm */
+.panel-ProCare {
+	border: 1px solid #D9D9D9;
+	margin-top: 10px;
+	background-color: #FFFFFF;
+}
+
+.panel-ProCare .title-panel-ProCare {
+	background-color: #E1DFDF;
+	padding: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-weight: bold;	
+}
+
+.panel-ProCare .list-ProCare {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.panel-ProCare .list-ProCare img {
+	width: 189px;
+	height: 200px;
+	margin-left: -14px;
+	padding-top: 15px;
+}
+
+/* Tùy chỉnh title giá, tên, ... */
+.panel-ProCare .detail-ProCare {
+	margin-left: -15px;
+	margin-right: -15px;
+	padding-top: 20px;
+}
+
+.panel-ProCare .detail-ProCare .priceProm-ProCare {
+	color: #DA0000;
+}
+
+.panel-ProCare .detail-ProCare .price-ProCare {
+	float: right;
+	font-weight: normal;
+	font-size: 12px;
+	text-decoration: line-through;
+	padding: 2px;
+	color: #504F4F;
+}
+
+.panel-ProCare .detail-ProCare a {
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: normal;
+	color: #504F4F;
+}
+
+.panel-ProCare .detail-ProCare a:hover {
+	color: #2003FA;
+}
+
+/* Tùy chỉnh lượt mua, xem, hỏi */
+.panel-ProCare .detail-ProCare .number-buy,  .panel-ProCare .detail-ProCare .number-view, 
+	.panel-ProCare .detail-ProCare .number-cmt {
+		color: #504F4F;
+		cursor: default;
+		font-size: 14px;
+		margin-left: 12px;
+}
+
