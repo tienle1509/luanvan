@@ -333,19 +333,19 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="img-promotion/2.jpg" alt="slide1">
+						<a href=""><img src="img-promotion/2.jpg" alt="slide1"></a>
 					</div>
 
 					<div class="item">
-						<img src="img-promotion/note8.jpg" alt="slide2">
+						<a href=""><img src="img-promotion/note8.jpg" alt="slide2"></a>
 					</div>
 
 					<div class="item">
-						<img src="img-promotion/mia1.png" alt="slide3">
+						<a href=""><img src="img-promotion/mia1.png" alt="slide3"></a>
 					</div>
 
 					<div class="item">
-						<img src="img-promotion/sony.png" alt="slide3">
+						<a href=""><img src="img-promotion/sony.png" alt="slide3"></a>
 					</div>
 				</div>
 
@@ -378,11 +378,31 @@
 		<div class="container">
 			<!-- Panel sản phẩm -->
 			<div class="panel-product">
-				<div class="panel-ProCare">
-					<div class="row title-panel-ProCare">Sản phẩm được quan tâm</div>
+				<div class="panel-Pro">
+					<div class="row title-panel-Pro"><img src="img/khuyenmai.png">&nbsp;&nbsp;Sản phẩm khuyến mãi</div>
 					<div class="row list-ProCare">
-						<div class="col-sm-2">
-							<img src="sanpham/iphone4s.jpg">
+						<div class="ProCare">
+							<a href="chitietsanpham.php"><img src="sanpham/iphone4s.jpg"></a>
+							<div class="chietkhau-prom">15%</div>
+							<div class="detail-Pro">
+								<div>
+									<label class="priceProm-Pro">1.700.000 đ</label>
+									<label class="price-Pro">2.500.000 đ</label>
+								</div>								
+								<label><a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a></label>
+								<div>
+									<label class="number-buy" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 1 lượt mua"><span class="fa fa-tag">1</span></label>
+									<label class="number-view" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 5 lượt xem"><span class="fa fa-eye">5</span></label>
+									<label class="number-cmt" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 0 hỏi đáp"><span class="fa fa-comments">0</span></label>
+								</div>
+								<div>
+									<label class="name-shop">ANHDUY</label>
+								</div>
+							</div>
+						</div>
+						
+						<div class="ProCare">
+							<a href="chitietsanpham.php"><img src="sanpham/iphone4s.jpg"></a>
 							<div class="detail-ProCare">
 								<div>
 									<label class="priceProm-ProCare">1.700.000 đ</label>
@@ -391,24 +411,188 @@
 								<label><a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a></label>
 								<div>
 									<label class="number-buy" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 1 lượt mua"><span class="fa fa-tag">1</span></label>
-									<label class="number-view"><span class="fa fa-eye">5</span></label>
-									<label class="number-cmt"><span class="fa fa-comments">0</span></label>
+									<label class="number-view" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 5 lượt xem"><span class="fa fa-eye">5</span></label>
+									<label class="number-cmt" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 0 hỏi đáp"><span class="fa fa-comments">0</span></label>
 								</div>
 								<div>
 									<label class="name-shop">ANHDUY</label>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-2">hihi</div>
-						<div class="col-md-2" style="background-color: yellow">hihi</div>
-						<div class="col-md-2">hihi</div>
-						<div class="col-md-2" style="background-color: blue">hihi</div>
-						<div class="col-md-2">hihi</div>
+
+						<div class="ProCare">
+							<a href="chitietsanpham.php"><img src="sanpham/iphone4s.jpg"></a>
+							<div class="detail-ProCare">
+								<div>
+									<label class="priceProm-ProCare">1.700.000 đ</label>
+									<label class="price-ProCare">2.500.000 đ</label>
+								</div>								
+								<label><a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a></label>
+								<div>
+									<label class="number-buy" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 1 lượt mua"><span class="fa fa-tag">1</span></label>
+									<label class="number-view" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 5 lượt xem"><span class="fa fa-eye">5</span></label>
+									<label class="number-cmt" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 0 hỏi đáp"><span class="fa fa-comments">0</span></label>
+								</div>
+								<div>
+									<label class="name-shop">ANHDUY</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="ProCare">
+							<a href="chitietsanpham.php"><img src="sanpham/iphone4s.jpg"></a>
+							<div class="detail-ProCare">
+								<div>
+									<label class="priceProm-ProCare">1.700.000 đ</label>
+									<label class="price-ProCare">2.500.000 đ</label>
+								</div>								
+								<label><a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a></label>
+								<div>
+									<label class="number-buy" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 1 lượt mua"><span class="fa fa-tag">1</span></label>
+									<label class="number-view" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 5 lượt xem"><span class="fa fa-eye">5</span></label>
+									<label class="number-cmt" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 0 hỏi đáp"><span class="fa fa-comments">0</span></label>
+								</div>
+								<div>
+									<label class="name-shop">ANHDUY</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="ProCare">
+							<a href="chitietsanpham.php"><img src="sanpham/iphone4s.jpg"></a>
+							<div class="detail-ProCare">
+								<div>
+									<label class="priceProm-ProCare">1.700.000 đ</label>
+									<label class="price-ProCare">2.500.000 đ</label>
+								</div>								
+								<label><a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a></label>
+								<div>
+									<label class="number-buy" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 1 lượt mua"><span class="fa fa-tag">1</span></label>
+									<label class="number-view" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 5 lượt xem"><span class="fa fa-eye">5</span></label>
+									<label class="number-cmt" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 0 hỏi đáp"><span class="fa fa-comments">0</span></label>
+								</div>
+								<div>
+									<label class="name-shop">ANHDUY</label>
+								</div>
+							</div>
+						</div>
+
 					</div>
-				</div>
-			</div>
+				</div> <!--end panel proCare -->
+
+
+
+				<!-- Sản phẩm bán chạy -->
+				<div class="panel-Pro">
+					<div class="row title-panel-Pro"><img src="img/giohang.png">&nbsp;&nbsp;Sản phẩm bán chạy</div>
+					<div class="row list-ProCare">
+						<div class="ProCare">
+							<a href="chitietsanpham.php"><img src="sanpham/iphone4s.jpg"></a>
+							<div class="chietkhau-prom">15%</div>
+							<div class="detail-Pro">
+								<div>
+									<label class="priceProm-Pro">1.700.000 đ</label>
+									<label class="price-Pro">2.500.000 đ</label>
+								</div>								
+								<label><a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a></label>
+								<div>
+									<label class="number-buy" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 1 lượt mua"><span class="fa fa-tag">1</span></label>
+									<label class="number-view" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 5 lượt xem"><span class="fa fa-eye">5</span></label>
+									<label class="number-cmt" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 0 hỏi đáp"><span class="fa fa-comments">0</span></label>
+								</div>
+								<div>
+									<label class="name-shop">ANHDUY</label>
+								</div>
+							</div>
+						</div>
+						
+						<div class="ProCare">
+							<a href="chitietsanpham.php"><img src="sanpham/iphone4s.jpg"></a>
+							<div class="detail-ProCare">
+								<div>
+									<label class="priceProm-ProCare">1.700.000 đ</label>
+									<label class="price-ProCare">2.500.000 đ</label>
+								</div>								
+								<label><a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a></label>
+								<div>
+									<label class="number-buy" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 1 lượt mua"><span class="fa fa-tag">1</span></label>
+									<label class="number-view" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 5 lượt xem"><span class="fa fa-eye">5</span></label>
+									<label class="number-cmt" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 0 hỏi đáp"><span class="fa fa-comments">0</span></label>
+								</div>
+								<div>
+									<label class="name-shop">ANHDUY</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="ProCare">
+							<a href="chitietsanpham.php"><img src="sanpham/iphone4s.jpg"></a>
+							<div class="detail-ProCare">
+								<div>
+									<label class="priceProm-ProCare">1.700.000 đ</label>
+									<label class="price-ProCare">2.500.000 đ</label>
+								</div>								
+								<label><a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a></label>
+								<div>
+									<label class="number-buy" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 1 lượt mua"><span class="fa fa-tag">1</span></label>
+									<label class="number-view" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 5 lượt xem"><span class="fa fa-eye">5</span></label>
+									<label class="number-cmt" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 0 hỏi đáp"><span class="fa fa-comments">0</span></label>
+								</div>
+								<div>
+									<label class="name-shop">ANHDUY</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="ProCare">
+							<a href="chitietsanpham.php"><img src="sanpham/iphone4s.jpg"></a>
+							<div class="detail-ProCare">
+								<div>
+									<label class="priceProm-ProCare">1.700.000 đ</label>
+									<label class="price-ProCare">2.500.000 đ</label>
+								</div>								
+								<label><a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a></label>
+								<div>
+									<label class="number-buy" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 1 lượt mua"><span class="fa fa-tag">1</span></label>
+									<label class="number-view" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 5 lượt xem"><span class="fa fa-eye">5</span></label>
+									<label class="number-cmt" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 0 hỏi đáp"><span class="fa fa-comments">0</span></label>
+								</div>
+								<div>
+									<label class="name-shop">ANHDUY</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="ProCare">
+							<a href="chitietsanpham.php"><img src="sanpham/iphone4s.jpg"></a>
+							<div class="detail-ProCare">
+								<div>
+									<label class="priceProm-ProCare">1.700.000 đ</label>
+									<label class="price-ProCare">2.500.000 đ</label>
+								</div>								
+								<label><a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a></label>
+								<div>
+									<label class="number-buy" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 1 lượt mua"><span class="fa fa-tag">1</span></label>
+									<label class="number-view" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 5 lượt xem"><span class="fa fa-eye">5</span></label>
+									<label class="number-cmt" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 0 hỏi đáp"><span class="fa fa-comments">0</span></label>
+								</div>
+								<div>
+									<label class="name-shop">ANHDUY</label>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div> <!--end panel bán chạy -->
+
+
+
+				
+			</div><!-- end panel product -->		
 		</div>
-	</div>
+
+
+	</div> <!-- end body -->
 
 
 
