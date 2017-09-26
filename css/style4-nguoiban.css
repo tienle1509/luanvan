@@ -1,0 +1,77 @@
+.container {
+	width: 1000px;
+}
+
+.navbar {
+	height: 100px;
+	background-color: #FBF6FB;
+	border-bottom: 1px solid #A633D7;
+	border-radius: 0px;
+}
+
+.navbar .navbar-collapse {
+	margin-top: 20px;
+}
+
+.navbar .navbar-collapse i {
+	font-size: 16px;
+}
+
+.navbar .navbar-collapse a {
+	font-size: 16px;
+	text-decoration: none;
+	color: red;
+}
+
+.navbar .navbar-collapse span {
+	font-size: 18px;
+}
+
+
+.panel-diachi {
+	margin-top: -20px;
+	width: 500px;
+	height: 450px;
+	padding: 15px 0px 15px 30px;
+}
+
+.panel-diachi h2 {
+	text-align: center;
+}
+
+
+/*Tùy chỉnh form đăng kí */
+#form-diachi {
+	margin-top: 40px;	
+}
+
+#form-diachi input, #form-diachi select {
+	width: 470px;
+	border: none;
+	border-bottom: 1px solid #E2E1E1;
+	padding: 2px 0px 1px 5px;
+	outline: none;
+}
+
+#form-diachi input:focus {
+	border-bottom: 2px solid #E528FA;
+}
+
+#form-diachi label {
+	padding-left: 5px;
+	font-size: 16px;
+}
+
+#form-diachi button {
+	margin-top: 20px;
+	width: 200px;
+	margin-left: 140px;
+}
+
+
+
+.footer {
+	text-align: center;
+	font-size: 11px;
+	margin-top: 70px;
+}

@@ -387,10 +387,46 @@
 	border: none;
 	font-weight: bold;
 	font-size: 13px;
-	position: relative;
 	outline: none;
 	margin-right: 5px;
 }
+
+.nav-bottom .danhmuc {
+	position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 256px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.nav-bottom .dropdown-content a {
+    display: block;
+    overflow: hidden;
+    color:  #666566;
+	padding: 4px;
+	border-bottom: 1px solid #EDECEE;
+	text-decoration: none;
+	width: 256px;
+	padding-left: 30px;
+}
+
+.nav-bottom .dropdown-content a:hover {
+	background-color: #A633D7;
+	color: #FFFFFF;
+}
+
+.nav-bottom .danhmuc:hover .dropdown-content {
+    display: block;
+}
+
+
+
 
 .nav-bottom .btn-danhmuc .fa-navicon, .nav-bottom .btn-danhmuc .fa-angle-down {
 	font-size: 16px;
@@ -436,242 +472,17 @@
 	padding-bottom: 50px;
 }
 
-.danhmuc {
-	width: 254px;
-	height: 437px;
-	border: 1px solid #B329EE;
-	background-color: #FFFFFF;
-}
-
-.danhmuc a {
-	display: block;
-	color:  #666566;
-	padding: 4px;
-	border-bottom: 1px solid #EDECEE;
-	text-decoration: none;
-	width: 252px;
-	margin-left: -15px;
-	padding-left: 30px;
-}
-
-.danhmuc a:hover {
-	background-color: #A633D7;
-	color: #FFFFFF;
-}
-
-
-#myCarousel{
-	width: 924px;
-	float: right;
-	margin-bottom: 1px;
-}
-
-#myCarousel img {
-	width: 924px;
-	height: 370px;
-}
-
-.panel-ship img {
-	float: right;
-	width: 307px;
-	height: 66px;
-}
-
-
-/* Tùy chỉnh Next, pre của ProCarousel */
-.Left-Right-ProCarousel {
-	float: right;
-	margin-top: 15px;
-	margin-right: 10px;
-}
-
-.panel-product .nav-pills .Left-Right-ProCarousel a:hover {
-	border: none;
-}
-
-
-/* Tùy chỉnh panel sản phẩm 1*/
-.panel-product {
-	margin-top: 20px;
-	background-color: #FFFFFF;
-}
-
-.panel-product .nav-pills {
-	background-color: #F0EDF0;
-}
-
-.panel-product .nav-pills a {
-	margin-left: 15px;
-	font-size: 15px;
-	font-weight: bold;
-	background-color: #F0EDF0;
-	color: #3415E3;
-}
-
-.panel-product .nav-pills a:hover {
-	background-color: #F0EDF0;
-	border-bottom: 2px solid #BE19B6;
-	border-radius: 0px;
-}
-
-.panel-product .pill-custom .active a{
-    background-color: #F0EDF0;
-    color: #3415E3;
-    border-bottom: 2px solid #BE19B6;
-    border-radius: 0px;
-}
-
-.panel-product .pill-custom .active a:hover {
-	background-color: #F0EDF0;
-    color: #3415E3;
-}
-
-.panel-product .pill-custom .active a:focus {
-	background-color: #F0EDF0;
-    color: #3415E3;
-    border-bottom: 2px solid #BE19B6;
-    border-radius: 0px;
-}
-
-
-
-
-/* Tùy chỉnh chi tiết sản phẩm */
-.panel-Pro {
-	margin-top: 10px;
-}
-
-.panel-Pro .title-panel-Pro {
-	padding: 10px 0px 10px 40px;
-	font-weight: bold;	
-	color: #5A51FA;
-	font-size: 16px;
-}
-
-
-.list-ProCare {
-	margin-left: 0px;
-	margin-right: 0px;
-}
-
-.list-ProCare .ProCare {
-	height: 390px;
-	width: 230px;
-	border: 1px solid #D9D9D9;
-	float: left;
-	margin-right: 3px;
-	margin-left: 3px;
-	background-color: #FFFFFF;
-	margin-bottom: 7px;
-}
-
-.list-ProCare .ProCare:hover{
-	border: 1px solid #EC51FA;
-}
-
-/* Tùy chỉnh chiết khấu khuyến mãi */
-.list-ProCare .ProCare .chietkhau-prom {
-	float: right;
-	color: #DA0000;
-	margin-top: -240px;
-	margin-right: 10px;
-	border: 1px solid red;
-	z-index: 1;
-	position: relative;
-	font-size: 12px;
-	padding: 1px 5px 1px 5px;
-	background-color: #FFFFFF;
-}
-
-.list-ProCare img {
-	width: 224px;
-	height: 250px;
-	margin-left: 1px;
-	margin-top: 2px;
-}
-
-/* Tùy chỉnh title giá, tên, ... */
-.detail-Pro {
-	padding-top: 15px;
-}
-
-.detail-Pro .priceProm-Pro {
-	color: #DA0000;
-}
-
-.detail-Pro .price-Pro {
-	float: right;
-	font-weight: normal;
-	font-size: 12px;
-	text-decoration: line-through;
-	padding: 2px;
-	color: #504F4F;
-}
-
-.detail-Pro a {
-	font-size: 12px;
-	text-decoration: none;
-	font-weight: normal;
-	color: #504F4F;
-	padding: 3px;
-}
-
-.detail-Pro a:hover {
-	color: #2003FA;
-}
 
 /* Tùy chỉnh lượt mua, xem, hỏi */
-.detail-Pro .number-buy,  .detail-Pro .number-view, 
-	.detail-Pro .number-cmt {
+.box-detail.number-buy,  .box-detail .number-view, 
+	.box-detail .number-cmt {
 		color: #504F4F;
 		cursor: default;
 		font-size: 14px;
 		margin-left: 12px;
 }
 
-.detail-Pro .name-shop {
-	background-color: #E1E1E1;
-	color: #4D4DFD;
-	font-weight: normal;
-	font-size: 12px;	
-	padding: 4px 194px 4px 5px; 
-}
 
-
-/* Tùy chỉnh panel sam sung */
-.panel-product-samsung {
-	margin-top: 30px;
-	width: 1180px;
-	height: 390px;
-	background-color: #FFFFFF;
-	margin-bottom: 30px;
-}
-
-.panel-product-samsung .panel-imgPro img {
-	margin-left: -15px;
-	width: 450px;
-	height: 390px;
-}
-
-#samsungCarousel {
-	width: 710px;
-	float: right;
-}
-
-#samsungCarousel .carousel-control {
-	background: #DCDADA;
-	width: 25px;
-	height: 30px;
-	margin-top: 160px;
-}
-
-
-
-/* Tùy chỉnh panel danh sách tất cả sản phẩm */
-.panel-listPro {
-	background-color: #FFFFFF;
-	padding-top: 7px;
-}
 
 
 
