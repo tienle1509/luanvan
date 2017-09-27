@@ -483,7 +483,33 @@
 }
 
 
+/*Tùy chỉnh box-detail */
+.box-detail {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: red;
+}
 
+.box-detail .img-product {
+	width: 350px;
+	height: 500px;
+	background-color: blue
+}
+
+.box-detail .img-product img {
+	width: 350px;
+	height: 350px;
+}
+
+.box-detail .img-product #imgCarousel{
+	margin-top: 10px;
+	width: 50px;
+}
+
+.box-detail .img-product #imgCarousel img {
+	width: 70px;
+	height: 70px;
+}
 
 
 

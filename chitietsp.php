@@ -13,20 +13,34 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/stylechitietsp.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 
   	<!-- jQuery, Bootstrap JS -->
 	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
 
-	<script>
+	<script language="javascript">
 	    $(document).ready(function(){
-	        $('[data-toggle="tooltip"]').tooltip();
+	        $('[data-toggle="tooltip"]').tooltip();   
 	    });
+
+	    $('.slider').slick({
+		  slidesToShow: 3,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  autoplaySpeed: 2000,
+		});
+	
     </script>
 
 
@@ -387,24 +401,158 @@
 			</ol>
 
 
-			<div class="container box-detail" style="background-color: red">
-				<div class="col-md-3" style="background-color: blue">
+			<div class="container box-detail">
+				<div class="img-product">
 					<img src="sanpham/hotwav.jpg" alt="imgMobile">
+
+
+					<!--slick  slider hình ảnh sản phẩm -->
+					<div class="slider" style="width: 100px; height: 50px;">
+						<div>
+							<img src="imgdetail/galaxy.jpg">
+						</div>
+						<div>
+							<img src="imgdetail/galaxy.jpg">
+						</div>
+						<div>
+							<img src="imgdetail/galaxy.jpg">
+						</div>
+						<div>
+							<img src="imgdetail/galaxy.jpg">
+						</div>
+						<div>
+							<img src="imgdetail/galaxy.jpg">
+						</div>
+						<div>
+							<img src="imgdetail/galaxy.jpg">
+						</div>
+					</div>
+
+				<a href=""><span class="fa fa-heart-o"></span>&nbsp;&nbsp;Tôi thích sản phẩm này</a>
 				</div>
-				<div class="col-md-6" style="background-color: yellow">
+
+
+
+				<div class="col-md-6" style="background-color: yellow;">
 					<h4><b>Điện thoại HOTWAV Tặng ốp lưng dán màn hình hàng nhập khẩu</b></h4>
-					<label class="number-buy" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 1 lượt mua"><span class="fa fa-tag">1</span></label>
-					<label class="number-view" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 5 lượt xem"><span class="fa fa-eye">5</span></label>
-					<label class="number-cmt" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 0 hỏi đáp"><span class="fa fa-comments">0</span></label>
+					<div>
+						<label class="number-buy" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 1 lượt mua"><span class="fa fa-tag">1</span></label>
+						<label class="number-view" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 5 lượt xem"><span class="fa fa-eye">5</span></label>
+						<label class="number-cmt" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 0 hỏi đáp"><span class="fa fa-comments">0</span></label>
+					</div>
+					<div class="col-md-6">
+						<ul>
+							<li>Hãng sản xuất: Hotwav</li>
+							<li>Kích thước màn hình: 5.5inch-6.0inch</li>
+							<li>Độ phân giải màn hình: 1080x1920 pixels</li>
+							<li>Hệ điều hành: Android</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<ul>
+							<li>Ram: 1Gb</li>
+							<li>Bộ nhớ trong: 8GB</li>							
+							<li>Camera: 5MP</li>
+							<li>Dung lượng pin (mAh): 4100 mAh</li>
+							<li>Thời gian bảo hành 12 tháng</li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+					<hr>
+					<label>Số lượng</label>
+					<select name="soluong">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+					<label>(Còn lại 3 sản phẩm)</label>
 					<hr>
 					<h4>1,399,000đ</h4>
 					<label>Giá trước đây:<del>1,900,000 đ</del></label><br>
-					<label>Kho hàng: Nghệ An</label>
 					<hr>
-					<div class="panel">
-						
-					</div>
+					<button type="button" class="btn"><span class="fa fa-shopping-cart"></span>&nbsp;&nbsp;Thêm vào giỏ hàng</button>
+					<button type="button" class="btn"><span class="fa fa-check"></span>&nbsp;&nbsp;Mua ngay</button>
+					<a href="huongdanmuahang"><span class="fa fa-desktop"></span>&nbsp;&nbsp;Hướng dẫn mua hàng</a>
 				</div>
+
+
+				<div class="col-md-2" style="background-color: gray">
+					<label><span class="fa fa-map-marker"></span>Kiểm tra thời gian giao hàng</label>
+					<select class="selectpicker" data-live-search="true">
+			    	<option value=""> Tỉnh/Thành phố</option>
+			    	<option value="1">Hồ Chí Minh</option>
+			    	<option value="2">Hà Nội</option>
+			    	<option value="3">An Giang</option>
+			    	<option value="5">Bắc Kạn</option>
+			    	<option value="6">Bắc Giang</option>
+			    	<option value="7">Bạc Liêu</option>
+			    	<option value="8">Bắc Ninh</option>
+			    	<option value="9">Bến Tre</option>
+			    	<option value="11">Bình Định</option>
+			    	<option value="12">Bình Phước</option>
+			    	<option value="13">Bình Thuận</option>
+			    	<option value="14">Cà Mau</option>
+			    	<option value="15">Cần Thơ</option>
+			    	<option value="16">Cao Bằng</option>
+			    	<option value="17">Đà Nẵng</option>
+			    	<option value="18">Đắk Lắk</option>
+			    	<option value="19">Điện Biên</option>
+			    	<option value="20">Đồng Nai</option>
+			    	<option value="21">Gia Lai</option>
+			    	<option value="22">Hà Giang</option>
+			    	<option value="23">Hà Nam</option>
+			    	<option value="24">Hậu Giang</option>
+			    	<option value="25">Hà Tĩnh</option>
+			    	<option value="26">Hải Dương</option>
+			    	<option value="27">Hải Phòng</option>
+			    	<option value="28">Hòa Bình</option>
+			    	<option value="30">Khánh Hòa</option>
+			    	<option value="32">Lai Châu</option>
+			    	<option value="33">Lâm Đồng</option>
+			    	<option value="34">Lạng Sơn</option>
+			    	<option value="35">Lào Cai</option>
+			    	<option value="36">Long An</option>
+			    	<option value="37">Nam Định</option>
+			    	<option value="38">Nghệ An</option>
+			    	<option value="39">Ninh Thuận</option>
+			    	<option value="40">Phú Thọ</option>
+			    	<option value="41">Phú Yên</option>
+			    	<option value="42">Quảng Bình</option>
+			    	<option value="43">Quảng Nam</option>
+			    	<option value="44">Quảng Ngãi</option>
+			    	<option value="45">Quảng Ninh</option>
+			    	<option value="46">Quảng Trị</option>
+			    	<option value="47">Sóc Trăng</option>
+			    	<option value="48">Tây Ninh</option>
+			    	<option value="49">Thái Bình</option>
+			    	<option value="50">Thái Nguyên</option>
+			    	<option value="51">Thanh Hóa</option>
+			    	<option value="52">Huế</option>
+			    	<option value="53">Tiền Giang</option>
+			    	<option value="54">Trà Vinh</option>
+			    	<option value="55">Tuyên Quang</option>
+			    	<option value="56">Kiên Giang</option>
+			    	<option value="57">Vĩnh Phúc</option>
+			    	<option value="58">Bà Rịa-Vũng Tàu</option>
+			    	<option value="59">Yên Bái</option>
+			    	<option value="60">Vĩnh Long</option>
+			    	<option value="61">Bình Dương</option>
+			    	<option value="62">Đắk Nông</option>
+			    	<option value="63">Đồng Tháp</option>
+			    	<option value="64">Hưng Yên</option>
+			    	<option value="65">Kon Tum</option>
+			    	<option value="66">Ninh Bình</option>
+			    	<option value="67">Sơn La</option>
+			    </select>
+				<hr>
+				<div><span class="fa fa-map-marker"></span>Giao hàng toàn quốc</div>
+				<div><span class="fa fa-file-text-o"></span>Nhà cung cấp xuất hóa đơn cho sản phẩm này</div>
+				<div><img src="img/iconship.gif">Giao hàng bởi đối tác của Mobile Store</div>
+				</div>
+				<hr>
+				<div><img src="img/marketplace.jpg">Sản phẩm được cung cấp bởi <label>ANHDUY</label></div>
 			</div>
 
 		</div>		 <!-- end container -->
@@ -443,7 +591,7 @@
 					<img src="img/nganluong.png" alt="logonganluong" style="width: 190px; height: 45px;">
 				</div>
 				<h5>Đối tác vận chuyển</h5>
-				<img src="img/vietnampost.jpg" alt="logovnpost">
+				<img src="img/vietnampost.png" alt="logovnpost">
 				<img src="img/logo-ghtk.png" alt="logoghtk">
 				<img src="img/ghn.jpg" alt="logoghn">
 			</div>
