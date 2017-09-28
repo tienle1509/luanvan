@@ -34,13 +34,21 @@
 	        $('[data-toggle="tooltip"]').tooltip();   
 	    });
 
-	    $('.slider').slick({
-		  slidesToShow: 3,
-		  slidesToScroll: 1,
-		  autoplay: true,
-		  autoplaySpeed: 2000,
+
+	    /* Slick slider */
+	    $(document).ready(function(){
+	    	$('.slider-for').slick({
+		   		slidesToShow: 1,
+		   		slidesToScroll: 1,
+		   		arrows: false,
+		   		fade: true,
+		 	});
+		 	$('.slider-nav').slick({
+		   		slidesToShow: 5,
+			   	asNavFor: '.slider-for',
+			   	focusOnSelect: true,
+		 	});
 		});
-	
     </script>
 
 
@@ -50,8 +58,8 @@
 <body>
 
 	<!-- Sub nav -->
-	<div class="subnav">
-		<div class="container">
+	<div class="subnav" style="background-color: red">
+		<div class="container" style="background-color: yellow">
 			<ul class="submenu nav nav-pills  navbar-right">
 				<li><a href="nguoiban/ban.php"><span class="fa fa-handshake-o"></span>&nbsp;&nbsp;Bán hàng cùng Mobile Store</a></li>
 				<li>
@@ -403,37 +411,25 @@
 
 			<div class="container box-detail">
 				<div class="img-product">
-					<img src="sanpham/hotwav.jpg" alt="imgMobile">
-
-
-					<!--slick  slider hình ảnh sản phẩm -->
-					<div class="slider" style="width: 100px; height: 50px;">
-						<div>
-							<img src="imgdetail/galaxy.jpg">
-						</div>
-						<div>
-							<img src="imgdetail/galaxy.jpg">
-						</div>
-						<div>
-							<img src="imgdetail/galaxy.jpg">
-						</div>
-						<div>
-							<img src="imgdetail/galaxy.jpg">
-						</div>
-						<div>
-							<img src="imgdetail/galaxy.jpg">
-						</div>
-						<div>
-							<img src="imgdetail/galaxy.jpg">
-						</div>
-					</div>
-
-				<a href=""><span class="fa fa-heart-o"></span>&nbsp;&nbsp;Tôi thích sản phẩm này</a>
+				  <div class="slider slider-for">
+				    <div><img src="sanpham/galaxyj7_1.jpg"></div>
+				    <div><img src="sanpham/galaxyj7_2.jpg"></div>
+				    <div><img src="sanpham/galaxyj7_3.jpg"></div>
+				    <div><img src="sanpham/galaxyj7_4.jpg"></div>
+				    <div><img src="sanpham/galaxyj7_5.jpg"></div>
+				  </div>
+				  <div class="slider slider-nav">
+				    <div style="margin-right: 10px"><img src="sanpham/galaxyj7_1.jpg"></div>
+				    <div style="margin-right: 10px"><img src="sanpham/galaxyj7_2.jpg"></div>
+				    <div style="margin-right: 10px"><img src="sanpham/galaxyj7_3.jpg"></div>
+				    <div style="margin-right: 10px"><img src="sanpham/galaxyj7_4.jpg"></div>
+				    <div style="margin-right: 10px"><img src="sanpham/galaxyj7_5.jpg"></div>
+				  </div>
+				<a href=""><span class="fa fa-heart-o">&nbsp;&nbsp;Tôi thích sản phẩm này</span></a>
 				</div>
 
 
-
-				<div class="col-md-6" style="background-color: yellow;">
+				<div class="info-product">
 					<h4><b>Điện thoại HOTWAV Tặng ốp lưng dán màn hình hàng nhập khẩu</b></h4>
 					<div>
 						<label class="number-buy" data-toggle="tooltip" data-html="true" data-placement="top" title="Đã có 1 lượt mua"><span class="fa fa-tag">1</span></label>
@@ -478,7 +474,7 @@
 				</div>
 
 
-				<div class="col-md-2" style="background-color: gray">
+				<div class="ship-product" style="background-color: gray">
 					<label><span class="fa fa-map-marker"></span>Kiểm tra thời gian giao hàng</label>
 					<select class="selectpicker" data-live-search="true">
 			    	<option value=""> Tỉnh/Thành phố</option>

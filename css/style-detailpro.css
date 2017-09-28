@@ -2,10 +2,14 @@
 	width: 1210px;
 }
 
-/* Sub nav, menu */
-.subnav{
+header {
 	background-color: #FBF6FB;
-	height: 22px;
+}
+
+/* Sub nav, menu */
+.submenu {
+	width: 808px;
+	background-color: #FBF6FB;
 }
 
 .submenu>li>a {
@@ -119,8 +123,7 @@
 	height: 70px;
 	background-color: #FBF6FB;
 	border-radius: 0px;
-	border-right: none;
-	border-left: none;
+	margin-bottom: 0px;
 }
 
 #top-nav #logo {
@@ -373,9 +376,8 @@
 
 
 /* Nav bottom */
-.nav-bottom {
+.nav-bottom, .nav-bottom .nav-pills {
 	background-color: #A633D7;
-	margin-top: -20px;
 }
 
 
@@ -393,7 +395,7 @@
 
 .nav-bottom .danhmuc {
 	position: relative;
-    display: inline-block;
+    display: inline;
 }
 
 .dropdown-content {
@@ -426,12 +428,11 @@
 }
 
 
-
-
 .nav-bottom .btn-danhmuc .fa-navicon, .nav-bottom .btn-danhmuc .fa-angle-down {
 	font-size: 16px;
 	font-weight: bold;
 }
+
 
 
 
@@ -468,43 +469,57 @@
 /* Tùy chỉnh Body */
 .body {
 	background-color: #FBF6FB;
-	margin-top: 1px;
 	padding-bottom: 50px;
+}
+
+/* Tùy chỉnh đường dẫn */
+.duongdan, .duongdan .row, .duongdan .breadcrumb {
+	background-color: #EAE9E9;
+	border-radius: 0px;
+	height: 40px;	
+}
+
+.duongdan .breadcrumb {
+	padding: 10px;
+}
+
+.duongdan .breadcrumb li, .duongdan .breadcrumb a {
+	color: #696969;
+}
+
+.duongdan .breadcrumb a:hover {
+	text-decoration: none;
+	color: #2930FF;
 }
 
 
 /* Tùy chỉnh lượt mua, xem, hỏi */
-.box-detail.number-buy,  .box-detail .number-view, 
+.box-detail .number-buy,  .box-detail .number-view, 
 	.box-detail .number-cmt {
 		color: #504F4F;
 		cursor: default;
 		font-size: 14px;
-		margin-left: 12px;
+		margin-left: 18px;
 }
 
 
 /*Tùy chỉnh box-detail */
 .box-detail {
-	padding-top: 15px;
+	margin-top: 20px;
+	padding-top: 20px;
 	padding-bottom: 15px;
-	background-color: red;
+	background-color: #FFFFFF;
 }
-
 
 /*Tùy chỉnh hình ảnh */
-.box-detail .img-product {
-  width:350px;
-  display:block;
-}
-
 .box-detail .img-product .slider-for {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .box-detail .img-product .slider-for img {
-	width: 350px;
-    height: 350px;
+	width: 370px;
+    height: 370px;
 }
 
 .box-detail .img-product .slider-nav {
@@ -531,27 +546,102 @@
 
 
 /*Tùy chỉnh thông tin */
-.box-detail .info-product {
-	width: 560px;
-	float: left;
-	display: block;
-	margin-top: -462px;
-	margin-left: 370px;
+.box-detail .info-product {	
 	background-color: yellow;
 }
 
+.box-detail .info-product hr {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
 
+.box-detail .info-product .col-md-6 li {
+	margin-left: -30px;
+	font-size: 13px;
+}
+
+.box-detail .info-product .label-soluong {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.box-detail .info-product .label-soluong label {
+	margin-left: 15px;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.box-detail .info-product .label-soluong select {
+	width: 50px;
+	height: 25px;
+	margin-left: 10px;
+	margin-right: -10px;	
+}
+
+.box-detail .info-product .label-gia {
+	margin-left: 0px;
+	margin-top: -25px;
+}
+
+.box-detail .info-product .label-gia h3 {
+	color: red;
+}
+
+.box-detail .info-product .label-gia label {
+	font-weight: normal;
+	font-size: 13px;
+}
+
+.box-detail .info-product .list-btn {
+	margin: 30px 10px 20px 0px;
+}
+
+.box-detail .info-product .list-btn .btn-addCart, .box-detail .info-product .list-btn .btn-buyPro {	
+	height: 40px;
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.box-detail .info-product .list-btn .btn-addCart {
+	background-color: #0DB712;
+	width: 190px;
+	margin-right: 10px;
+}
+
+.box-detail .info-product .list-btn .btn-buyPro {
+	background-color: #A633D7;
+	width: 140px;
+}
+
+.box-detail .info-product .list-btn .btn-addCart span, .box-detail .info-product .list-btn .btn-buyPro span {
+	font-size: 18px;
+}
+
+.box-detail .info-product .label-huongdanmua {
+	margin-top: -50px;
+	margin-right: 8px;
+}
+
+.box-detail .info-product .label-huongdanmua img {
+	margin-top: -30px;
+}
+
+.box-detail .info-product .label-huongdanmua label {
+	font-weight: normal;
+	font-size: 13px;
+	cursor: pointer;
+}
 
 
 /*Tùy chỉnh thông tin giao hàng */
-.box-detail .ship-product {
-	width: 235px;
-	float: left;
-	display: block;
-	margin-top: -462px;
-	margin-left: 945px;
+.box-detail .ship-product {	
 	background-color: blue;
 }
+
+
+
+
 
 
 /* Tùy chỉnh footer */
