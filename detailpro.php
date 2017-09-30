@@ -16,12 +16,14 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style-detailpro.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/rating.css">
 
   	<!-- jQuery, Bootstrap JS -->
 	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
 	<script type="text/javascript" src="js/jquery.elevatezoom.js"></script>
+	<script type="text/javascript" src="js/rating.js"></script>
 
 
 	<!-- Font Awesome -->
@@ -31,12 +33,31 @@
 	    $(document).ready(function(){
 	        $('[data-toggle="tooltip"]').tooltip();   
 	    });
+
+
+	    /* Show hide nội dung mô tả */
+	    $(document).ready(function(){
+	    	$('#showhidden-Mota').click(function(){
+	    		if(noidung.style.overflow === "hidden" && noidung.style.height ==="200px"){
+		    		noidung.style.overflow = "visible";
+			    	noidung.style.height = "auto";
+			    	document.getElementById("showhidden-Mota").innerHTML = "Thu gọn&nbsp;&nbsp;<span class='fa fa-angle-double-up'></span>";
+			    }
+			    else if(noidung.style.overflow === "visible" && noidung.style.height === "auto"){
+			    	noidung.style.overflow = "hidden";
+		    		noidung.style.height="200px";
+		    		document.getElementById("showhidden-Mota").innerHTML = "Xem thêm&nbsp;&nbsp;<span class='fa fa-angle-double-down'></span>";
+			    }
+	    	});	    	
+	    });
+
+
     </script>
 
 </head>
 
 
-<body>
+<body data-spy="scroll" data-target="#navbar-list">
 
 	<header>
 		<div class="container">
@@ -162,8 +183,7 @@
 
 
 	<!-- header menu -->
-	<div data-spy="affix" data-offset-top="300">
-		<div class="container">
+	<div class="container">
 			<div class="row">
 				<nav id="top-nav" class="navbar col-md-12 col-sm-12" role="navigation">
 					<!-- Brand and toggle get grouped for better mobile display -->
@@ -343,8 +363,7 @@
 					</div> <!-- end modal giỏ hàng -->
 				</nav>	
 			</div>		
-		</div>	
-	</div> <!-- end header menu -->
+		</div> <!-- end header menu -->
 
 	<div class="nav-bottom ">
 		<div class="container">
@@ -572,6 +591,158 @@
 		</div> <!-- end box detail -->
 
 
+		<!-- Panel Mô tả sản phẩm -->
+		<nav id="navbar-list" class="navbar" data-spy="affix" data-offset-top="40" style="background-color: red">
+			<div class="collapse navbar-collapse container" style="background-color: yellow">
+				<ul class="nav navbar-nav col-md-8 col-sm-8">
+					<li><a href="#mota">Mô tả</a></li>
+					<li><a href="#thongso">Thông số kĩ thuật</a></li>
+					<li><a href="#cauhoi">Câu hỏi</a></li>
+					<li><a href="#danhgia">Đánh giá & nhận xét</a></li>					
+				</ul>
+				<ul class="col-md-4 col-sm-4">
+					<button type="button" class="btn btn-addCart" data-toggle="modal" data-target="#modalCart"><span class="fa fa-shopping-cart"></span>&nbsp;&nbsp;Thêm vào giỏ hàng</button>
+					<button type="button" class="btn btn-buyPro"><span class="fa fa-check"></span>&nbsp;&nbsp;Mua ngay</button>
+				</ul>
+			</div>
+		</nav>
+
+
+		<div class="container" style="background-color: red">
+			<div class="col-md-9 col-sm-9" style="background-color: blue;">	
+				<div id="mota" class="row" >
+					<h4>Mô tả sản phẩm</h4>
+					<div id="noidung" class="col-md-12 col-sm-12" style="border: 2px solid black; overflow: hidden; height: 200px; ">
+						<div class="row">
+						<p>	Không còn jack cắm tai nghe truyền thống, thay vào đó tai tai nghe EarPod không dây hoặc kết nối thông quan đầu cắm Lightning. Dung lượng bộ nhớ được tăng đáng kể, bạn có thể sở hữu phiên bản lên đến 256GB. Ngoài những màu sắc quen thuộc, Apple đã giới thiệu đến người dùng phiên bản màu đen bóng (Jet Black) cực kỳ ấn tượng. Trọng lượng máy nhẹ hơn và màn hình sáng hơn cũng là một điểm đáng chú ý. Nhờ bỏ đi jack cắm tai nghe Apple đã có thể trang bị hệ thống loa kép với âm thanh stereo cực kỳ sống động. Apple đã loại bỏ nút Home vật lý thay bằng nút cảm ứng với công nghệ cảm ứng lực Force Touch độc đáo. Cuối cùng là pin “khủng” hơn, bộ xử lý mạnh hơn cũng như camera tốt hơn hỗ trợ quay video 4K.<br>
+							    	Nút Home vật lý quen thuộc ngày nào giờ đây đã được thay bằng nút Home cảm ứng tích hợp cảm ứng lực mang lại trải nghiệm hoàn hảo hơn. Nút Home trên iPhone 7 hoạt động song song với Taptic Engine mới cho độ nhạy cao, phản hồi chính xác trong từng lực nhấn của người dùng. Nút home vẫn giữ nguyên chức năng cảm biến vân tay Tuoch ID, cũng như Apple Pay dùng để thanh toán một cách an toàn.
+							    	Không còn jack cắm tai nghe truyền thống, thay vào đó tai tai nghe EarPod không dây hoặc kết nối thông quan đầu cắm Lightning. Dung lượng bộ nhớ được tăng đáng kể, bạn có thể sở hữu phiên bản lên đến 256GB. Ngoài những màu sắc quen thuộc, Apple đã giới thiệu đến người dùng phiên bản màu đen bóng (Jet Black) cực kỳ ấn tượng. Trọng lượng máy nhẹ hơn và màn hình sáng hơn cũng là một điểm đáng chú ý. Nhờ bỏ đi jack cắm tai nghe Apple đã có thể trang bị hệ thống loa kép với âm thanh stereo cực kỳ sống động. Apple đã loại bỏ nút Home vật lý thay bằng nút cảm ứng với công nghệ cảm ứng lực Force Touch độc đáo. Cuối cùng là pin “khủng” hơn, bộ xử lý mạnh hơn cũng như camera tốt hơn hỗ trợ quay video 4K.<br>
+							    	Nút Home vật lý quen thuộc ngày nào giờ đây đã được thay bằng nút Home cảm ứng tích hợp cảm ứng lực mang lại trải nghiệm hoàn hảo hơn. Nút Home trên iPhone 7 hoạt động song song với Taptic Engine mới cho độ nhạy cao, phản hồi chính xác trong từng lực nhấn của người dùng. Nút home vẫn giữ nguyên chức năng cảm biến vân tay Tuoch ID, cũng như Apple Pay dùng để thanh toán một cách an toàn.
+						</p>
+						</div>
+					</div>
+					<div class="showhidden">
+						<button type="button" id="showhidden-Mota">Xem thêm&nbsp;&nbsp;<span class="fa fa-angle-double-down"></span></button>	
+					</div>					
+				</div>
+				
+					
+
+
+				<div class="row" id="thongso" style="background-color: violet">
+					<h4>Thông số kĩ thuật</h4>
+					<div>
+						<label>Bộ sản phẩm bao gồm: </label> 1 x Thân máy, 1 x Sạc, 1 x Tai nghe theo máy
+					</div>
+					<div>
+						<label>Đặc điểm chính:</label>
+					</div>
+					<div>
+						<table class="table table-bordered">
+						    <tbody>
+						      <tr><td>Tên sản phẩm</td><td>Doe</td></tr>
+						      <tr><td>Màu sắc</td><td>Moe</td></tr>
+						      <tr><td>Xuất xứ</td><td>Moe</td></tr>
+						      <tr><td>Bộ nhớ trong</td><td>Dooley</td></tr>
+						      <tr><td>Kích thước</td><td>Doe</td></tr>
+						      <tr><td>Độ phân giải màn hình</td><td>Moe</td></tr>
+						      <tr><td>Camera Trước</td><td>Dooley</td></tr>
+						      <tr><td>Camera Sau</td><td>Doe</td></tr>
+						      <tr><td>Hệ điều hành</td><td>Moe</td></tr>
+						      <tr><td>Dung lượng pin</td><td>Dooley</td></tr>
+						      <tr><td>Thời gian bảo hành</td><td>Doe</td></tr>
+						    </tbody>
+						</table>
+					</div>
+				</div>
+
+
+				<div class="row" id="cauhoi" style="background-color: gray">
+					<h4>Câu hỏi về sản phẩm này</h4>
+					<p>
+						Vui lòng <a href="#" data-toggle="modal" data-target="#modalLogin" data-backdrop="static">Đăng nhập</a>
+						hoặc <a href="#" data-toggle="modal" data-target="#modalRegister" data-backdrop="static">Đăng ký ngay !</a> để đặt câu hỏi cho nhà bán hàng
+					</p>
+					<hr>
+					<div class="list-cauhoi">
+						<div class="col-md-1 col-sm-1" style="background-color: blue">
+							<span class="fa fa-user-circle"></span>
+						</div>
+						<div class="col-md-11 col-sm-9">
+							<p>Máy tốt không nhỉ ?</p>
+							<p>KenT - ngày 20 tháng 9 năm 2017</p>
+						</div>
+						<div class="col-md-1 col-sm-1" style="background-color: blue">
+							<img src="img/marketplace.jpg">
+						</div>
+						<div class="col-md-11 col-sm-9">
+							<p>Tốt em nhé ?</p>
+							<p>Tên shop - đã trả lời ngày 21 tháng 9 năm 2017</p>
+						</div>
+						<div class="clearfix"></div>
+						<hr>
+
+
+						 <div class="col-md-1 col-sm-1" style="background-color: blue">
+							<span class="fa fa-user-circle"></span>
+						</div>
+						<div class="col-md-11 col-sm-9">
+							<p>Máy tốt không nhỉ ?</p>
+							<p>KenT - ngày 20 tháng 9 năm 2017</p>
+						</div>
+						<div class="col-md-1 col-sm-1" style="background-color: blue">
+							<img src="img/marketplace.jpg">
+						</div>
+						<div class="col-md-11 col-sm-9">
+							<p>Tốt em nhé ?</p>
+							<p>Tên shop - đã trả lời ngày 21 tháng 9 năm 2017</p>
+						</div>
+						<div class="clearfix"></div>
+						<hr>
+
+
+						<div class="col-md-1 col-sm-1" style="background-color: blue">
+							<span class="fa fa-user-circle"></span>
+						</div>
+						<div class="col-md-11 col-sm-9">
+							<p>Máy tốt không nhỉ ?</p>
+							<p>KenT - ngày 20 tháng 9 năm 2017</p>
+						</div>
+						<div class="col-md-1 col-sm-1" style="background-color: blue">
+							
+						</div>
+						<div class="col-md-11 col-sm-9">
+							<p>Chưa có câu trả lời</p>
+						</div>
+						<div class="clearfix"></div>
+						<hr>
+					</div>
+				</div>
+
+
+
+				<div class="row" id="danhgia" style="background-color: yellow">
+					<h4>Đánh giá & nhận xét cho sản phẩm Điện thoại HOTWAV tặng ốp lưng dán màn hình nhập khẩu</h4>
+					<table class="table table-bordered">
+					    <tbody>
+					      <tr>
+					        <td>
+					        	
+					        </td>
+					        <td>
+					        	<h5>Bạn đã dùng sản phẩm này</h5>
+					        	<button type="button" >ĐÁNH GIÁ & NHẬN XÉT</button>
+					        </td>
+					      </tr>
+					    </tbody>
+					  </table>
+				</div>
+			</div> <!-- end col-md-9 -->
+
+			<div class="col-md-3 col-sm-3" style="background-color: gray">
+				hi
+			</div>
+		</div>
 
 
 	</div> <!--end body -->

@@ -678,6 +678,10 @@ body {
 
 
 /* Tùy chỉnh footer */
+footer {
+	background-color: #F2F2F2;
+}
+
 .footer {
 	padding-top: 30px;
 	border-top: 1px solid #DEDEDE;
