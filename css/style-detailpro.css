@@ -467,7 +467,7 @@ header {
 
 
 /* Tùy chỉnh Body */
-.body {
+body {
 	background-color: #FBF6FB;
 	padding-bottom: 50px;
 }
@@ -476,15 +476,16 @@ header {
 .duongdan, .duongdan .row, .duongdan .breadcrumb {
 	background-color: #EAE9E9;
 	border-radius: 0px;
-	height: 40px;	
+	height: 35px;	
 }
 
 .duongdan .breadcrumb {
-	padding: 10px;
+	padding: 5px;
 }
 
 .duongdan .breadcrumb li, .duongdan .breadcrumb a {
 	color: #696969;
+	font-size: 12px;
 }
 
 .duongdan .breadcrumb a:hover {
@@ -506,24 +507,27 @@ header {
 /*Tùy chỉnh box-detail */
 .box-detail {
 	margin-top: 20px;
+	margin-bottom: 20px;
 	padding-top: 20px;
 	padding-bottom: 15px;
 	background-color: #FFFFFF;
 }
 
+.box-detail hr {
+	color: red;
+}
+
 /*Tùy chỉnh hình ảnh */
 .box-detail .img-product .slider-for {
-    position: relative;
-    margin-bottom: 15px;
+   	margin-bottom: 15px;
 }
 
 .box-detail .img-product .slider-for img {
-	width: 370px;
-    height: 370px;
+	width: 350px;
+    height: 350px;
 }
 
-.box-detail .img-product .slider-nav {
-    position: relative;
+.box-detail .img-product .slider-nav {    
     width: 300px;
     margin-bottom: 30px;
     margin-left: 30px;
@@ -546,10 +550,6 @@ header {
 
 
 /*Tùy chỉnh thông tin */
-.box-detail .info-product {	
-	background-color: yellow;
-}
-
 .box-detail .info-product hr {
 	margin-top: 5px;
 	margin-bottom: 10px;
@@ -561,8 +561,8 @@ header {
 }
 
 .box-detail .info-product .label-soluong {
-	margin-top: 15px;
 	margin-bottom: 15px;
+	margin-top: 15px;
 }
 
 .box-detail .info-product .label-soluong label {
@@ -573,23 +573,28 @@ header {
 
 .box-detail .info-product .label-soluong select {
 	width: 50px;
-	height: 25px;
-	margin-left: 10px;
-	margin-right: -10px;	
+	height: 23px;
+	margin-right: 10px;	
 }
 
 .box-detail .info-product .label-gia {
-	margin-left: 0px;
-	margin-top: -25px;
+	margin-top: -20px;
 }
 
 .box-detail .info-product .label-gia h3 {
 	color: red;
+	margin-left: 10px;	
 }
 
-.box-detail .info-product .label-gia label {
-	font-weight: normal;
+.box-detail .info-product .label-gia .col-md-8 {
 	font-size: 13px;
+	margin-top: -5px;
+}
+
+
+.box-detail .info-product .time-ship {
+	margin-top: 30px;
+	margin-bottom: 20px;
 }
 
 .box-detail .info-product .list-btn {
@@ -604,7 +609,7 @@ header {
 }
 
 .box-detail .info-product .list-btn .btn-addCart {
-	background-color: #0DB712;
+	background-color: #1A920D;
 	width: 190px;
 	margin-right: 10px;
 }
@@ -636,9 +641,37 @@ header {
 
 /*Tùy chỉnh thông tin giao hàng */
 .box-detail .ship-product {	
-	background-color: blue;
+	width: 268px;
+	background-color: #E7FAFC;
+	border-top: 1px solid #9C9999;
+	margin-left: 20px;
 }
 
+.box-detail .ship-product .fa-map-marker {
+	font-size: 28px;
+	color: #868686;
+}
+
+.box-detail .ship-product #btn-diadiem {
+	width: 215px;
+	margin-top: 20px;
+}
+
+.box-detail .ship-product .fa-file-text-o {
+	font-size: 20px;
+}
+
+.box-detail .ship-product .row {
+	padding: 8px 0px 8px 18px;
+}
+
+.box-detail .ship-product .noicungcap img {
+	margin-left: -15px;
+}
+
+.box-detail .ship-product .col-md-3 {
+	width: 55px;
+}
 
 
 
@@ -649,6 +682,7 @@ header {
 	padding-top: 30px;
 	border-top: 1px solid #DEDEDE;
 	background-color: #F2F2F2;
+	height: 500px;
 }
 
 .footer h5 {

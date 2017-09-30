@@ -14,17 +14,15 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
-	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/style-detailpro.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 
   	<!-- jQuery, Bootstrap JS -->
 	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
-	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/jquery.elevatezoom.js"></script>
+
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
@@ -33,24 +31,7 @@
 	    $(document).ready(function(){
 	        $('[data-toggle="tooltip"]').tooltip();   
 	    });
-
-
-	    /* Slick slider */
-	    $(document).ready(function(){
-	    	$('.slider-for').slick({
-		   		slidesToShow: 1,
-		   		slidesToScroll: 1,
-		   		arrows: false,
-		   		fade: true,
-		 	});
-		 	$('.slider-nav').slick({
-		   		slidesToShow: 5,
-			   	asNavFor: '.slider-for',
-			   	focusOnSelect: true,
-		 	});
-		});
     </script>
-
 
 </head>
 
@@ -173,14 +154,18 @@
 						</div>
 					</div> <!-- end modal đăng kí -->
 				</ul>
-			</div> <!--end row-->
-			<div class="clearfix"></div>
+			</div> <!--end row-->		
+		</div>
+	</header>
+	<div class="clearfix"></div>
 
 
 
-			<!-- header menu -->
+	<!-- header menu -->
+	<div data-spy="affix" data-offset-top="300">
+		<div class="container">
 			<div class="row">
-				<nav id="top-nav" class="navbar col-md-12 col-sm-12" role="navigation" data-spy="affix" data-offset-top="300">
+				<nav id="top-nav" class="navbar col-md-12 col-sm-12" role="navigation">
 					<!-- Brand and toggle get grouped for better mobile display -->
 				    <div class="navbar-header">
 				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnav">
@@ -252,7 +237,7 @@
 					  				</button>
 					  				<h5 class="modal-title">
 					  					<span class="fa fa-shopping-cart"></span>
-					  					&nbsp;<b style="font-size: 14px; color: #2930FF; text-align: center;">GIỎ HÀNG </b>
+					  					&nbsp;<b style="font-size: 14px; text-align: center;">GIỎ HÀNG </b>
 					  					( <b style="color: #DA0000">9</b> sản phẩm )
 					  				</h5>	  				
 					  			</div>
@@ -355,12 +340,11 @@
 					  			</div>
 					  		</div>
 					  	</div>
-					  </div> <!-- end modal giỏ hàng -->
-				</nav>				
-			</div> <!-- end header menu -->
-		</div>
-	</header>
-	<div class="clearfix"></div>
+					</div> <!-- end modal giỏ hàng -->
+				</nav>	
+			</div>		
+		</div>	
+	</div> <!-- end header menu -->
 
 	<div class="nav-bottom ">
 		<div class="container">
@@ -422,23 +406,28 @@
 		<div class="container box-detail">
 			<div class="row">
 				<div class="img-product col-md-4 col-sm-4">
-				  <div class="slider slider-for">
-				    <div><img src="sanpham/galaxyj7_1.jpg"></div>
-				    <div><img src="sanpham/galaxyj7_2.jpg"></div>
-				    <div><img src="sanpham/galaxyj7_3.jpg"></div>
-				    <div><img src="sanpham/galaxyj7_4.jpg"></div>
-				    <div><img src="sanpham/galaxyj7_5.jpg"></div>
+				  <div class="slider-for">
+				  	<img id="zoom_01" src="sanphamtb/galaxyj7_1.jpg" data-zoom-image="sanpham/galaxyj7_1.jpg"/>
 				  </div>
-				  <div class="slider slider-nav">
-				    <div style="margin-right: 10px"><img src="sanpham/galaxyj7_1.jpg"></div>
-				    <div style="margin-right: 10px"><img src="sanpham/galaxyj7_2.jpg"></div>
-				    <div style="margin-right: 10px"><img src="sanpham/galaxyj7_3.jpg"></div>
-				    <div style="margin-right: 10px"><img src="sanpham/galaxyj7_4.jpg"></div>
-				    <div style="margin-right: 10px"><img src="sanpham/galaxyj7_5.jpg"></div>
+				  <div id="gallery" class="slider-nav" >
+				  	<a href="#" data-image="sanphamtb/galaxyj7_1.jpg" data-zoom-image="sanpham/galaxyj7_1.jpg">
+				  		<img id="img_01" src="sanphamnho/galaxyj7_1.jpg">
+				  	</a>				  
+				  	<a href="#" data-image="sanphamtb/galaxyj7_2.jpg" data-zoom-image="sanpham/galaxyj7_2.jpg">
+				  		<img id="img_01" src="sanphamnho/galaxyj7_2.jpg">
+				  	</a>
+				  	<a href="#" data-image="sanphamtb/galaxyj7_3.jpg" data-zoom-image="sanpham/galaxyj7_3.jpg">
+				  		<img id="img_01" src="sanphamnho/galaxyj7_3.jpg">
+				  	</a>
+				  	<a href="#" data-image="sanphamtb/galaxyj7_4.jpg" data-zoom-image="sanpham/galaxyj7_4.jpg">
+				  		<img id="img_01" src="sanphamnho/galaxyj7_4.jpg">
+				  	</a>
+				  	<a href="#" data-image="sanphamtb/galaxyj7_5.jpg" data-zoom-image="sanpham/galaxyj7_5.jpg">
+				  		<img id="img_01" src="sanphamnho/galaxyj7_5.jpg">
+				  	</a>				  
 				  </div>
 				  <a href=""><span class="fa fa-heart-o">&nbsp;&nbsp;Tôi thích sản phẩm này !</span></a>
 				</div>
-
 
 
 				<div class="info-product col-md-5 col-sm-5">
@@ -472,36 +461,39 @@
 					<div class="clearfix"></div>
 					<hr>
 					<div class="row label-soluong">
-						<label>Số lượng: </label>
+						<div class="col-md-3 col-sm-3">Số lượng:</div>
 						<select name="soluong">
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
 							<option value="4">4</option>
 							<option value="5">5</option>
-						</select>
-						<label>(Còn lại 3 sản phẩm)</label>
+						</select>(Còn lại 3 sản phẩm)
 					</div>
 					<hr>
 					<div class="row label-gia">
 						<h3>1,399,000 đ</h3>
-						<label>Giá trước đây: <del>1,900,000 đ</del></label>
+						<div class="col-md-8 col-sm-8">Giá trước đây: <del>1,900,000 đ</del></div>
+					</div>
+					<div class="row time-ship">
+						<div class="col-md-3 col-sm-3">Giao hàng: </div>
+						<label>Thời gian giao hàng trong vòng 6-7 ngày.</label>
 					</div>
 					<div class="row list-btn">
-						<button type="button" class="btn btn-addCart"><span class="fa fa-shopping-cart"></span>&nbsp;&nbsp;Thêm vào giỏ hàng</button>
+						<button type="button" class="btn btn-addCart" data-toggle="modal" data-target="#modalCart"><span class="fa fa-shopping-cart"></span>&nbsp;&nbsp;Thêm vào giỏ hàng</button>
 						<button type="button" class="btn btn-buyPro"><span class="fa fa-check"></span>&nbsp;&nbsp;Mua ngay</button>					
 					</div>
-					<div class="row pull-right label-huongdanmua" style="background-color: red">
+					<div class="row pull-right label-huongdanmua">
 						<a href="huongdanmuahang"><img src="img/iconhuongdanmua.png"><label>Hướng dẫn<br>mua hàng</label></a>
 					</div>
 				</div>
 
 
 
-				<div class="ship-product col-md-3 col-sm-3" style="background-color: gray">
-					<h5><span class="fa fa-map-marker"></span>&nbsp;&nbsp;Kiểm tra thời gian giao hàng</h5>
-					<select class="selectpicker" data-live-search="true">
-				    	<option value=""> Tỉnh/Thành phố</option>
+				<div class="ship-product col-md-3 col-sm-3">
+					<h5><span class="fa fa-map-marker"></span>&nbsp;&nbsp;<b>Kiểm tra thời gian giao hàng</b></h5>
+					<select class="selectpicker dropup" data-live-search="true" data-width="215px">
+				    	<option value="0"> Tỉnh/Thành phố</option>
 				    	<option value="1">Hồ Chí Minh</option>
 				    	<option value="2">Hà Nội</option>
 				    	<option value="3">An Giang</option>
@@ -566,21 +558,38 @@
 				    	<option value="66">Ninh Bình</option>
 				    	<option value="67">Sơn La</option>
 				    </select>
+				    <button id="btn-diadiem" type="submit" class="btn btn-danger btn-md" disabled>CHỌN</button>
 					<hr>
-					<div><span class="fa fa-map-marker"></span>Giao hàng toàn quốc</div>
-					<div><span class="fa fa-file-text-o"></span>Nhà cung cấp xuất hóa đơn cho sản phẩm này</div>
-					<div><img src="img/iconship.gif">Giao hàng bởi đối tác của Mobile Store</div>
+					<div class="row"><span class="fa fa-map-marker"></span>&nbsp;&nbsp;Giao hàng toàn quốc</div>
+					<div class="row"><span class="fa fa-file-text-o"></span>&nbsp;&nbsp;Nhà cung cấp xuất hóa đơn cho sản phẩm này</div>
+					<div class="row"><img src="img/iconship.png">&nbsp;&nbsp;Giao hàng bởi đối tác của Mobile Store</div>
+					<hr>
+					<div class="row noicungcap">
+						<div class="col-md-3 col-sm-3"><img src="img/marketplace.jpg"></div>Sản phẩm được cung cấp bởi<br><b>&nbsp;&nbsp;ANHDUY</b>
 					</div>
-					<hr>
-					<div><img src="img/marketplace.jpg">Sản phẩm được cung cấp bởi <label>ANHDUY</label></div>
 				</div>
 			</div>
 		</div> <!-- end box detail -->
 
-		
+
+
+
 	</div> <!--end body -->
 
 
+
+
+	<div class="footer">
+		
+	</div>
+
+
+
+
+	<script>
+    	$("#zoom_01").elevateZoom({gallery:'gallery', cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true,
+    								zoomWindowWidth:550, zoomWindowHeight:500, zoomWindowOffetx:20, zoomWindowOffety:5}); 
+	</script>
 
 </body>
 </html>
