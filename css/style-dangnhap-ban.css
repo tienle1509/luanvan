@@ -1,12 +1,12 @@
-.navbar-right {
-	margin-top: 15px;
+.link-dangnhap {
+	padding: 10px 0px 5px 0px;
 	font-size: 15px;
 }
 
-.navbar-right a {
-	text-decoration: none;
+.link-dangnhap a {
 	color: red;
 	outline: none;
+	text-decoration: none;
 }
 
 /* Tùy chọn modal đăng nhập */
@@ -36,74 +36,62 @@
 	color: #F82525;
 }
 
-
 /* Tùy chỉnh panel logan */
 .panel-logan {
 	background-color: #A633D7;
-	margin-top: -20px;
 	height: 100px;
 	text-align: center;
 	color: #FFFFFF;
 }
 
-.panel-logan h2{
-	padding-top: 20px;
+
+#panel-left {
+	padding-top: 30px;
 }
 
-
-.container-fuild .col-md-6 {
-	padding-left: 120px;
-	margin-top: 30px;
-	padding-right: 90px;
-}
-
-.container-fuild .col-md-6 h2 {
+#panel-left h2 {
 	color: #A633D7;
 }
 
-.container-fuild .col-md-6 p {
+#panel-left p {
 	color: #79767A;
 	font-size: 18px;
 }
 
-.container-fuild .col-md-6 img {
+#panel-left img {
 	width: 400px;
 	height: 200px;
 }
 
-
-
 /*Tùy chỉnh form đăng kí */
-#register {
-	margin-top: 20px;	
-	margin-left: 20px
+#panel-right {
+	padding-top: 20px;
 }
 
-#register input {
-	width: 500px;
+#panel-right #register input {
+	width: 100%;
 	border: none;
 	border-bottom: 1px solid #E2E1E1;
 	padding: 2px 0px 1px 5px;
 	outline: none;
 }
 
-#register input:focus {
+#panel-right #register input:focus {
 	border-bottom: 2px solid #E528FA;
 }
 
-#register label {
+#panel-right #register label {
 	font-weight: normal;
 	padding-left: 5px;
 	font-size: 15px;
 }
 
-#register button {
-	margin-top: 40px;
+#panel-right #register button {
+	margin-top: 30px;
 	margin-left: 30px;
 }
 
 .footer {
-	text-align: center;
-	font-size: 11px;
-	margin-top: 40px;
+	font-size: 12px;
+	margin-top: 38px;
 }

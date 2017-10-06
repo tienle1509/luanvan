@@ -2,10 +2,14 @@
 	width: 1210px;
 }
 
-/* Sub nav, menu */
-.subnav{
+header {
 	background-color: #FBF6FB;
-	height: 22px;
+}
+
+/* Sub nav, menu */
+.submenu {
+	width: 808px;
+	background-color: #FBF6FB;
 }
 
 .submenu>li>a {
@@ -119,8 +123,7 @@
 	height: 70px;
 	background-color: #FBF6FB;
 	border-radius: 0px;
-	border-right: none;
-	border-left: none;
+	margin-bottom: 0px;
 }
 
 #top-nav #logo {
@@ -373,9 +376,8 @@
 
 
 /* Nav bottom */
-.nav-bottom {
+.nav-bottom, .nav-bottom .nav-pills {
 	background-color: #A633D7;
-	margin-top: -20px;
 }
 
 
@@ -387,15 +389,50 @@
 	border: none;
 	font-weight: bold;
 	font-size: 13px;
-	position: relative;
 	outline: none;
 	margin-right: 5px;
 }
+
+.nav-bottom .danhmuc {
+	position: relative;
+    display: inline;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 256px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.nav-bottom .dropdown-content a {
+    display: block;
+    overflow: hidden;
+    color:  #666566;
+	padding: 4px;
+	border-bottom: 1px solid #EDECEE;
+	text-decoration: none;
+	width: 256px;
+	padding-left: 30px;
+}
+
+.nav-bottom .dropdown-content a:hover {
+	background-color: #A633D7;
+	color: #FFFFFF;
+}
+
+.nav-bottom .danhmuc:hover .dropdown-content {
+    display: block;
+}
+
 
 .nav-bottom .btn-danhmuc .fa-navicon, .nav-bottom .btn-danhmuc .fa-angle-down {
 	font-size: 16px;
 	font-weight: bold;
 }
+
 
 
 
@@ -425,268 +462,110 @@
 
 
 
-
-
-
-
 /* Tùy chỉnh Body */
-.body {
+body {
 	background-color: #FBF6FB;
-	margin-top: 1px;
-	padding-bottom: 50px;
 }
 
-.danhmuc {
-	width: 254px;
-	height: 437px;
-	border: 1px solid #B329EE;
-	background-color: #FFFFFF;
+
+.tieude {
+	margin-top: 30px;
+	margin-bottom: 20px;
 }
 
-.danhmuc a {
-	display: block;
-	color:  #666566;
-	padding: 4px;
-	border-bottom: 1px solid #EDECEE;
-	text-decoration: none;
-	width: 252px;
-	margin-left: -15px;
-	padding-left: 30px;
+.trangthai {
+	margin-left: 100px;
 }
 
-.danhmuc a:hover {
-	background-color: #A633D7;
+.trangthai .label-xacnhan, .trangthai .label-vanchuyen, .trangthai .label-dagiao, .trangthai .label-hoantat {
+	margin-right: 5px;
+	background-color: #E1E1E1;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.trangthai .label-cho {
+	background-color: #28A502;
 	color: #FFFFFF;
+	padding: 10px;
+	border-radius: 3px;
 }
 
-
-#myCarousel{
-	width: 924px;
-	float: right;
-	margin-bottom: 1px;
-}
-
-#myCarousel img {
-	width: 924px;
-	height: 370px;
-}
-
-.panel-ship img {
-	float: right;
-	width: 307px;
-	height: 66px;
-}
-
-
-/* Tùy chỉnh Next, pre của ProCarousel */
-.Left-Right-ProCarousel {
-	float: right;
-	margin-top: 15px;
-	margin-right: 10px;
-}
-
-.panel-product .nav-pills .Left-Right-ProCarousel a:hover {
-	border: none;
-}
-
-
-/* Tùy chỉnh panel sản phẩm 1*/
-.panel-product {
+.panel-vanchuyen {
 	margin-top: 20px;
+	border: 1px solid #A9A9A9;
+	border-radius: 3px;
+	padding: 5px 16px 20px 16px;
 	background-color: #FFFFFF;
 }
 
-.panel-product .nav-pills {
-	background-color: #F0EDF0;
+.panel-vanchuyen .col-md-3 .row {
+	padding: 2px;
 }
 
-.panel-product .nav-pills a {
-	margin-left: 15px;
-	font-size: 15px;
-	font-weight: bold;
-	background-color: #F0EDF0;
-	color: #3415E3;
+.panel-vanchuyen .thoigian {
+	border: 1px dashed #E125EB;
+	padding: 8px;
+	color: #E125EB;
+	margin-top: 8px;
 }
 
-.panel-product .nav-pills a:hover {
-	background-color: #F0EDF0;
-	border-bottom: 2px solid #BE19B6;
-	border-radius: 0px;
-}
-
-.panel-product .pill-custom .active a{
-    background-color: #F0EDF0;
-    color: #3415E3;
-    border-bottom: 2px solid #BE19B6;
-    border-radius: 0px;
-}
-
-.panel-product .pill-custom .active a:hover {
-	background-color: #F0EDF0;
-    color: #3415E3;
-}
-
-.panel-product .pill-custom .active a:focus {
-	background-color: #F0EDF0;
-    color: #3415E3;
-    border-bottom: 2px solid #BE19B6;
-    border-radius: 0px;
+.panel-thongtinnhan {
+	width: 570px;
+	margin-left: 5px;
+	margin-top: 20px;
+	border: 1px solid #A9A9A9;
+	border-radius: 3px;
+	padding: 5px 16px 8px 16px;
+	background-color: #FFFFFF;
 }
 
 
+.panel-donhang {
+	background-color: #FFFFFF;
+	margin-top: 30px;
+	border: 1px solid #A9A9A9;
+	border-radius: 3px;
+	padding: 20px 20px 0px 20px;
+	margin-bottom: 40px;
+}
 
+.tbdonhang .col-ten {
+	width: 55%;
+}
 
-/* Tùy chỉnh chi tiết sản phẩm */
-.panel-Pro {
+.tbdonhang img {
+	width: 80px;
+	height: 80px;
+}
+
+.tbdonhang label {
+	margin-top: -8px;
+	padding-left: 15px;
+}
+
+.tbdonhang .label-tong {
+	color: red;	
+}
+
+.tbdonhang .row-tong {
 	margin-top: 10px;
-}
-
-.panel-Pro .title-panel-Pro {
-	padding: 10px 0px 10px 40px;
-	font-weight: bold;	
-	color: #5A51FA;
 	font-size: 16px;
 }
 
 
-.list-ProCare {
-	margin-left: 0px;
-	margin-right: 0px;
-}
 
-.list-ProCare .ProCare {
-	height: 390px;
-	width: 230px;
-	border: 1px solid #D9D9D9;
-	float: left;
-	margin-right: 3px;
-	margin-left: 3px;
-	background-color: #FFFFFF;
-	margin-bottom: 7px;
-}
-
-.list-ProCare .ProCare:hover{
-	border: 1px solid #EC51FA;
-}
-
-/* Tùy chỉnh chiết khấu khuyến mãi */
-.list-ProCare .ProCare .chietkhau-prom {
-	float: right;
-	color: #DA0000;
-	margin-top: -240px;
-	margin-right: 10px;
-	border: 1px solid red;
-	z-index: 1;
-	position: relative;
-	font-size: 12px;
-	padding: 1px 5px 1px 5px;
-	background-color: #FFFFFF;
-}
-
-.list-ProCare img {
-	width: 224px;
-	height: 250px;
-	margin-left: 1px;
-	margin-top: 2px;
-}
-
-/* Tùy chỉnh title giá, tên, ... */
-.detail-Pro {
-	padding-top: 15px;
-}
-
-.detail-Pro .priceProm-Pro {
-	color: #DA0000;
-}
-
-.detail-Pro .price-Pro {
-	float: right;
-	font-weight: normal;
-	font-size: 12px;
-	text-decoration: line-through;
-	padding: 2px;
-	color: #504F4F;
-}
-
-.detail-Pro a {
-	font-size: 12px;
-	text-decoration: none;
-	font-weight: normal;
-	color: #504F4F;
-	padding: 3px;
-}
-
-.detail-Pro a:hover {
-	color: #2003FA;
-}
-
-/* Tùy chỉnh lượt mua, xem, hỏi */
-.detail-Pro .number-buy,  .detail-Pro .number-view, 
-	.detail-Pro .number-cmt {
-		color: #504F4F;
-		cursor: default;
-		font-size: 14px;
-		margin-left: 12px;
-}
-
-.detail-Pro .name-shop {
-	background-color: #E1E1E1;
-	color: #4D4DFD;
-	font-weight: normal;
-	font-size: 12px;	
-	padding: 4px 194px 4px 5px; 
-}
-
-
-/* Tùy chỉnh panel sam sung */
-.panel-product-samsung {
-	margin-top: 30px;
-	width: 1180px;
-	height: 390px;
-	background-color: #FFFFFF;
-	margin-bottom: 30px;
-}
-
-.panel-product-samsung .panel-imgPro img {
-	margin-left: -15px;
-	width: 450px;
-	height: 390px;
-}
-
-#samsungCarousel {
-	width: 710px;
-	float: right;
-}
-
-#samsungCarousel .carousel-control {
-	background: #DCDADA;
-	width: 25px;
-	height: 30px;
-	margin-top: 160px;
-}
-
-
-
-/* Tùy chỉnh panel danh sách tất cả sản phẩm */
-.panel-listPro {
-	background-color: #FFFFFF;
-	padding-top: 7px;
-}
-
-
-
-
-
-
-/* Tùy chỉnh footer */
-.footer {
-	padding-top: 30px;
+/* Footer*/
+.footer .container{
+	background-color: #F2F2F2;	
 	border-top: 1px solid #DEDEDE;
-	background-color: #F2F2F2;
+	padding-top: 20px;
 }
 
-.footer h5 {
-	font-weight: bold;
+.footer {
+	background-color: #F2F2F2;	
+	border-top: 1px solid #DEDEDE;
+	margin-top: 30px;
 }
 
 .footer .col-md-3 a {
@@ -694,13 +573,13 @@
 	padding: 3px;
 	text-decoration: none;
 	color: #635E63;
-	font-size: 13px;
+	font-size: 14px;
 }
 
 .footer .col-md-3 a:hover {
 	color: #2930FF;
 }
 
-.footer .col-md-12 {
+.diachi {
 	padding-bottom: 30px;
 }

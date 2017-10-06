@@ -13,7 +13,7 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/style4-nguoiban.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-dangki-ban3.css">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
 
   	<!-- jQuery, Bootstrap JS -->
@@ -26,20 +26,16 @@
 
 </head>
 <body>
-	<nav class="navbar" role="navigation">
-	  <div class="container">
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse">
-	      <ul class="nav navbar-nav">
-	        <img src="../img/logo2.png" alt="logoMobileStore">
-	      </ul>
-	      <ul class="nav navbar-nav navbar-right">
-	        <div><i>Đã có tài khoản?</i><a href="ban.php"> Đăng nhập</a>
-	        <div><span class="fa fa-question-circle"></span>&nbsp;19008088 (8h-21h hằng ngày)</div>
-	      </ul>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
+
+	<div class="header">
+		<div class="container container-header">
+			<img src="../img/logo2.png" alt="logoMobileStore">
+			<div class="text-right">
+			    <i>Đã có tài khoản ? </i><a href="dangnhap-ban.php">Đăng nhập</a>
+			    <div><span class="fa fa-question-circle"></span>&nbsp;19008088 (8h-21h hằng ngày)</div>
+			</div>
+		</div>
+	</div>
 
 
 	<div class="container panel-diachi">
@@ -130,7 +126,7 @@
 		</form>
 	</div>
 
-	<div class="footer">
+	<div class="footer text-center">
 		<b>Copyright &copy; 2014 MobileStore.vn</b>
 		<div>Công ty cổ phần công nghệ Mobile. Địa chỉ: Số 108, Đường 3/2, Phường Xuân Khánh, Quận Ninh Kiều, Tp. Cần Thơ.</div>
 	</div>

@@ -13,7 +13,7 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/stylexacnhanmail-nguoiban.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-dangki-ban2.css">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
 
   	<!-- jQuery, Bootstrap JS -->
@@ -26,21 +26,16 @@
 
 </head>
 <body>
-	<nav class="navbar" role="navigation">
-	  <div class="container">
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse">
-	      <ul class="nav navbar-nav">
-	        <img src="../img/logo2.png" alt="logoMobileStore">
-	      </ul>
-	      <ul class="nav navbar-nav navbar-right">
-	        <div><i>Không nhận được mã?</i>
-	        <div><span class="fa fa-question-circle"></span>&nbsp;19008088 (8h-21h hằng ngày)</div>
-	      </ul>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
 
+	<div class="header">
+		<div class="container container-header">
+			<img src="../img/logo2.png" alt="logoMobileStore">
+			<div class="text-right">
+			    <i>Không nhận được mã?</i>
+			    <div><span class="fa fa-question-circle"></span>&nbsp;19008088 (8h-21h hằng ngày)</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="container panel-xacthuc">
 		<h3><b>XÁC THỰC EMAIL</b></h3>
@@ -49,14 +44,14 @@
 			<div class="form-group">
 		  		<input class="form-control" id="" placeholder="Mã xác thực">
 		  	</div>
-		  	<button type="submit" class="btn btn-danger btn-md">TIẾP TỤC</button><a href="dattenshop.php">Chuyển trang</a>
+		  	<button type="submit" class="btn btn-danger btn-md">TIẾP TỤC</button><a href="dangki-ban3.php">Chuyển trang</a>
 		  	<div>
 		  		<a href="">Gửi lại mã xác thực</a>
 		  	</div>
 		</form>
 	</div>
 
-	<div class="footer">
+	<div class="footer text-center">
 		<b>Copyright &copy; 2014 MobileStore.vn</b>
 		<div>Công ty cổ phần công nghệ Mobile. Địa chỉ: Số 108, Đường 3/2, Phường Xuân Khánh, Quận Ninh Kiều, Tp. Cần Thơ.</div>
 	</div>
