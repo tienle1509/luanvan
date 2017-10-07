@@ -156,8 +156,130 @@
 
 
 
+	<!--Modal giỏ hàng -->
+	<div class="modal" id="modalCart" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close1" data-dismiss="modal">
+					  	<span aria-hidden="true">&times;</span>
+					  	<span class="sr-only">Close</span>
+					</button>
+					<h5 class="modal-title">
+					  	<span class="fa fa-shopping-cart"></span>
+					  	&nbsp;<b style="font-size: 14px; text-align: center;">GIỎ HÀNG </b>
+					  	( <b style="color: #DA0000">9</b> sản phẩm )
+					</h5>	  				
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid list-cart">
+					  	<div class="title-cart">
+						  	<div class="row">
+							  	<div class="col-md-6">Sản phẩm</div>
+							  	<div class="col-md-2" style="text-align: center;">Số lượng</div>
+							  	<div class="col-md-2" style="text-align: right;">Giá thành</div>
+							  	<div class="col-md-2"></div>
+						  	</div> 
+					  	</div>
+					  	<div class="box-scroll">			
+							<div class="row detail-cart">
+							  	<div class="col-md-6">
+							  		<img id="imageProduct" src="sanpham/GalaxyS7_32GB.jpg" alt="imageProduct">
+							  		<div class="ten-sp">
+								  		<label>ĐIỆN THOẠI SAMSUNG GALAXY S7 Edge 32GB (BẠC) FULL BOX</label>
+								  		<a href="#"><span class="fa fa-heart-o">&nbsp;&nbsp;Thêm vào danh sách yêu thích</span></a>
+							  		</div>
+							  	</div>
+							  	<div class="col-md-2 sl-cart">
+							  		<select name="" id="">
+							  			<option value="1">1</option>
+							  			<option selected="" value="2">2</option>
+							  			<option value="3">3</option>
+							  			<option value="4">4</option>
+							  			<option value="5">5</option>
+							  		</select>
+							  	</div>
+							  	<div class="col-md-2 gia-cart">
+							  		<label>3.790.000 đ</label>
+							  	</div>			  					
+							  	<div class="col-md-2 xoasp-cart">
+							  		<button type="submit"><span class="fa fa-trash-o"></span></button>
+							  	</div>
+							</div>
+							  				
+							  				
+							<div class="row detail-cart">
+							  	<div class="col-md-6">
+							  		<img id="imageProduct" src="sanpham/GalaxyS7_32GB.jpg" alt="imageProduct">
+							  		<div class="ten-sp">
+								  		<label>ĐIỆN THOẠI SAMSUNG GALAXY S7 Edge 32GB (BẠC) FULL BOX</label>
+								  		<a href="#"><span class="fa fa-heart-o">&nbsp;&nbsp;Thêm vào danh sách yêu thích</span></a>
+							  		</div>
+							  	</div>
+							  	<div class="col-md-2 sl-cart">
+							  		<select name="" id="">
+							  			<option value="1">1</option>
+							  			<option selected="" value="2">2</option>
+							  			<option value="3">3</option>
+							  			<option value="4">4</option>
+							  			<option value="5">5</option>
+							  		</select>
+							  	</div>
+							  	<div class="col-md-2 gia-cart">
+							  		<label>3.790.000 đ</label>
+							  	</div>			  					
+							  	<div class="col-md-2 xoasp-cart">
+							  		<button type="submit"><span class="fa fa-trash-o"></span></button>
+							  	</div>
+							</div>
+
+
+							<div class="row detail-cart">
+							  	<div class="col-md-6">
+							  		<img id="imageProduct" src="sanpham/GalaxyS7_32GB.jpg" alt="imageProduct">
+							  		<div class="ten-sp">
+								  		<label>ĐIỆN THOẠI SAMSUNG GALAXY S7 Edge 32GB (BẠC) FULL BOX</label>
+								  		<a href="#"><span class="fa fa-heart-o">&nbsp;&nbsp;Thêm vào danh sách yêu thích</span></a>
+							  		</div>
+							  	</div>
+							  	<div class="col-md-2 sl-cart">
+							  		<select name="" id="">
+							  			<option value="1">1</option>
+							  			<option selected="" value="2">2</option>
+							  			<option value="3">3</option>
+							  			<option value="4">4</option>
+							  			<option value="5">5</option>
+							  		</select>
+							  	</div>
+							  	<div class="col-md-2 gia-cart">
+							  		<label>3.790.000 đ</label>
+							  	</div>			  					
+							  	<div class="col-md-2 xoasp-cart">
+							  		<button type="submit"><span class="fa fa-trash-o"></span></button>
+							  	</div>
+							</div>							  				 				
+						</div>	
+					</div>
+				</div>
+				<div class="modal-footer">
+					<label class="label-thanhtien">Thành tiền:</label>
+					<label class="label-tong"> 17.980.000 VND</label>
+					<div class="label-vat">(Đã bao gồm VAT)</div>
+					<div class="footer-cart">
+					  	<a class="tieptuc-cart" href="trangchu.php"><span class="fa fa-undo">&nbsp;&nbsp;Tiếp tục mua hàng</span></a>
+					  	<button class="thanhtoan-cart btn btn-danger" type="submit">TIẾN HÀNH THANH TOÁN</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>  <!-- end modal giỏ hàng -->
+
+
+
+
 	<!-- header menu -->
-	<div class="container">
+	<div data-spy="affix" data-offset-top="100">
+		<div class="container">
 			<div class="row">
 				<nav id="top-nav" class="navbar col-md-12 col-sm-12" role="navigation">
 					<!-- Brand and toggle get grouped for better mobile display -->
@@ -221,123 +343,14 @@
 
 
 				    <!-- Modal Giỏ hàng -->
-					  <div class="modal" id="modalCart" tabindex="-1" role="dialog">
-					  	<div class="modal-dialog">
-					  		<div class="modal-content">
-					  			<div class="modal-header">
-					  				<button type="button" class="close1" data-dismiss="modal">
-					  					<span aria-hidden="true">&times;</span>
-					  					<span class="sr-only">Close</span>
-					  				</button>
-					  				<h5 class="modal-title">
-					  					<span class="fa fa-shopping-cart"></span>
-					  					&nbsp;<b style="font-size: 14px; text-align: center;">GIỎ HÀNG </b>
-					  					( <b style="color: #DA0000">9</b> sản phẩm )
-					  				</h5>	  				
-					  			</div>
-					  			<div class="modal-body">
-					  				<div class="container-fluid list-cart">
-					  					<div class="title-cart">
-						  					<div class="row">
-							  					<div class="col-md-6">Sản phẩm</div>
-							  					<div class="col-md-2" style="text-align: center;">Số lượng</div>
-							  					<div class="col-md-2" style="text-align: right;">Giá thành</div>
-							  					<div class="col-md-2"></div>
-						  					</div> 
-					  					</div>
-					  					<div class="box-scroll">			
-							  				<div class="row detail-cart">
-							  					<div class="col-md-6">
-							  						<img id="imageProduct" src="sanpham/GalaxyS7_32GB.jpg" alt="imageProduct">
-							  						<div class="ten-sp">
-								  						<label>ĐIỆN THOẠI SAMSUNG GALAXY S7 Edge 32GB (BẠC) FULL BOX</label>
-								  						<a href="#"><span class="fa fa-heart-o">&nbsp;&nbsp;Thêm vào danh sách yêu thích</span></a>
-							  						</div>
-							  					</div>
-							  					<div class="col-md-2 sl-cart">
-							  						<select name="" id="">
-							  							<option value="1">1</option>
-							  							<option selected="" value="2">2</option>
-							  							<option value="3">3</option>
-							  							<option value="4">4</option>
-							  							<option value="5">5</option>
-							  						</select>
-							  					</div>
-							  					<div class="col-md-2 gia-cart">
-							  						<label>3.790.000 đ</label>
-							  					</div>			  					
-							  					<div class="col-md-2 xoasp-cart">
-							  						<button type="submit"><span class="fa fa-trash-o"></span></button>
-							  					</div>
-							  				</div>
-							  				
-							  				<div class="row detail-cart">
-							  					<div class="col-md-6">
-							  						<img id="imageProduct" src="sanpham/GalaxyS7_32GB.jpg" alt="imageProduct">
-							  						<div class="ten-sp">
-								  						<label>ĐIỆN THOẠI SAMSUNG GALAXY S7 Edge 32GB (BẠC) FULL BOX</label>
-								  						<a href="#"><span class="fa fa-heart-o">&nbsp;&nbsp;Thêm vào danh sách yêu thích</span></a>
-							  						</div>
-							  					</div>
-							  					<div class="col-md-2 sl-cart">
-							  						<select name="" id="">
-							  							<option value="1">1</option>
-							  							<option selected="" value="2">2</option>
-							  							<option value="3">3</option>
-							  							<option value="4">4</option>
-							  							<option value="5">5</option>
-							  						</select>
-							  					</div>
-							  					<div class="col-md-2 gia-cart">
-							  						<label>3.790.000 đ</label>
-							  					</div>			  					
-							  					<div class="col-md-2 xoasp-cart">
-							  						<button type="submit"><span class="fa fa-trash-o"></span></button>
-							  					</div>
-							  				</div>
-
-							  				<div class="row detail-cart">
-							  					<div class="col-md-6">
-							  						<img id="imageProduct" src="sanpham/GalaxyS7_32GB.jpg" alt="imageProduct">
-							  						<div class="ten-sp">
-								  						<label>ĐIỆN THOẠI SAMSUNG GALAXY S7 Edge 32GB (BẠC) FULL BOX</label>
-								  						<a href="#"><span class="fa fa-heart-o">&nbsp;&nbsp;Thêm vào danh sách yêu thích</span></a>
-							  						</div>
-							  					</div>
-							  					<div class="col-md-2 sl-cart">
-							  						<select name="" id="">
-							  							<option value="1">1</option>
-							  							<option selected="" value="2">2</option>
-							  							<option value="3">3</option>
-							  							<option value="4">4</option>
-							  							<option value="5">5</option>
-							  						</select>
-							  					</div>
-							  					<div class="col-md-2 gia-cart">
-							  						<label>3.790.000 đ</label>
-							  					</div>			  					
-							  					<div class="col-md-2 xoasp-cart">
-							  						<button type="submit"><span class="fa fa-trash-o"></span></button>
-							  					</div>
-							  				</div>	  				
-							  			</div>	
-					  				</div>
-						  		</div>
-					  			<div class="modal-footer">
-					  				<label class="label-thanhtien">Thành tiền:</label>
-					  				<label class="label-tong"> 17.980.000 VND</label>
-					  				<div class="label-vat">(Đã bao gồm VAT)</div>
-					  				<div class="footer-cart">
-					  					<a class="tieptuc-cart" href="trangchu.php"><span class="fa fa-undo">&nbsp;&nbsp;Tiếp tục mua hàng</span></a>
-					  					<a href="dathang1.php" class="thanhtoan-cart btn btn-danger">TIẾN HÀNH THANH TOÁN</a>
-					  				</div>
-					  			</div>
-					  		</div>
-					  	</div>
-					</div> <!-- end modal giỏ hàng -->
+					<!-- end modal giỏ hàng -->
 				</nav>	
 			</div>		
-		</div> <!-- end header menu -->
+		</div>	
+	</div> <!-- end header menu -->
+
+
+	
 
 	<div class="nav-bottom ">
 		<div class="container">
@@ -395,11 +408,445 @@
 		</div>
 
 
-		
+		<div class="panel-category container">
+			<div class="row title-panelCate">
+				<div class="col-md-6 col-sm-6">
+					<label>Samsung </label>
+					<label class="label-numPro"> | Tìm thấy 90 sản phẩm</label>
+				</div>
+				<div class="col-md-6 col-sm-6 text-right">
+					<select>
+						<option value="">-- Sắp xếp theo --</option>
+						<option value="1">Giá giảm dần</option>
+						<option value="2">Giá tăng dần</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row panel-product">
+				<div class="panel-list col-md-12 col-sm-12">
+					<div class="list-pro">
+						<a id="sanpham" href="detailpro.php">
+							<div class="thumbnail">
+								<img src="sanpham/iphone4s.jpg">
+								<div class="chietkhau">15%</div>
+								<div class="caption">
+									<div class="gia">
+										<label class="giakm">1.700.000 đ</label>
+										<del class="giagoc">2.500.000 đ</del>
+									</div>
+									<div class="tendt">
+										<a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a>
+									</div>
+									<div class="luotvote">
+										<a href="#" data-toggle="tooltip" title="Đã có <b>1</b> lượt mua" data-html="true" data-placement="top">
+										    <span class="fa fa-tag">1</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>5</b> lượt xem" data-html="true" data-placement="top">
+										    <span class="fa fa-eye">5</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>0</b> bình luận" data-html="true" data-placement="top">
+										    <span class="fa fa-comment">0</span>
+										</a>
+									</div>
+		  							<div class="ten-shop row">ANHDUY</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="list-pro">
+						<a id="sanpham" href="detailpro.php">
+							<div class="thumbnail">
+								<img src="sanpham/iphone4s.jpg">
+								<div class="chietkhau">15%</div>
+								<div class="caption">
+									<div class="gia">
+										<label class="giakm">1.700.000 đ</label>
+										<del class="giagoc">2.500.000 đ</del>
+									</div>
+									<div class="tendt">
+										<a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a>
+									</div>
+									<div class="luotvote">
+										<a href="#" data-toggle="tooltip" title="Đã có <b>1</b> lượt mua" data-html="true" data-placement="top">
+										    <span class="fa fa-tag">1</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>5</b> lượt xem" data-html="true" data-placement="top">
+										    <span class="fa fa-eye">5</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>0</b> bình luận" data-html="true" data-placement="top">
+										    <span class="fa fa-comment">0</span>
+										</a>
+									</div>
+		  							<div class="ten-shop row">ANHDUY</div>
+								</div>
+							</div>
+						</a>
+					</div>
 
 
+					<div class="list-pro">
+						<a id="sanpham" href="detailpro.php">
+							<div class="thumbnail">
+								<img src="sanpham/iphone4s.jpg">
+								<div class="chietkhau">15%</div>
+								<div class="caption">
+									<div class="gia">
+										<label class="giakm">1.700.000 đ</label>
+										<del class="giagoc">2.500.000 đ</del>
+									</div>
+									<div class="tendt">
+										<a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a>
+									</div>
+									<div class="luotvote">
+										<a href="#" data-toggle="tooltip" title="Đã có <b>1</b> lượt mua" data-html="true" data-placement="top">
+										    <span class="fa fa-tag">1</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>5</b> lượt xem" data-html="true" data-placement="top">
+										    <span class="fa fa-eye">5</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>0</b> bình luận" data-html="true" data-placement="top">
+										    <span class="fa fa-comment">0</span>
+										</a>
+									</div>
+		  							<div class="ten-shop row">ANHDUY</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+
+					<div class="list-pro">
+						<a id="sanpham" href="detailpro.php">
+							<div class="thumbnail">
+								<img src="sanpham/iphone4s.jpg">
+								<div class="chietkhau">15%</div>
+								<div class="caption">
+									<div class="gia">
+										<label class="giakm">1.700.000 đ</label>
+										<del class="giagoc">2.500.000 đ</del>
+									</div>
+									<div class="tendt">
+										<a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a>
+									</div>
+									<div class="luotvote">
+										<a href="#" data-toggle="tooltip" title="Đã có <b>1</b> lượt mua" data-html="true" data-placement="top">
+										    <span class="fa fa-tag">1</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>5</b> lượt xem" data-html="true" data-placement="top">
+										    <span class="fa fa-eye">5</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>0</b> bình luận" data-html="true" data-placement="top">
+										    <span class="fa fa-comment">0</span>
+										</a>
+									</div>
+		  							<div class="ten-shop row">ANHDUY</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+
+					<div class="list-pro">
+						<a id="sanpham" href="detailpro.php">
+							<div class="thumbnail">
+								<img src="sanpham/iphone4s.jpg">
+								<div class="chietkhau">15%</div>
+								<div class="caption">
+									<div class="gia">
+										<label class="giakm">1.700.000 đ</label>
+										<del class="giagoc">2.500.000 đ</del>
+									</div>
+									<div class="tendt">
+										<a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a>
+									</div>
+									<div class="luotvote">
+										<a href="#" data-toggle="tooltip" title="Đã có <b>1</b> lượt mua" data-html="true" data-placement="top">
+										    <span class="fa fa-tag">1</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>5</b> lượt xem" data-html="true" data-placement="top">
+										    <span class="fa fa-eye">5</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>0</b> bình luận" data-html="true" data-placement="top">
+										    <span class="fa fa-comment">0</span>
+										</a>
+									</div>
+		  							<div class="ten-shop row">ANHDUY</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+
+					<div class="list-pro">
+						<a id="sanpham" href="detailpro.php">
+							<div class="thumbnail">
+								<img src="sanpham/iphone4s.jpg">
+								<div class="chietkhau">15%</div>
+								<div class="caption">
+									<div class="gia">
+										<label class="giakm">1.700.000 đ</label>
+										<del class="giagoc">2.500.000 đ</del>
+									</div>
+									<div class="tendt">
+										<a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a>
+									</div>
+									<div class="luotvote">
+										<a href="#" data-toggle="tooltip" title="Đã có <b>1</b> lượt mua" data-html="true" data-placement="top">
+										    <span class="fa fa-tag">1</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>5</b> lượt xem" data-html="true" data-placement="top">
+										    <span class="fa fa-eye">5</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>0</b> bình luận" data-html="true" data-placement="top">
+										    <span class="fa fa-comment">0</span>
+										</a>
+									</div>
+		  							<div class="ten-shop row">ANHDUY</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+
+					<div class="list-pro">
+						<a id="sanpham" href="detailpro.php">
+							<div class="thumbnail">
+								<img src="sanpham/iphone4s.jpg">
+								<div class="chietkhau">15%</div>
+								<div class="caption">
+									<div class="gia">
+										<label class="giakm">1.700.000 đ</label>
+										<del class="giagoc">2.500.000 đ</del>
+									</div>
+									<div class="tendt">
+										<a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a>
+									</div>
+									<div class="luotvote">
+										<a href="#" data-toggle="tooltip" title="Đã có <b>1</b> lượt mua" data-html="true" data-placement="top">
+										    <span class="fa fa-tag">1</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>5</b> lượt xem" data-html="true" data-placement="top">
+										    <span class="fa fa-eye">5</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>0</b> bình luận" data-html="true" data-placement="top">
+										    <span class="fa fa-comment">0</span>
+										</a>
+									</div>
+		  							<div class="ten-shop row">ANHDUY</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="list-pro">
+						<a id="sanpham" href="detailpro.php">
+							<div class="thumbnail">
+								<img src="sanpham/iphone4s.jpg">
+								<div class="chietkhau">15%</div>
+								<div class="caption">
+									<div class="gia">
+										<label class="giakm">1.700.000 đ</label>
+										<del class="giagoc">2.500.000 đ</del>
+									</div>
+									<div class="tendt">
+										<a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a>
+									</div>
+									<div class="luotvote">
+										<a href="#" data-toggle="tooltip" title="Đã có <b>1</b> lượt mua" data-html="true" data-placement="top">
+										    <span class="fa fa-tag">1</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>5</b> lượt xem" data-html="true" data-placement="top">
+										    <span class="fa fa-eye">5</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>0</b> bình luận" data-html="true" data-placement="top">
+										    <span class="fa fa-comment">0</span>
+										</a>
+									</div>
+		  							<div class="ten-shop row">ANHDUY</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+
+					<div class="list-pro">
+						<a id="sanpham" href="detailpro.php">
+							<div class="thumbnail">
+								<img src="sanpham/iphone4s.jpg">
+								<div class="chietkhau">15%</div>
+								<div class="caption">
+									<div class="gia">
+										<label class="giakm">1.700.000 đ</label>
+										<del class="giagoc">2.500.000 đ</del>
+									</div>
+									<div class="tendt">
+										<a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a>
+									</div>
+									<div class="luotvote">
+										<a href="#" data-toggle="tooltip" title="Đã có <b>1</b> lượt mua" data-html="true" data-placement="top">
+										    <span class="fa fa-tag">1</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>5</b> lượt xem" data-html="true" data-placement="top">
+										    <span class="fa fa-eye">5</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>0</b> bình luận" data-html="true" data-placement="top">
+										    <span class="fa fa-comment">0</span>
+										</a>
+									</div>
+		  							<div class="ten-shop row">ANHDUY</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+
+					<div class="list-pro">
+						<a id="sanpham" href="detailpro.php">
+							<div class="thumbnail">
+								<img src="sanpham/iphone4s.jpg">
+								<div class="chietkhau">15%</div>
+								<div class="caption">
+									<div class="gia">
+										<label class="giakm">1.700.000 đ</label>
+										<del class="giagoc">2.500.000 đ</del>
+									</div>
+									<div class="tendt">
+										<a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a>
+									</div>
+									<div class="luotvote">
+										<a href="#" data-toggle="tooltip" title="Đã có <b>1</b> lượt mua" data-html="true" data-placement="top">
+										    <span class="fa fa-tag">1</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>5</b> lượt xem" data-html="true" data-placement="top">
+										    <span class="fa fa-eye">5</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>0</b> bình luận" data-html="true" data-placement="top">
+										    <span class="fa fa-comment">0</span>
+										</a>
+									</div>
+		  							<div class="ten-shop row">ANHDUY</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+
+					<div class="list-pro">
+						<a id="sanpham" href="detailpro.php">
+							<div class="thumbnail">
+								<img src="sanpham/iphone4s.jpg">
+								<div class="chietkhau">15%</div>
+								<div class="caption">
+									<div class="gia">
+										<label class="giakm">1.700.000 đ</label>
+										<del class="giagoc">2.500.000 đ</del>
+									</div>
+									<div class="tendt">
+										<a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a>
+									</div>
+									<div class="luotvote">
+										<a href="#" data-toggle="tooltip" title="Đã có <b>1</b> lượt mua" data-html="true" data-placement="top">
+										    <span class="fa fa-tag">1</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>5</b> lượt xem" data-html="true" data-placement="top">
+										    <span class="fa fa-eye">5</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>0</b> bình luận" data-html="true" data-placement="top">
+										    <span class="fa fa-comment">0</span>
+										</a>
+									</div>
+		  							<div class="ten-shop row">ANHDUY</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+
+					<div class="list-pro">
+						<a id="sanpham" href="detailpro.php">
+							<div class="thumbnail">
+								<img src="sanpham/iphone4s.jpg">
+								<div class="chietkhau">15%</div>
+								<div class="caption">
+									<div class="gia">
+										<label class="giakm">1.700.000 đ</label>
+										<del class="giagoc">2.500.000 đ</del>
+									</div>
+									<div class="tendt">
+										<a href="chitietsanpham.php">ĐIỆN THOẠI IPHONE 4S-16GB CHÍNH HÃNG</a>
+									</div>
+									<div class="luotvote">
+										<a href="#" data-toggle="tooltip" title="Đã có <b>1</b> lượt mua" data-html="true" data-placement="top">
+										    <span class="fa fa-tag">1</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>5</b> lượt xem" data-html="true" data-placement="top">
+										    <span class="fa fa-eye">5</span>
+										</a>
+										<a href="#" data-toggle="tooltip" title="Đã có <b>0</b> bình luận" data-html="true" data-placement="top">
+										    <span class="fa fa-comment">0</span>
+										</a>
+									</div>
+		  							<div class="ten-shop row">ANHDUY</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div> <!-- panel list -->
+			</div>
+		</div>
 	</div>
 
+
+
+	<!-- Footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-3">
+					<h4>Mobile Store</h4>
+					<div>
+						<a href="">Giới thiệu về Mobile Store</a>
+						<a href="">Quy chế hoạt động</a>
+						<a href="">Liên hệ với Mobile Store</a>
+						<a href="">Trung tâm hỗ trợ khách hàng</a>
+						<a href="">Đăng kí mở gian hàng</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<h4>Chăm sóc khách hàng</h4>
+					<div>
+						<a href="">Kiểm tra đơn hàng</a>
+						<a href="">Hướng dẫn mua hàng</a>
+						<a href="">Phương thức vận chuyển</a>
+						<a href="">Chính sách đổi trả</a>
+						<a href="">Câu hỏi thường gặp</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<h4>Hỗ trợ thanh toán online</h4>
+					<div>
+						<img src="img/nganluong.png" alt="logonganluong" style="width: 190px; height: 45px;">
+					</div>
+					<h4>Đối tác vận chuyển</h4>
+					<img src="img/vietnampost.png" alt="logovnpost">
+					<img src="img/logo-ghtk.png" alt="logoghtk">
+					<img src="img/ghn.jpg" alt="logoghn" style="padding-top: 10px;">
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<h5>Được chứng nhận</h5>
+					<img src="img/bocongthuong.gif" alt="logobocongthuong">
+				</div>
+			</div>
+
+			<div class="diachi row">
+				<b>Copyright &copy; 2014 MobileStore.vn</b>
+					<div>Công ty cổ phần công nghệ Mobile</div>
+					<div>Địa chỉ: Số 108, Đường 3/2, Phường Xuân Khánh, Quận Ninh Kiều, Tp. Cần Thơ.</div>
+			</div>
+		</div>
+	</div>
 
 
 </body>
