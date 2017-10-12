@@ -1,0 +1,256 @@
+#navbar {
+	border-radius: 0px;
+	background-color: #3C3C3C;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+}
+
+#navbar img {
+	margin-top: -15px;
+}
+
+#navbar .navbar-right .btndrop {
+	font-size: 15px;
+	color: #BFBFBF;
+	width: 160px;
+	background-color: #3C3C3C;
+	outline: none;
+	border: none;
+	padding: 12px;
+}
+
+#navbar .navbar-right .btndrop:hover,
+ #navbar .navbar-right .btndrop:focus {
+	background-color: #3C3C3C;
+	color: #FFFFFF;
+	outline: none;
+}
+
+#navbar .nav .dropdown {
+	z-index: 2;
+}
+
+@media(min-width:768px) {
+
+	#myNavbar {
+		position: fixed;
+	    top: 51px;
+	    width: 225px;
+	    border: none;
+	    border-radius: 0;
+	    background-color: #3C3C3C;
+	    bottom: 0;
+	    padding-top: 10px;
+	    font-size: 14px;
+	    margin-left: -1px;
+	}
+
+	#myNavbar .active {
+		width: 225px;
+		margin-left: -15px;
+		padding-left: 20px;
+        background-color: #2E2E2E;
+        color: #FFFFFF;
+	}
+
+	#myNavbar li>a {
+		width: 225px;
+		margin-left: -15px;
+		color: #BFBFBF;
+		padding-left: 20px;
+	}
+
+    #myNavbar li a:hover,
+    #myNavbar li a:focus {
+        outline: none;
+        color: #FFFFFF;
+        background-color: #2E2E2E; !important;
+    }
+
+    #myNavbar li>a>span {
+    	font-size: 17px;
+    }
+
+    #myNavbar .fa-mobile {
+    	font-size: 24px;
+    }
+}
+
+
+/*Modal profile*/
+#formProfile label {
+	text-align: left;
+	width: 150px;
+}
+
+#formProfile input, #formProfile textarea {
+	width: 420px;
+
+}
+
+#formProfile button {
+	margin-top: 10px;
+	width: 150px;
+}
+
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 225px;
+    }
+
+    #page-wrapper {
+        padding-left: 225px;
+        padding-top: 70px;
+    }
+}
+
+
+
+.huge {
+	color: #FFFFFF;
+	font-size: 30px;
+}
+
+.panel .panel-heading {
+	color: #FFFFFF;
+	font-size: 15px;
+}
+
+.panel-red {
+	background-color: #E24631;
+}
+
+.panel-red a {
+	color: #E24631;
+}
+
+.panel-red a:hover {
+	color: #C12B17;
+}
+
+.panel-green {
+	background-color: #76CE33;
+}
+
+.panel-green a {
+	color: #76CE33;
+}
+
+.panel-green a:hover {
+	color: #68B42D;
+}
+
+.panel-orange {
+	background-color: #F1C432;
+}
+
+.panel-orange a {
+	color: #F1C432;
+}
+
+.panel-orange a:hover {
+	color: #D0AB2E;
+}
+
+.panel-blue {
+	background-color: #4B38F0;
+}
+
+.panel-blue a {
+	color: #4B38F0;
+}
+
+.panel-blue a:hover {
+	color: #3F2FCE;
+}
+
+#input-search {
+	z-index: 0;
+	margin-top: -20px;
+	margin-bottom: 30px;
+	float: right;
+	width: 25%
+}
+
+#input-search button {
+	width: 50px;
+}
+
+.star {
+	font-size: 24px;
+}
+
+/* table sản phẩm*/
+#table-listProduct {
+	text-align: center;
+}
+
+#table-listProduct .ma-pro,
+	#table-listProduct .name-pro,
+	#table-listProduct .price-pro,
+	#table-listProduct .prom-pro,
+	#table-listProduct .num-pro,
+	#table-listProduct .duyet-pro {
+		padding-top: 20px;
+}
+
+#table-listProduct .hanhdong-pro {
+	padding-top: 15px;
+}
+
+#table-listProduct thead>tr>th{
+	background-color: #C0C2FF;
+	text-align: center;
+}
+
+#table-listProduct .name-pro {
+	width: 35%;
+	text-align: left;
+	color: #4F54FC;
+}
+
+#table-listProduct .price-pro {
+	color: red;
+}
+
+#table-listProduct .duyet-pro {
+	font-size: 16px;
+}
+
+/* end quản lí sản phẩm*/
+
+
+
+
+
+
+/*Thêm sản phẩm*/
+.file-input .file-preview {
+	width: 260px;
+	height: 260px;
+	text-align: center;
+}
+
+.file-input .file-preview-frame {
+	width: 224px;
+	height: 224px;
+}
+
+.file-input .btn-kv {
+	margin-top: -50px;
+}
+
+.file-input .text-warning {
+	display: none;
+}
+
+.file-input .fileinput-remove-button {
+	margin-left: 75px;
+	margin-top: 10px;
+} /*end fileinput */
+
+
+
