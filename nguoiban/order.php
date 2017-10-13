@@ -144,8 +144,8 @@
 		    </ul>
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		     	<ul class="nav navbar-nav side-nav">	     		
-		     		<li><a class="active" href="home-ban.php"><span class="fa fa-mobile"></span>&nbsp;&nbsp;Sản phẩm</a></li>
-		     		<li><a href="order.php"><span class="fa fa-list-alt"></span>&nbsp;&nbsp;Đơn hàng</a></li>
+		     		<li><a href="home-ban.php"><span class="fa fa-mobile"></span>&nbsp;&nbsp;Sản phẩm</a></li>
+		     		<li><a class="active" href="order.php"><span class="fa fa-list-alt"></span>&nbsp;&nbsp;Đơn hàng</a></li>
 		     		<li><a href=""><span class="fa fa-comments-o"></span>&nbsp;&nbsp;Phản hồi câu hỏi</a></li>
 		     		<li><a href=""><span class="fa fa-bullhorn"></span>&nbsp;&nbsp;Khuyến mãi</a></li>	     		
 		     		<li><a href=""><span class="fa fa-flag"></span>&nbsp;&nbsp;Thống kê</a></li>
@@ -158,35 +158,36 @@
 
 		<div id="page-wrapper">
 			<div class="container-fluid">
-				<h1>Sản phẩm</h1>
+				<h1>Đơn hàng</h1>
 				<hr>
 				<div class="row">
 					<div class="col-md-12 col-sm-12">
 						<ol class="breadcrumb">
-						  <li><a href="home-ban.php">Sản phẩm</a></li>
+						  <li><a href="home-ban.php">Đơn hàng</a></li>
 						  <li class="active"></li>
 						</ol>
 					</div>
 				</div>
 
+
 				<!-- Panel -->
 				<div class="row">
-					<!-- Sản phẩm chờ duyêt -->
-					<div class="col-md-3 col-sm-3">
-						<div class="panel panel-red">
+					<!-- Tất cả đơn hàng -->
+					<div class="col-md-2 col-sm-2">
+						<div class="panel panel-green">
 						  <div class="panel-heading">
 						  	<div class="row">
 							  	<div class="col-md-3 col-sm-3">
-							  		<img src="../img/waiting.png">
+							  		<img src="../img/icondonhang.png">
 							  	</div>
 							  	<div class="col-md-9 col-sm-9 text-right">
-							  		<div class="huge">4</div>
-							  		Sản phẩm chờ duyệt
+							  		<div class="huge">40</div>
+							  		Tất cả <br> Đơn hàng
 							  	</div>
 							  	<div class="clearfix"></div>
 							</div>
 						  </div>
-						  <a href="proWaiting.php">
+						  <a href="">
 							  <div class="panel-footer">
 							   	<span class="pull-left">
 							   		Chi tiết
@@ -198,19 +199,19 @@
 							  </div>
 						  </a>
 						</div>
-					</div> <!-- end sản phẩm chờ duyêt -->					
+					</div> <!-- end tất cả đơn hàng -->					
 
-					<!-- Sản phẩm bán chạy -->
-					<div class="col-md-3 col-sm-3">
+					<!-- Đơn hàng đang xử lí -->
+					<div class="col-md-2 col-sm-2">
 						<div class="panel panel-orange">
 						  <div class="panel-heading">
 						  	<div class="row">
 							  	<div class="col-md-3 col-sm-3">
-							  		<img src="../img/banchay.png">
+							  		<img src="../img/icondangxuli.png">
 							  	</div>
 							  	<div class="col-md-9 col-sm-9 text-right">
 							  		<div class="huge">12</div>
-							  		Sản phẩm bán chạy
+							  		Đơn hàng <br> Đang xử lí
 							  	</div>
 							  	<div class="clearfix"></div>
 							</div>
@@ -230,17 +231,17 @@
 					</div> <!-- end sản phẩm bán chạy -->
 
 
-					<!-- Sản phẩm hết hàng -->
-					<div class="col-md-3 col-sm-3">
-						<div class="panel panel-green">
+					<!-- Đơn hàng đang giao đi -->
+					<div class="col-md-2 col-sm-2">
+						<div class="panel panel-blue">
 						  <div class="panel-heading">
 						  	<div class="row">
 							  	<div class="col-md-3 col-sm-3">
-							  		<img src="../img/iconhethang.png">
+							  		<img src="../img/icondanggiao.png">
 							  	</div>
 							  	<div class="col-md-9 col-sm-9 text-right">
 							  		<div class="huge">2</div>
-							  		Sản phẩm hết hàng
+							  		Đơn hàng<br> Đang giao đi
 							  	</div>
 							  	<div class="clearfix"></div>
 							</div>
@@ -258,20 +259,20 @@
 						  </a>
 						</div>
 					</div>
-					 <!-- end sản phẩm hết hàng -->
+					 <!-- end đơn hàng đang giao đi-->
 
 
-					<!-- Tất cả sản phẩm -->					
-					<div class="col-md-3 col-sm-3">
-						<div class="panel panel-blue">
+					<!-- Đơn hàng giao hàng thất bại -->					
+					<div class="col-md-2 col-sm-2">
+						<div class="panel panel-red">
 						  <div class="panel-heading">
 						  	<div class="row">
 							  	<div class="col-md-3 col-sm-3">
-							  		<img src="../img/tonkho.png">
+							  		<img src="../img/iconhuydonhang.png">
 							  	</div>
 							  	<div class="col-md-9 col-sm-9 text-right">
 							  		<div class="huge">43</div>
-							  		Tất cả sản phẩm
+							  		Giao hàng <br> Thất bại
 							  	</div>
 							  	<div class="clearfix"></div>
 							</div>
@@ -288,87 +289,89 @@
 							  </div>
 						  </a>
 						</div>
-					</div> <!-- end tất cả sản phẩm -->
+					</div> <!-- end Đơn hàng giao hàng thất bại -->
+
+					<!-- Đã giao hàng -->					
+					<div class="col-md-2 col-sm-2">
+						<div class="panel panel-violet">
+						  <div class="panel-heading">
+						  	<div class="row">
+							  	<div class="col-md-3 col-sm-3">
+							  		<img src="../img/iconhoanthanh.png">
+							  	</div>
+							  	<div class="col-md-9 col-sm-9 text-right">
+							  		<div class="huge">20</div>
+							  		Đơn hàng<br> Đã giao
+							  	</div>
+							  	<div class="clearfix"></div>
+							</div>
+						  </div>
+						  <a href="allProduct.php">
+							  <div class="panel-footer">
+							   	<span class="pull-left">
+							   		Chi tiết
+							   	</span>
+							   	<span class="pull-right">
+							   		<i class="fa fa-arrow-circle-right"></i>
+							   	</span>
+							   	<div class="clearfix"></div>
+							  </div>
+						  </a>
+						</div>
+					</div> <!-- end đã giao hàng -->				
 				</div> <!--end panel -->
 
-				<a href="addProduct.php" type="button" class="btn btn-success btn-lg"><span class="fa fa-plus-circle"></span>&nbsp;&nbsp;Thêm sản phẩm</a>
-				<h3>Sản phẩm mới</h3>				
 
+
+				<h3>Đơn hàng mới</h3>
 				<table id="table-listProduct" class="table table-bordered table-hover">
 				    <thead>
 				      <tr>
-				        <th>Mã SP</th>
-				        <th>Hình ảnh</th>
+				        <th>Mã ĐH</th>
+				        <th>Ngày đặt</th>
+				        <th>Ngày giao</th>
+				        <th>Tên khách hàng</th>
+				        <th>Số điện thoại</th>
+				        <th>Địa chỉ giao hàng</th>
 				        <th>Tên sản phẩm</th>
-				        <th>Giá bán lẻ</th>
-				        <th>Giá khuyến mãi</th>
 				        <th>Số lượng</th>
-				        <th>Trạng thái</th>
+				        <th>Giá tiền</th>
+				        <th>Hình thức thanh toán</th>
+				        <th>Tình trạng</th>
+				        <th>Tổng tiền</th>
 				      </tr>
 				    </thead>
 				    <tbody>
 				      <tr>
 				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
+				        <td></td>
+				        <td class=""></td>
 				        <td class="price-pro">18.483.000</td>
+				        <td class="prom-pro">17.905.000</td>
+				        <td class="num-pro">5</td>
+				        <td class="price-pro">18.483.000</td>
+				        <td class="prom-pro">17.905.000</td>
+				        <td class="num-pro">5</td>
 				        <td class="prom-pro">17.905.000</td>
 				        <td class="num-pro">5</td>
 				        <td class="duyet-pro">
 				        	<span class="label label-warning">Chờ duyệt</span>
 				        </td>
-				     <!--   <td class="hanhdong-pro">
-				        	<a href="editProduct.php" type="btn" class="btn btn-success">
-				        		<span class="fa fa-refresh"></span>&nbsp;&nbsp;Sửa
-				        	</a>
-				        	<a href="deleteProduct.php" type="btn" class="btn btn-danger">
-				        		<span class="fa fa-trash"></span>&nbsp;&nbsp;Xóa
-				        	</a>
-				        </td> -->
 				      </tr>
 				      
-				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
-				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">-</td>
-				        <td class="num-pro">5</td>
-				        <td class="duyet-pro">
-				        	<span class="label label-warning">Chờ duyệt</span>
-				        </td>
-				      </tr>
-
-				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
-				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">17.905.000</td>
-				        <td class="num-pro">5</td>
-				        <td class="duyet-pro">
-				        	<span class="label label-warning">Chờ duyệt</span>
-				        </td>
-				      </tr>
-
-				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
-				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">-</td>
-				        <td class="num-pro">5</td>
-				        <td class="duyet-pro">
-				        	<span class="label label-warning">Chờ duyệt</span>
-				        </td>
-				      </tr>
+				      
 				    </tbody>
 				  </table>
 			</div>
 		</div>
 
 
-	</div> <!-- end wrapper -->
+
+
+
+	</div><!-- end wrapper -->
+
+
 
 </body>
 </html>

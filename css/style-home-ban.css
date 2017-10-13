@@ -78,7 +78,6 @@
     }
 }
 
-
 /*Modal profile*/
 #formProfile label {
 	text-align: left;
@@ -163,14 +162,22 @@
 	color: #4B38F0;
 }
 
+.panel-violet {
+	background-color: #EB42F1;
+}
+
+.panel-violet a {
+	color: #9A289E;
+}
+
 .panel-blue a:hover {
 	color: #3F2FCE;
 }
 
 #input-search {
 	z-index: 0;
-	margin-top: -20px;
-	margin-bottom: 30px;
+	margin-top: -10px;
+	margin-bottom: 20px;
 	float: right;
 	width: 25%
 }
@@ -227,15 +234,9 @@
 
 
 
-/*Thêm sản phẩm*/
-.file-input .file-preview {
-	width: 260px;
-	height: 260px;
-	text-align: center;
-}
-
+/*Thêm, sửa sản phẩm*/
 .file-input .file-preview-frame {
-	width: 224px;
+	width: 216px;
 	height: 224px;
 }
 
@@ -243,14 +244,29 @@
 	margin-top: -50px;
 }
 
-.file-input .text-warning {
+.file-input .text-warning, .file-input .kv-file-upload {
 	display: none;
 }
 
 .file-input .fileinput-remove-button {
 	margin-left: 75px;
-	margin-top: 10px;
-} /*end fileinput */
+}
 
+#formInfoProduct .title-thongtin {
+	margin-top: -20px;
+}
+
+#formInfoProduct .title, #formInfoProduct .title-thongtin {
+	margin-bottom: 40px;
+	border-bottom: 2px solid blue;
+}
+
+#formInfoProduct #btn-addProduct, #formInfoProduct #btn-cancelAdd {
+	margin: 70px 20px 30px 0px;
+	float: right;
+	width: 25%;
+}
+
+/*end thêm, sửa sản phẩm*/
 
 
