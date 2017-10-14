@@ -144,8 +144,8 @@
 		    </ul>
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		     	<ul class="nav navbar-nav side-nav">	     		
-		     		<li><a class="active" href="home-ban.php"><span class="fa fa-mobile"></span>&nbsp;&nbsp;Sản phẩm</a></li>
-		     		<li><a href=""><span class="fa fa-list-alt"></span>&nbsp;&nbsp;Đơn hàng</a></li>
+		     		<li><a href="home-ban.php"><span class="fa fa-mobile"></span>&nbsp;&nbsp;Sản phẩm</a></li>
+		     		<li><a class="active" href="order.php"><span class="fa fa-list-alt"></span>&nbsp;&nbsp;Đơn hàng</a></li>
 		     		<li><a href=""><span class="fa fa-comments-o"></span>&nbsp;&nbsp;Phản hồi câu hỏi</a></li>
 		     		<li><a href=""><span class="fa fa-bullhorn"></span>&nbsp;&nbsp;Khuyến mãi</a></li>	     		
 		     		<li><a href=""><span class="fa fa-flag"></span>&nbsp;&nbsp;Thống kê</a></li>
@@ -158,108 +158,117 @@
 
 		<div id="page-wrapper">
 			<div class="container-fluid">
-				<h1>Sản phẩm bán chạy</h1>
+				<h1>Chi tiết đơn hàng</h1>
 				<hr>
 				<div class="row">
 					<div class="col-md-12 col-sm-12">
 						<ol class="breadcrumb">
-						  <li><a href="home-ban.php">Sản phẩm</a></li>
-						  <li class="active">Sản phẩm bán chạy</li>
+						  <li><a href="order.php">Đơn hàng</a></li>
+						  <li class="active">Chi tiết đơn hàng</li>
 						</ol>
 					</div>
 				</div>
 
-				<h3>Danh sách sản phẩm bán chạy</h3>
-				<div class="row">
-					<div class="col-md-12 col-sm-12">
-						<form id="form-searchProduct" class="form-horizontal" role="form">
-							<div class="col-sm-2 form-group">
-							  	<input type="text" class="form-control" id="" placeholder="Mã sản phẩm">
-							</div>
-							<div class="col-sm-5">
-							  	<input type="text" class="form-control" id="" placeholder="Tên sản phẩm">
-							</div>	
-							<button type="button" class="btn btn-default"><span class="fa fa-search"></span>&nbsp;Tìm kiếm</button>
-						</form>
+
+				<div class="detailOrder-h3"><h3>ĐƠN HÀNG <label>#123456</label></h3></div>
+				<hr style="border: 1px solid blue">
+				<div class="detailOrderRow1 row">
+					<div class="col-md-3 col-sm-3">
+						<span class="fa fa-clock-o"></span>&nbsp;&nbsp;Ngày đặt hàng: <b>20/03/2017</b>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<span class="fa fa-clock-o"></span>&nbsp;&nbsp;Ngày giao hàng: <b>25/03/2017</b>
+					</div>
+					<div class="col-md-5 col-sm-5">
+						<span class="fa fa-money"></span>&nbsp;&nbsp;Hình thức thanh toán: Thanh toán khi nhận hàng
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<hr>
+
+				<div class="detailOrderRow1 row">
+					<div class="col-md-3 col-sm-3">
+						<span class="fa fa-user"></span>&nbsp;&nbsp;Người nhận <b>Nguyễn Văn A</b>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<span class="fa fa-mobile"></span>&nbsp;&nbsp;
+						Số điện thoại: 01234567890
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<span class="fa fa-home"></span>&nbsp;&nbsp;
+						Địa chỉ: KTX B, ĐH Cần Thơ, đường 3/2, phường Xuân Khánh, Ninh kiều, Cần Thơ.
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<hr>
+
+
+				<table id="table-detailOrder" class="table">
+				  <thead>
+				    <th>Hình ảnh</th>
+				    <th>Tên sản phẩm</th>				    
+				    <th>Số lượng</th>
+				    <th class="text-center">Đơn giá</th>
+				    <th class="text-right">Thành tiền</th>
+				  </thead>
+				  <tr>
+				    <td class="img-detailOrder">
+				    	<img src="../sanpham/galaxyj7_1.jpg" width="80px" height="80px">
+				    </td>
+				    <td class="name-detailOrder">Điện thoại samsung galaxy j7 32GB chính hãng</td>
+				    <td class="num-detailOrder">
+				    	<select class="form-control">
+				    		<option>1</option>
+				    		<option>2</option>
+				    		<option>3</option>
+				    		<option>4</option>
+				    		<option>5</option>
+				    	</select>
+				    </td>
+				    <td class="price-detailOrder text-center">12,394,000</td>
+				    <td class="tong-detailOrder text-right">12,394,000</td>
+				  </tr>
+				  
+				  <tr>
+				    <td class="img-detailOrder">
+				    	<img src="../sanpham/galaxyj7_1.jpg" width="80px" height="80px">
+				    </td>
+				    <td class="name-detailOrder">Điện thoại samsung galaxy j7 32GB chính hãng</td>
+				    <td class="num-detailOrder">
+				    	<select class="form-control">
+				    		<option>1</option>
+				    		<option>2</option>
+				    		<option>3</option>
+				    		<option>4</option>
+				    		<option>5</option>
+				    	</select>
+				    </td>
+				    <td class="price-detailOrder text-center">12,394,000</td>
+				    <td class="tong-detailOrder text-right">12,394,000</td>
+				  </tr>
+				</table>
+				<hr>
+				<div class="tongtien-detailOrder row">
+					<div class="col-md-10 col-sm-10 text-right">
+						Tổng tiền:
+					</div>
+					<div class="col-md-2 col-sm-2 text-right">
+						<b>24,094,000 đ</b>
 					</div>
 				</div>
 
+				<div class="detailOrderRow2 row">
+					<div class="col-md-5 col-sm-5">
+						<a href="order.php">
+							<span class="fa fa-angle-double-left"></span>&nbsp;&nbsp;Về trang chủ
+						</a>
+					</div>
+					<div class="text-right submit-detailOrder col-md-7 col-sm-7">
+						<button type="button" class="btn btn-primary">Lưu thay đổi</button>	
+					</div>
+				</div>
 
-				<table id="table-listProduct" class="table table-bordered table-hover">
-				    <thead>
-				      <tr>
-				        <th>Mã SP</th>
-				        <th>Hình ảnh</th>
-				        <th>Tên sản phẩm</th>
-				        <th>Giá bán lẻ</th>
-				        <th>Giá khuyến mãi</th>
-				        <th>Số lượng</th>
-				        <th>Lượt mua</th>
-				        <th>Hành động</th>
-				      </tr>
-				    </thead>
-				    <tbody>
-				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
-				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">17.905.000</td>
-				        <td class="num-pro">5</td>
-				        <td class="num-pro">12</td>
-				        <td class="hanhdong-pro">
-				        	<a href="detailProduct-ban.php" type="btn" class="btn btn-info">
-				        		Chi tiết
-				        	</a>
-				        </td>
-				      </tr>
-				      
-				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
-				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">-</td>
-				        <td class="num-pro">5</td>
-				        <td class="num-pro">12</td>
-				        <td class="hanhdong-pro">
-				        	<a href="detailProduct-ban.php" type="btn" class="btn btn-info">
-				        		Chi tiết
-				        	</a>
-				        </td>
-				      </tr>
-
-				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
-				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">17.905.000</td>
-				        <td class="num-pro">5</td>
-				        <td class="num-pro">12</td>
-				        <td class="hanhdong-pro">
-				        	<a href="detailProduct-ban.php" type="btn" class="btn btn-info">
-				        		Chi tiết
-				        	</a>
-				        </td>
-				      </tr>
-
-				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
-				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">-</td>
-				        <td class="num-pro">5</td>
-				        <td class="num-pro">12</td>
-				        <td class="hanhdong-pro">
-				        	<a href="detailProduct-ban.php" type="btn" class="btn btn-info">
-				        		Chi tiết
-				        	</a>
-				        </td>
-				      </tr>
-				    </tbody>
-				  </table>
+				
 			</div>
 		</div>
 
@@ -267,7 +276,8 @@
 
 
 
-	</div><!-- end wrapper -->
+
+	</div> <!-- end wrapper -->
 
 
 

@@ -172,12 +172,15 @@
 				<h3>Danh sách sản phẩm của shop</h3>
 				<div class="row">
 					<div class="col-md-12 col-sm-12">
-						<div id="input-search" class="input-group">
-					      <input type="search" class="form-control" placeholder="Nhập tên sản phẩm...">
-					      <span class="input-group-btn">
-					        <button class="btn btn-danger" type="button"><span class="fa fa-search"></span></button>
-					      </span>
-					    </div><!-- /input-group -->
+						<form id="form-searchProduct" class="form-horizontal" role="form">
+							<div class="col-sm-2 form-group">
+							  	<input type="text" class="form-control" id="" placeholder="Mã sản phẩm">
+							</div>
+							<div class="col-sm-5">
+							  	<input type="text" class="form-control" id="" placeholder="Tên sản phẩm">
+							</div>	
+							<button type="button" class="btn btn-default"><span class="fa fa-search"></span>&nbsp;Tìm kiếm</button>
+						</form>
 					</div>
 				</div>
 

@@ -8,7 +8,7 @@
 
 
 	<link rel="icon" type="text/css" href="img/icon.png">
-	<title>Kênh người bán</title>
+	<title>Khuyến mãi</title>
 
 
 	<!-- Bootstrap CSS -->
@@ -144,10 +144,10 @@
 		    </ul>
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		     	<ul class="nav navbar-nav side-nav">	     		
-		     		<li><a class="active" href="home-ban.php"><span class="fa fa-mobile"></span>&nbsp;&nbsp;Sản phẩm</a></li>
-		     		<li><a href=""><span class="fa fa-list-alt"></span>&nbsp;&nbsp;Đơn hàng</a></li>
+		     		<li><a href="home-ban.php"><span class="fa fa-mobile"></span>&nbsp;&nbsp;Sản phẩm</a></li>
+		     		<li><a href="order.php"><span class="fa fa-list-alt"></span>&nbsp;&nbsp;Đơn hàng</a></li>
 		     		<li><a href=""><span class="fa fa-comments-o"></span>&nbsp;&nbsp;Phản hồi câu hỏi</a></li>
-		     		<li><a href=""><span class="fa fa-bullhorn"></span>&nbsp;&nbsp;Khuyến mãi</a></li>	     		
+		     		<li><a class="active" href="promotion-ban.php"><span class="fa fa-bullhorn"></span>&nbsp;&nbsp;Khuyến mãi</a></li>	     		
 		     		<li><a href=""><span class="fa fa-flag"></span>&nbsp;&nbsp;Thống kê</a></li>
 		     	</ul>
 		    </div>		    
@@ -158,108 +158,42 @@
 
 		<div id="page-wrapper">
 			<div class="container-fluid">
-				<h1>Sản phẩm bán chạy</h1>
+				<h1>Khuyến mãi</h1>
 				<hr>
 				<div class="row">
 					<div class="col-md-12 col-sm-12">
 						<ol class="breadcrumb">
-						  <li><a href="home-ban.php">Sản phẩm</a></li>
-						  <li class="active">Sản phẩm bán chạy</li>
+						  <li><a href="home-ban.php">Khuyến mãi</a></li>
+						  <li class="active"></li>
 						</ol>
 					</div>
 				</div>
 
-				<h3>Danh sách sản phẩm bán chạy</h3>
-				<div class="row">
-					<div class="col-md-12 col-sm-12">
-						<form id="form-searchProduct" class="form-horizontal" role="form">
-							<div class="col-sm-2 form-group">
-							  	<input type="text" class="form-control" id="" placeholder="Mã sản phẩm">
+
+				<h3>Khuyến mãi - Tham gia ngay trước khi hết hạn</h3>
+
+				<!-- panel khuyến mãi -->
+				<div class="panel panel-default panel-promotion">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-3 col-sm-3">
+								<img src="../img-promotion/giamgia.jpg" width="200" height="250">
 							</div>
-							<div class="col-sm-5">
-							  	<input type="text" class="form-control" id="" placeholder="Tên sản phẩm">
-							</div>	
-							<button type="button" class="btn btn-default"><span class="fa fa-search"></span>&nbsp;Tìm kiếm</button>
-						</form>
+							<div class="col-md-9 col-sm-9">
+								<h3 class="text-center">Mừng ngày phụ nữ Việt Nam</h3>
+								Nhanh tay đặt phòng ngay bây giờ!!! Giảm ngay 10% giá tất cả các phòng trong tháng 4 này.
+								Để tạo điều kiện cho những khách đến Đà lạt vào tháng 4/2017 có một nơi nghĩ dưởng tốt nhất, Terracotta Hotel & Resort áp dụng chương trình khuyến mãi. Giảm giá 10% cho tất cả các loại phòng (kể cả các phòng thuộc villa như Premium hay Junior). 
+								Với quy mô khách sạn 4 sao và khung cảnh gần gũi thiên nhiên chúng tôi đảm bảo sẽ làm hài lòng quý khách khi đến với khách sạn của chúng tôi.
+								Terrcotta - Một điểm đến lý tưởng cho những ai yêu thích thiên nhiên và mong muốn tìm một nơi nghỉ dưỡng đẳng cấp đúng nghĩa.
+								<h4><b>Thời gian khuyến mãi: </b>Từ 20/03/2017 đến 25/03/2017</h4>
+								<h4><b>Giảm giá: </b>8%</h4>
+								<div class="text-right">
+									<button type="button" class="btn btn-warning btn-lg">Tham gia ngay</button>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-
-
-				<table id="table-listProduct" class="table table-bordered table-hover">
-				    <thead>
-				      <tr>
-				        <th>Mã SP</th>
-				        <th>Hình ảnh</th>
-				        <th>Tên sản phẩm</th>
-				        <th>Giá bán lẻ</th>
-				        <th>Giá khuyến mãi</th>
-				        <th>Số lượng</th>
-				        <th>Lượt mua</th>
-				        <th>Hành động</th>
-				      </tr>
-				    </thead>
-				    <tbody>
-				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
-				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">17.905.000</td>
-				        <td class="num-pro">5</td>
-				        <td class="num-pro">12</td>
-				        <td class="hanhdong-pro">
-				        	<a href="detailProduct-ban.php" type="btn" class="btn btn-info">
-				        		Chi tiết
-				        	</a>
-				        </td>
-				      </tr>
-				      
-				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
-				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">-</td>
-				        <td class="num-pro">5</td>
-				        <td class="num-pro">12</td>
-				        <td class="hanhdong-pro">
-				        	<a href="detailProduct-ban.php" type="btn" class="btn btn-info">
-				        		Chi tiết
-				        	</a>
-				        </td>
-				      </tr>
-
-				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
-				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">17.905.000</td>
-				        <td class="num-pro">5</td>
-				        <td class="num-pro">12</td>
-				        <td class="hanhdong-pro">
-				        	<a href="detailProduct-ban.php" type="btn" class="btn btn-info">
-				        		Chi tiết
-				        	</a>
-				        </td>
-				      </tr>
-
-				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
-				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">-</td>
-				        <td class="num-pro">5</td>
-				        <td class="num-pro">12</td>
-				        <td class="hanhdong-pro">
-				        	<a href="detailProduct-ban.php" type="btn" class="btn btn-info">
-				        		Chi tiết
-				        	</a>
-				        </td>
-				      </tr>
-				    </tbody>
-				  </table>
+				</div> <!-- end panel khuyến mãi -->
 			</div>
 		</div>
 
@@ -267,7 +201,8 @@
 
 
 
-	</div><!-- end wrapper -->
+	</div><!--end wrapper -->
+
 
 
 

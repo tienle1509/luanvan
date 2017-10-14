@@ -130,6 +130,18 @@
 	color: #C12B17;
 }
 
+.panel-red1 {
+	background-color:#F53A10;
+}
+
+.panel-red1 a {
+	color: #F53A10;
+}
+
+.panel-red1 a:hover {
+	color: #C12B17;
+}
+
 .panel-green {
 	background-color: #76CE33;
 }
@@ -162,16 +174,20 @@
 	color: #4B38F0;
 }
 
+.panel-blue a:hover {
+	color: #3B2CBD;
+}
+
 .panel-violet {
 	background-color: #EB42F1;
 }
 
 .panel-violet a {
-	color: #9A289E;
+	color: #EB42F1;
 }
 
-.panel-blue a:hover {
-	color: #3F2FCE;
+.panel-violet a:hover {
+	color: #9A289E;
 }
 
 #input-search {
@@ -193,6 +209,7 @@
 /* table sản phẩm*/
 #table-listProduct {
 	text-align: center;
+	margin-top: 15px;
 }
 
 #table-listProduct .ma-pro,
@@ -270,3 +287,123 @@
 /*end thêm, sửa sản phẩm*/
 
 
+
+
+/* Quản lí đơn hàng*/
+#table-donhang {
+	margin-top: 15px;
+}
+
+#table-donhang thead>tr>th {
+	background-color: #C0C2FF;
+	text-align: center;
+}
+
+#table-donhang .guiden {
+	width: 20%;
+}
+
+#table-donhang .guiden label {
+	color: #FF3737;
+	font-weight: normal;
+}
+
+#table-donhang .httt {
+	width: 10%;
+}
+
+#table-donhang .chitietdh label {
+	color: #3745FF;
+	font-weight: normal;
+}
+
+#table-donhang .tongtien {
+	color: #FF3737;
+	font-weight: bold;
+}
+
+#form-searchOrder #Sdate, #form-searchOrder #Edate {
+	z-index: 0;
+}
+
+
+
+/* Chi tiết đơn hàng*/
+.detailOrder-h3 {
+	background-color: #CFCECE;
+	width: 270px;
+	margin-top: -20px;
+	margin-bottom: -20px;
+}
+
+.detailOrder-h3 h3 {
+	padding: 10px 5px 0px 15px;
+}
+
+.detailOrder-h3 h3>label {
+	color: red;
+	font-weight: normal;
+}
+
+.detailOrderRow1 {
+	font-size: 14px;
+	margin-bottom: -30px;
+	margin-top: -5px;
+}
+
+.detailOrderRow1 span {
+	font-size: 18px;
+	color: #5D5D5D;
+}
+
+#table-detailOrder .name-detailOrder,
+	#table-detailOrder .price-detailOrder,
+	#table-detailOrder .tong-detailOrder {
+		padding-top: 30px;
+}
+#table-detailOrder .img-detailOrder {
+	width: 12%;
+}
+
+#table-detailOrder .name-detailOrder {
+	width: 30%;
+}
+
+#table-detailOrder .num-detailOrder {
+	width: 10%;
+	padding-top: 20px;
+}
+
+#table-detailOrder .price-detailOrder {
+	color: red;
+	width: 15%;
+}
+
+#table-detailOrder .tong-detailOrder {
+	color: red;
+	width: 10%;
+}
+
+.tongtien-detailOrder {
+	font-size: 15px;
+}
+
+.tongtien-detailOrder b {
+	color: red;
+}
+
+.detailOrderRow2 {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.detailOrderRow2 a {
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.detailOrderRow2 .submit-detailOrder button {
+	width: 35%;
+	font-size: 16px;
+	margin-right: 30px;
+}

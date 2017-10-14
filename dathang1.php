@@ -188,18 +188,12 @@
 			    <div class="form-group">
 			      <label class="control-label col-md-3 col-sm-3">Địa chỉ chi tiết: </label>
 			      <div class="col-md-9 col-sm-9">
-			      	<input type="text" class="form-control input-sm" placeholder="Ví dụ: số 5, đường 3/2, phường Xuân Khánh, quận Ninh Kiều">
-			      </div>
-			    </div>
-			    <div class="form-group">
-			      <label class="control-label col-md-3 col-sm-3">Ghi chú:</label>
-			      <div class="col-md-9 col-sm-9">
-			     	<textarea class="form-control" placeholder=" Ví dụ: Chuyển hàng ngoài giờ hành chính" rows="2"></textarea>
+			     	<textarea class="form-control" placeholder=" Ví dụ: số 5, đường 3/2, phường Xuân Khánh, quận Ninh Kiều" rows="2"></textarea>
 			      </div>
 			    </div>
 			    <div class="text-right">
 			    	<button type="submit" class="btn btn-danger btn-md">TIẾP TỤC&nbsp;&nbsp;<span class="fa fa-long-arrow-right"></span></button>
-			    </div>
+			    </div>			    
 			</form>
 		</div> <!-- end panel địa chỉ-->
 

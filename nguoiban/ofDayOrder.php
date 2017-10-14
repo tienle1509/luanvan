@@ -15,14 +15,23 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/style-home-ban.css">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
 
   	<!-- jQuery, Bootstrap JS -->
 	<script type="text/javascript" src="../jquery/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.js"></script>
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css">
 
+	<script type="text/javascript">
+		// datepicker		
+		$(function () {
+                $("#Sdate").datepicker();
+                 $("#Edate").datepicker();
+        });
+	</script>
 
 </head>
 
@@ -144,8 +153,8 @@
 		    </ul>
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		     	<ul class="nav navbar-nav side-nav">	     		
-		     		<li><a class="active" href="home-ban.php"><span class="fa fa-mobile"></span>&nbsp;&nbsp;Sản phẩm</a></li>
-		     		<li><a href=""><span class="fa fa-list-alt"></span>&nbsp;&nbsp;Đơn hàng</a></li>
+		     		<li><a href="home-ban.php"><span class="fa fa-mobile"></span>&nbsp;&nbsp;Sản phẩm</a></li>
+		     		<li><a class="active" href="order.php"><span class="fa fa-list-alt"></span>&nbsp;&nbsp;Đơn hàng</a></li>
 		     		<li><a href=""><span class="fa fa-comments-o"></span>&nbsp;&nbsp;Phản hồi câu hỏi</a></li>
 		     		<li><a href=""><span class="fa fa-bullhorn"></span>&nbsp;&nbsp;Khuyến mãi</a></li>	     		
 		     		<li><a href=""><span class="fa fa-flag"></span>&nbsp;&nbsp;Thống kê</a></li>
@@ -156,110 +165,152 @@
 		</nav>
 
 
+
 		<div id="page-wrapper">
 			<div class="container-fluid">
-				<h1>Sản phẩm bán chạy</h1>
+				<h1>Đơn hàng trong ngày</h1>
 				<hr>
 				<div class="row">
 					<div class="col-md-12 col-sm-12">
 						<ol class="breadcrumb">
-						  <li><a href="home-ban.php">Sản phẩm</a></li>
-						  <li class="active">Sản phẩm bán chạy</li>
+						  <li><a href="order.php">Đơn hàng</a></li>
+						  <li class="active">Đơn hàng trong ngày</li>
 						</ol>
 					</div>
 				</div>
 
-				<h3>Danh sách sản phẩm bán chạy</h3>
+				<h3>Đơn hàng trong ngày</h3>
+
 				<div class="row">
 					<div class="col-md-12 col-sm-12">
-						<form id="form-searchProduct" class="form-horizontal" role="form">
+						<form id="form-searchOrder" class="form-horizontal" role="form">
 							<div class="col-sm-2 form-group">
-							  	<input type="text" class="form-control" id="" placeholder="Mã sản phẩm">
+							  	<input type="text" class="form-control" id="" placeholder="Mã đơn hàng">
 							</div>
-							<div class="col-sm-5">
-							  	<input type="text" class="form-control" id="" placeholder="Tên sản phẩm">
+							<div class="col-sm-3">
+							  	<input type="text" class="form-control" id="" placeholder="Tên khách hàng">
 							</div>	
+							<div class="col-sm-3 form-group">
+							  	<div class="input-group">
+							        <input class="form-control" type="text" id="Sdate" name="txtSDate" placeholder="Từ ngày" />
+							        	<span class="input-group-addon"><i class="fa fa-calendar"></i></span> 
+							    </div>
+							</div>
+							<div class="col-sm-3">
+							  	<div class="input-group">
+							        <input class="form-control" type="text" id="Edate" name="txtEDate" placeholder="Đến ngày" />
+							        	<span class="input-group-addon"><i class="fa fa-calendar"></i></span> 
+							    </div>
+							</div>				    
 							<button type="button" class="btn btn-default"><span class="fa fa-search"></span>&nbsp;Tìm kiếm</button>
 						</form>
 					</div>
 				</div>
 
 
-				<table id="table-listProduct" class="table table-bordered table-hover">
+				<table id="table-donhang" class="table table-bordered table-hover">
 				    <thead>
 				      <tr>
-				        <th>Mã SP</th>
-				        <th>Hình ảnh</th>
+				        <th>Mã ĐH</th>
+				        <th>Ngày đặt</th>
+				        <th>Ngày giao</th>
+				        <th>Thông tin giao hàng</th>
 				        <th>Tên sản phẩm</th>
-				        <th>Giá bán lẻ</th>
-				        <th>Giá khuyến mãi</th>
-				        <th>Số lượng</th>
-				        <th>Lượt mua</th>
-				        <th>Hành động</th>
+				        <th>Hình thức thanh toán</th>
+				        <th>Tình trạng</th>
+				        <th>Tổng tiền</th>
+				        <th>Thao tác</th>
 				      </tr>
 				    </thead>
 				    <tbody>
 				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
-				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">17.905.000</td>
-				        <td class="num-pro">5</td>
-				        <td class="num-pro">12</td>
-				        <td class="hanhdong-pro">
-				        	<a href="detailProduct-ban.php" type="btn" class="btn btn-info">
-				        		Chi tiết
-				        	</a>
+				        <td class="madh">123456</td>
+				        <td class="ngaydat">12/03/2017</td>
+				        <td class="ngaygiao">18/03/2017</td>
+				        <td class="guiden">
+				        	<label>Nguyễn Văn A</label><br> đường 3/2, phường Xuân Khánh, quận Ninh Kiều, Cần Thơ
+				        	<br>0964873862
+				        </td>
+				        <td class="chitietdh">
+				        	<label>Điện thoại samsung galaxy j7 32GB</label><br>1x12,075,000
+				        	<br><label>Điện thoại samsung galaxy j7 32GB</label> <br> 1x12,075,000
+				        </td>
+				        <td class="httt">Thanh toán khi nhận hàng</td>
+				        <td class="tinhtrangdh">
+				        	<label class="label label-warning">Đang xử lí</label>
+				        </td>			        
+				        <td class="tongtien">12,057,000</td>
+				        <td>
+				        	<a href="detailOrder.php" class="btn btn-info">Chi tiết</a>
 				        </td>
 				      </tr>
 				      
 				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
-				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">-</td>
-				        <td class="num-pro">5</td>
-				        <td class="num-pro">12</td>
-				        <td class="hanhdong-pro">
-				        	<a href="detailProduct-ban.php" type="btn" class="btn btn-info">
-				        		Chi tiết
-				        	</a>
+				        <td class="madh">123456</td>
+				        <td class="ngaydat">12/03/2017</td>
+				        <td class="ngaygiao">18/03/2017</td>
+				        <td class="guiden">
+				        	<label>Nguyễn Văn A</label><br> đường 3/2, phường Xuân Khánh, quận Ninh Kiều, Cần Thơ
+				        	<br>0964873862
+				        </td>
+				        <td class="chitietdh">
+				        	<label>Điện thoại samsung galaxy j7 32GB</label><br>1x12,075,000
+				        </td>
+				        <td class="httt">Thanh toán khi nhận hàng</td>
+				        <td class="tinhtrangdh">
+				        	<label class="label label-warning">Đang xử lí</label>
+				        </td>		        
+				        <td class="tongtien">12,057,000</td>
+				        <td>
+				        	<a href="detailOrder.php" class="btn btn-info">Chi tiết</a>
 				        </td>
 				      </tr>
 
 				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
-				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">17.905.000</td>
-				        <td class="num-pro">5</td>
-				        <td class="num-pro">12</td>
-				        <td class="hanhdong-pro">
-				        	<a href="detailProduct-ban.php" type="btn" class="btn btn-info">
-				        		Chi tiết
-				        	</a>
+				        <td class="madh">123456</td>
+				        <td class="ngaydat">12/03/2017</td>
+				        <td class="ngaygiao">18/03/2017</td>
+				        <td class="guiden">
+				        	<label>Nguyễn Văn A</label><br> đường 3/2, phường Xuân Khánh, quận Ninh Kiều, Cần Thơ
+				        	<br>0964873862
+				        </td>
+				        <td class="chitietdh">
+				        	<label>Điện thoại samsung galaxy j7 32GB</label><br>1x12,075,000
+				        	<br><label>Điện thoại samsung galaxy j7 32GB</label> <br> 1x12,075,000
+				        </td>
+				        <td class="httt">Thanh toán khi nhận hàng</td>
+				        <td class="tinhtrangdh">
+				        	<label class="label label-warning">Đang xử lí</label>
+				        </td>			        
+				        <td class="tongtien">12,057,000</td>
+				        <td>
+				        	<a href="detailOrder.php" class="btn btn-info">Chi tiết</a>
 				        </td>
 				      </tr>
 
-				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
-				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">-</td>
-				        <td class="num-pro">5</td>
-				        <td class="num-pro">12</td>
-				        <td class="hanhdong-pro">
-				        	<a href="detailProduct-ban.php" type="btn" class="btn btn-info">
-				        		Chi tiết
-				        	</a>
+				       <tr>
+				        <td class="madh">123456</td>
+				        <td class="ngaydat">12/03/2017</td>
+				        <td class="ngaygiao">18/03/2017</td>
+				        <td class="guiden">
+				        	<label>Nguyễn Văn A</label><br> đường 3/2, phường Xuân Khánh, quận Ninh Kiều, Cần Thơ
+				        	<br>0964873862
+				        </td>
+				        <td class="chitietdh">
+				        	<label>Điện thoại samsung galaxy j7 32GB</label><br>1x12,075,000
+				        	<br><label>Điện thoại samsung galaxy j7 32GB</label> <br> 1x12,075,000
+				        </td>
+				        <td class="httt">Thanh toán khi nhận hàng</td>
+				        <td class="tinhtrangdh">
+				        	<label class="label label-warning">Đang xử lí</label>
+				        </td>			        
+				        <td class="tongtien">12,057,000</td>
+				        <td>
+				        	<a href="detailOrder.php" class="btn btn-info">Chi tiết</a>
 				        </td>
 				      </tr>
 				    </tbody>
-				  </table>
+				</table>
 			</div>
 		</div>
 
@@ -267,7 +318,8 @@
 
 
 
-	</div><!-- end wrapper -->
+
+	</div><!-- end wrapper-->
 
 
 

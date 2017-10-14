@@ -147,7 +147,7 @@
 		     		<li><a href="home-ban.php"><span class="fa fa-mobile"></span>&nbsp;&nbsp;Sản phẩm</a></li>
 		     		<li><a class="active" href="order.php"><span class="fa fa-list-alt"></span>&nbsp;&nbsp;Đơn hàng</a></li>
 		     		<li><a href=""><span class="fa fa-comments-o"></span>&nbsp;&nbsp;Phản hồi câu hỏi</a></li>
-		     		<li><a href=""><span class="fa fa-bullhorn"></span>&nbsp;&nbsp;Khuyến mãi</a></li>	     		
+		     		<li><a href="promotion-ban.php"><span class="fa fa-bullhorn"></span>&nbsp;&nbsp;Khuyến mãi</a></li>	     		
 		     		<li><a href=""><span class="fa fa-flag"></span>&nbsp;&nbsp;Thống kê</a></li>
 		     	</ul>
 		    </div>		    
@@ -163,7 +163,7 @@
 				<div class="row">
 					<div class="col-md-12 col-sm-12">
 						<ol class="breadcrumb">
-						  <li><a href="home-ban.php">Đơn hàng</a></li>
+						  <li><a href="order.php">Đơn hàng</a></li>
 						  <li class="active"></li>
 						</ol>
 					</div>
@@ -187,7 +187,7 @@
 							  	<div class="clearfix"></div>
 							</div>
 						  </div>
-						  <a href="">
+						  <a href="allOrder.php">
 							  <div class="panel-footer">
 							   	<span class="pull-left">
 							   		Chi tiết
@@ -199,7 +199,36 @@
 							  </div>
 						  </a>
 						</div>
-					</div> <!-- end tất cả đơn hàng -->					
+					</div> <!-- end tất cả đơn hàng -->	
+
+					<!-- Đơn hàng trong ngày -->
+					<div class="col-md-2 col-sm-2">
+						<div class="panel panel-red1">
+						  <div class="panel-heading">
+						  	<div class="row">
+							  	<div class="col-md-3 col-sm-3">
+							  		<img src="../img/donhangtrongngay.png">
+							  	</div>
+							  	<div class="col-md-9 col-sm-9 text-right">
+							  		<div class="huge">4</div>
+							  		Đơn hàng<br> Trong ngày
+							  	</div>
+							  	<div class="clearfix"></div>
+							</div>
+						  </div>
+						  <a href="ofDayOrder.php">
+							  <div class="panel-footer">
+							   	<span class="pull-left">
+							   		Chi tiết
+							   	</span>
+							   	<span class="pull-right">
+							   		<i class="fa fa-arrow-circle-right"></i>
+							   	</span>
+							   	<div class="clearfix"></div>
+							  </div>
+						  </a>
+						</div>
+					</div> <!-- end đơn hàng trong ngày -->					
 
 					<!-- Đơn hàng đang xử lí -->
 					<div class="col-md-2 col-sm-2">
@@ -216,7 +245,7 @@
 							  	<div class="clearfix"></div>
 							</div>
 						  </div>
-						  <a href="proFast.php">
+						  <a href="proceOrder.php">
 							  <div class="panel-footer">
 							   	<span class="pull-left">
 							   		Chi tiết
@@ -246,7 +275,7 @@
 							  	<div class="clearfix"></div>
 							</div>
 						  </div>
-						  <a href="proOutOfStock.php">
+						  <a href="deliverOrder.php">
 							  <div class="panel-footer">
 							   	<span class="pull-left">
 							   		Chi tiết
@@ -277,7 +306,7 @@
 							  	<div class="clearfix"></div>
 							</div>
 						  </div>
-						  <a href="allProduct.php">
+						  <a href="failOrder.php">
 							  <div class="panel-footer">
 							   	<span class="pull-left">
 							   		Chi tiết
@@ -306,7 +335,7 @@
 							  	<div class="clearfix"></div>
 							</div>
 						  </div>
-						  <a href="allProduct.php">
+						  <a href="successOrder.php">
 							  <div class="panel-footer">
 							   	<span class="pull-left">
 							   		Chi tiết
@@ -324,18 +353,14 @@
 
 
 				<h3>Đơn hàng mới</h3>
-				<table id="table-listProduct" class="table table-bordered table-hover">
+				<table id="table-donhang" class="table table-bordered table-hover">
 				    <thead>
 				      <tr>
 				        <th>Mã ĐH</th>
 				        <th>Ngày đặt</th>
 				        <th>Ngày giao</th>
-				        <th>Tên khách hàng</th>
-				        <th>Số điện thoại</th>
-				        <th>Địa chỉ giao hàng</th>
+				        <th>Thông tin giao hàng</th>
 				        <th>Tên sản phẩm</th>
-				        <th>Số lượng</th>
-				        <th>Giá tiền</th>
 				        <th>Hình thức thanh toán</th>
 				        <th>Tình trạng</th>
 				        <th>Tổng tiền</th>
@@ -343,25 +368,62 @@
 				    </thead>
 				    <tbody>
 				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td></td>
-				        <td class=""></td>
-				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">17.905.000</td>
-				        <td class="num-pro">5</td>
-				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">17.905.000</td>
-				        <td class="num-pro">5</td>
-				        <td class="prom-pro">17.905.000</td>
-				        <td class="num-pro">5</td>
-				        <td class="duyet-pro">
-				        	<span class="label label-warning">Chờ duyệt</span>
+				        <td class="madh">123456</td>
+				        <td class="ngaydat">12/03/2017</td>
+				        <td class="ngaygiao">18/03/2017</td>
+				        <td class="guiden">
+				        	<label>Nguyễn Văn A</label><br> đường 3/2, phường Xuân Khánh, quận Ninh Kiều, Cần Thơ
+				        	<br>0964873862
 				        </td>
+				        <td class="chitietdh">
+				        	<label>Điện thoại samsung galaxy j7 32GB</label><br>1x12,075,000
+				        	<br><label>Điện thoại samsung galaxy j7 32GB</label> <br> 1x12,075,000
+				        </td>
+				        <td class="httt">Thanh toán khi nhận hàng</td>
+				        <td class="tinhtrangdh">
+				        	<label class="label label-warning">Đang xử lí</label>
+				        </td>				        
+				        <td class="tongtien">12,057,000</td>
 				      </tr>
 				      
-				      
+				      <tr>
+				        <td class="madh">123456</td>
+				        <td class="ngaydat">12/03/2017</td>
+				        <td class="ngaygiao">18/03/2017</td>
+				        <td class="guiden">
+				        	<label>Nguyễn Văn A</label><br> đường 3/2, phường Xuân Khánh, quận Ninh Kiều, Cần Thơ
+				        	<br>0964873862
+				        </td>
+				        <td class="chitietdh">
+				        	<label>Điện thoại samsung galaxy j7 32GB</label><br>1x12,075,000
+				        </td>
+				        <td class="httt">Thanh toán khi nhận hàng</td>
+				        <td class="tinhtrangdh">
+				        	<label class="label label-warning">Đang xử lí</label>
+				        </td>			        
+				        <td class="tongtien">12,057,000</td>
+				      </tr>
+
+				      <tr>
+				        <td class="madh">123456</td>
+				        <td class="ngaydat">12/03/2017</td>
+				        <td class="ngaygiao">18/03/2017</td>
+				        <td class="guiden">
+				        	<label>Nguyễn Văn A</label><br> đường 3/2, phường Xuân Khánh, quận Ninh Kiều, Cần Thơ
+				        	<br>0964873862
+				        </td>
+				        <td class="chitietdh">
+				        	<label>Điện thoại samsung galaxy j7 32GB</label><br>1x12,075,000
+				        	<br><label>Điện thoại samsung galaxy j7 32GB</label> <br> 1x12,075,000
+				        </td>
+				        <td class="httt">Thanh toán khi nhận hàng</td>
+				        <td class="tinhtrangdh">
+				        	<label class="label label-warning">Đang xử lí</label>
+				        </td>			        
+				        <td class="tongtien">12,057,000</td>
+				      </tr>
 				    </tbody>
-				  </table>
+				</table>
 			</div>
 		</div>
 
