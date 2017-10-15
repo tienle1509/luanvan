@@ -1,0 +1,286 @@
+body {
+	background-color: #EDEDED;
+}
+
+#navbar {
+	border-radius: 0px;
+	background-color: #3C3C3C;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+}
+
+#navbar .navbar-header a {
+	color: #BFBFBF;
+}
+
+#navbar .navbar-header a:hover {
+	color: #FFFFFF;
+}
+
+#navbar .navbar-right .btndrop {
+	font-size: 15px;
+	color: #BFBFBF;
+	width: 170px;
+	background-color: #3C3C3C;
+	outline: none;
+	border: none;
+	padding: 12px;
+}
+
+@media(min-width:768px) {
+
+	#myNavbar {
+		position: fixed;
+	    top: 51px;
+	    width: 225px;
+	    border: none;
+	    border-radius: 0;
+	    background-color: #3C3C3C;
+	    bottom: 0;
+	    padding-top: 10px;
+	    font-size: 14px;
+	    margin-left: -1px;
+	}
+
+	#myNavbar .active {
+		width: 225px;
+		margin-left: -15px;
+		padding-left: 20px;
+        background-color: #2E2E2E;
+        color: #FFFFFF;
+	}
+
+	#myNavbar li>a {
+		width: 225px;
+		margin-left: -15px;
+		color: #BFBFBF;
+		padding-left: 20px;
+	}
+
+    #myNavbar li a:hover,
+    #myNavbar li a:focus {
+        outline: none;
+        color: #FFFFFF;
+        background-color: #2E2E2E; !important;
+    }
+
+    #myNavbar li>a>span {
+    	font-size: 17px;
+    }
+
+    #myNavbar .fa-mobile {
+    	font-size: 24px;
+    }
+}
+
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 225px;
+    }
+
+    #page-wrapper {
+        padding-left: 225px;
+        padding-top: 70px;
+    }
+}
+
+
+
+/* Quản lí sản phẩm*/
+.panel-green {
+	background-color: #FFFFFF;
+}
+
+.panel-green .huge {
+	color: #07862F; 
+	font-size: 30px;
+}
+
+.panel-green .panel-footer {
+	background-color: #0A9737; 
+	color: #FFFFFF	
+}
+
+.panel-green .panel-footer:hover {
+	background-color: #0C6929;
+}
+
+.panel-green a {
+	font-size: 16px;
+	text-decoration: none;
+}
+
+
+.panel-orange {
+	background-color: #FFFFFF;
+}
+
+.panel-orange .huge {
+	color: #E8C500; 
+	font-size: 30px;
+}
+
+.panel-orange .panel-footer {
+	background-color: #E8C500; 
+	color: #FFFFFF	
+}
+
+.panel-orange .panel-footer:hover {
+	background-color: #E4B201;
+}
+
+.panel-orange a {
+	font-size: 16px;
+	text-decoration: none;
+}
+
+
+.panel-red {
+	background-color: #FFFFFF;
+}
+
+.panel-red .huge {
+	color: #DF0505; 
+	font-size: 30px;
+}
+
+.panel-red .panel-footer {
+	background-color: #DF0505; 
+	color: #FFFFFF	
+}
+
+.panel-red .panel-footer:hover {
+	background-color: #D50404;
+}
+
+.panel-red a {
+	font-size: 16px;
+	text-decoration: none;
+}
+
+
+/* Table */
+#table-product {
+	background-color: #FFFFFF;
+	font-size: 15px;
+	margin-top: 15px;
+	text-align: center;
+}
+
+#table-product th {
+	background-color: #9A9AFF;
+	text-align: center;
+}
+
+#table-product .dongia {
+	color: red;
+}
+
+#table-product .th-tensp, #table-product .tensp {
+	text-align: left;
+}
+
+#table-product .tensp, #table-product .tenshop {
+	color: blue;
+}
+
+
+/*chi tiết sản phẩm*/
+.file-input .kv-file-remove, .file-input .kv-fileinput-caption {
+	display: none;
+}
+
+#formInfoProduct .title-thongtin {
+	margin-top: -20px;
+}
+
+#formInfoProduct .title, #formInfoProduct .title-thongtin {
+	margin-bottom: 40px;
+	border-bottom: 2px solid blue;
+}
+
+#formInfoProduct #btn-link {
+	margin: 70px 20px 30px 0px;
+	float: right;
+	width: 25%;
+}
+/* end chi tiết sản phẩm*/
+
+
+
+
+
+/* Quản lí đơn hàng */
+.panel-blue {
+	background-color: #FFFFFF;
+}
+
+.panel-blue .huge {
+	color: #325FFF; 
+	font-size: 30px;
+}
+
+.panel-blue .panel-footer {
+	background-color: #325FFF; 
+	color: #FFFFFF	
+}
+
+.panel-blue .panel-footer:hover {
+	background-color: #0037FF;
+}
+
+.panel-blue a {
+	font-size: 16px;
+	text-decoration: none;
+}
+
+
+.panel-yellow {
+	background-color: #FFFFFF;
+}
+
+.panel-yellow .huge {
+	color: #F0B800; 
+	font-size: 30px;
+}
+
+.panel-yellow .panel-footer {
+	background-color: #F0B800; 
+	color: #FFFFFF	
+}
+
+.panel-yellow .panel-footer:hover {
+	background-color: #DDAA00;
+}
+
+.panel-yellow a {
+	font-size: 16px;
+	text-decoration: none;
+}
+
+
+.panel-blue2 {
+	background-color: #FFFFFF;
+}
+
+.panel-blue2 .huge {
+	color: #060BAA; 
+	font-size: 30px;
+}
+
+.panel-blue2 .panel-footer {
+	background-color: #060BAA; 
+	color: #FFFFFF	
+}
+
+.panel-blue2 .panel-footer:hover {
+	background-color: #00058D;
+}
+
+.panel-blue2 a {
+	font-size: 16px;
+	text-decoration: none;
+}

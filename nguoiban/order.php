@@ -352,7 +352,7 @@
 
 
 
-				<h3>Đơn hàng mới</h3>
+				<h2>Đơn hàng mới</h2>
 				<table id="table-donhang" class="table table-bordered table-hover">
 				    <thead>
 				      <tr>

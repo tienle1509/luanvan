@@ -8,7 +8,7 @@
 
 
 	<link rel="icon" type="text/css" href="img/icon.png">
-	<title>Kênh người bán</title>
+	<title>Khuyến mãi</title>
 
 
 	<!-- Bootstrap CSS -->
@@ -144,10 +144,10 @@
 		    </ul>
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		     	<ul class="nav navbar-nav side-nav">	     		
-		     		<li><a class="active" href="home-ban.php"><span class="fa fa-mobile"></span>&nbsp;&nbsp;Sản phẩm</a></li>
-		     		<li><a href=""><span class="fa fa-list-alt"></span>&nbsp;&nbsp;Đơn hàng</a></li>
+		     		<li><a href="home-ban.php"><span class="fa fa-mobile"></span>&nbsp;&nbsp;Sản phẩm</a></li>
+		     		<li><a href="order.php"><span class="fa fa-list-alt"></span>&nbsp;&nbsp;Đơn hàng</a></li>
 		     		<li><a href=""><span class="fa fa-comments-o"></span>&nbsp;&nbsp;Phản hồi câu hỏi</a></li>
-		     		<li><a href=""><span class="fa fa-bullhorn"></span>&nbsp;&nbsp;Khuyến mãi</a></li>	     		
+		     		<li><a class="active" href="promotion-ban.php"><span class="fa fa-bullhorn"></span>&nbsp;&nbsp;Khuyến mãi</a></li>	     		
 		     		<li><a href=""><span class="fa fa-flag"></span>&nbsp;&nbsp;Thống kê</a></li>
 		     	</ul>
 		    </div>		    
@@ -158,145 +158,20 @@
 
 		<div id="page-wrapper">
 			<div class="container-fluid">
-				<h1>Sản phẩm</h1>
+				<h1>Danh sách sản phẩm khuyến mãi</h1>
 				<hr>
 				<div class="row">
 					<div class="col-md-12 col-sm-12">
 						<ol class="breadcrumb">
-						  <li><a href="home-ban.php">Sản phẩm</a></li>
-						  <li class="active">Sản phẩm bán chạy</li>
+						  <li><a href="promotion-ban.php">Khuyến mãi</a></li>
+						  <li><a href="detailPromotion.php">Chi tiết khuyến mãi</a></li>
+						  <li><a href="addProPromotion.php">Thêm sản phẩm khuyến mãi</a></li>
+						  <li class="active">Danh sách sản phẩm khuyến mãi</li>
 						</ol>
 					</div>
 				</div>
-				<!-- Panel -->
-				<div class="row">
-					<!-- Sản phẩm chờ duyêt -->
-					<div class="col-md-3 col-sm-3">
-						<div class="panel panel-red">
-						  <div class="panel-heading">
-						  	<div class="row">
-							  	<div class="col-md-3 col-sm-3">
-							  		<img src="../img/waiting.png">
-							  	</div>
-							  	<div class="col-md-9 col-sm-9 text-right">
-							  		<div class="huge">4</div>
-							  		Sản phẩm chờ duyệt
-							  	</div>
-							  	<div class="clearfix"></div>
-							</div>
-						  </div>
-						  <a href="proWaiting.php">
-							  <div class="panel-footer">
-							   	<span class="pull-left">
-							   		Chi tiết
-							   	</span>
-							   	<span class="pull-right">
-							   		<i class="fa fa-arrow-circle-right"></i>
-							   	</span>
-							   	<div class="clearfix"></div>
-							  </div>
-						  </a>
-						</div>
-					</div> <!-- end sản phẩm chờ duyêt -->					
 
-					<!-- Sản phẩm bán chạy -->
-					<div class="col-md-3 col-sm-3">
-						<div class="panel panel-orange">
-						  <div class="panel-heading">
-						  	<div class="row">
-							  	<div class="col-md-3 col-sm-3">
-							  		<img src="../img/banchay.png">
-							  	</div>
-							  	<div class="col-md-9 col-sm-9 text-right">
-							  		<div class="huge">12</div>
-							  		Sản phẩm bán chạy
-							  	</div>
-							  	<div class="clearfix"></div>
-							</div>
-						  </div>
-						  <a href="proFast.php">
-							  <div class="panel-footer">
-							   	<span class="pull-left">
-							   		Chi tiết
-							   	</span>
-							   	<span class="pull-right">
-							   		<i class="fa fa-arrow-circle-right"></i>
-							   	</span>
-							   	<div class="clearfix"></div>
-							  </div>
-						  </a>
-						</div>
-					</div> <!-- end sản phẩm bán chạy -->
-
-
-					<!-- Sản phẩm hết hàng -->
-					<div class="col-md-3 col-sm-3">
-						<div class="panel panel-green">
-						  <div class="panel-heading">
-						  	<div class="row">
-							  	<div class="col-md-3 col-sm-3">
-							  		<img src="../img/iconhethang.png">
-							  	</div>
-							  	<div class="col-md-9 col-sm-9 text-right">
-							  		<div class="huge">2</div>
-							  		Sản phẩm hết hàng
-							  	</div>
-							  	<div class="clearfix"></div>
-							</div>
-						  </div>
-						  <a href="proOutOfStock.php">
-							  <div class="panel-footer">
-							   	<span class="pull-left">
-							   		Chi tiết
-							   	</span>
-							   	<span class="pull-right">
-							   		<i class="fa fa-arrow-circle-right"></i>
-							   	</span>
-							   	<div class="clearfix"></div>
-							  </div>
-						  </a>
-						</div>
-					</div>
-					 <!-- end sản phẩm hết hàng -->
-
-
-					<!-- Tất cả sản phẩm -->					
-					<div class="col-md-3 col-sm-3">
-						<div class="panel panel-blue">
-						  <div class="panel-heading">
-						  	<div class="row">
-							  	<div class="col-md-3 col-sm-3">
-							  		<img src="../img/tonkho.png">
-							  	</div>
-							  	<div class="col-md-9 col-sm-9 text-right">
-							  		<div class="huge">43</div>
-							  		Tất cả sản phẩm
-							  	</div>
-							  	<div class="clearfix"></div>
-							</div>
-						  </div>
-						  <a href="allProduct.php">
-							  <div class="panel-footer">
-							   	<span class="pull-left">
-							   		Chi tiết
-							   	</span>
-							   	<span class="pull-right">
-							   		<i class="fa fa-arrow-circle-right"></i>
-							   	</span>
-							   	<div class="clearfix"></div>
-							  </div>
-						  </a>
-						</div>
-					</div> <!-- end tất cả sản phẩm -->
-				</div> <!--end panel -->
-
-				<a href="addProduct.php" type="button" class="btn btn-success btn-lg"><span class="fa fa-plus-circle"></span>&nbsp;&nbsp;Thêm sản phẩm</a>
-
-
-
-
-
-				<h2>Danh sách sản phẩm bán chạy</h2>
+				<h3>Deal Giá Sốc - Khuyến mãi chỉ duy nhất 2 ngày</h3>
 				<div class="row">
 					<div class="col-md-12 col-sm-12">
 						<form id="form-searchProduct" class="form-horizontal" role="form">
@@ -305,8 +180,10 @@
 							</div>
 							<div class="col-sm-5">
 							  	<input type="text" class="form-control" id="" placeholder="Tên sản phẩm">
-							</div>	
-							<button type="button" class="btn btn-default"><span class="fa fa-search"></span>&nbsp;Tìm kiếm</button>
+							</div>
+							<div class="col-sm-2 form-group">	
+								<button type="button" class="btn btn-default"><span class="fa fa-search"></span>&nbsp;Tìm kiếm</button>
+							</div>
 						</form>
 					</div>
 				</div>
@@ -317,76 +194,80 @@
 				      <tr>
 				        <th>Mã SP</th>
 				        <th>Hình ảnh</th>
-				        <th class="th-name-pro">Tên sản phẩm</th>
-				        <th>Giá bán lẻ</th>
+				        <th>Tên sản phẩm</th>
+				        <th>Giá hiện tại</th>
 				        <th>Giá khuyến mãi</th>
 				        <th>Số lượng</th>
-				        <th>Lượt mua</th>
 				        <th>Hành động</th>
 				      </tr>
 				    </thead>
 				    <tbody>
 				      <tr>
-				        <td>AP002</td>
+				        <td class="ma-pro">AP002</td>
 				        <td class="img-pro"><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh</td>
+				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
 				        <td class="price-pro">18.483.000</td>
-				        <td>17.905.000</td>
-				        <td>5</td>
-				        <td>12</td>
-				        <td>
-				        	<a href="detailProduct-ban.php" type="btn" class="btn btn-info">
-				        		Chi tiết
-				        	</a>
+				        <td class="prom-pro">17.905.000</td>
+				        <td class="num-pro">5</td>
+				        <td class="duyet-pro">
+				        	<button type="button" class="btn btn-danger">
+				        		<span class="fa fa-trash"></span>&nbsp;&nbsp;Xóa
+				        	</button>
 				        </td>
+				     <!--   <td class="hanhdong-pro">
+				        	<a href="editProduct.php" type="btn" class="btn btn-success">
+				        		<span class="fa fa-refresh"></span>&nbsp;&nbsp;Sửa
+				        	</a>
+				        	<a href="deleteProduct.php" type="btn" class="btn btn-danger">
+				        		<span class="fa fa-trash"></span>&nbsp;&nbsp;Xóa
+				        	</a>
+				        </td> -->
 				      </tr>
 				      
 				      <tr>
-				        <td>AP002</td>
+				        <td class="ma-pro">AP002</td>
 				        <td class="img-pro"><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh</td>
+				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
 				        <td class="price-pro">18.483.000</td>
-				        <td>17.905.000</td>
-				        <td>5</td>
-				        <td>12</td>
-				        <td>
-				        	<a href="detailProduct-ban.php" type="btn" class="btn btn-info">
-				        		Chi tiết
-				        	</a>
+				        <td class="prom-pro">-</td>
+				        <td class="num-pro">5</td>
+				        <td class="duyet-pro">
+				        	<button type="button" class="btn btn-danger">
+				        		<span class="fa fa-trash"></span>&nbsp;&nbsp;Xóa
+				        	</button>
 				        </td>
 				      </tr>
 
 				      <tr>
-				        <td>AP002</td>
+				        <td class="ma-pro">AP002</td>
 				        <td class="img-pro"><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh</td>
+				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
 				        <td class="price-pro">18.483.000</td>
-				        <td>17.905.000</td>
-				        <td>5</td>
-				        <td>12</td>
-				        <td>
-				        	<a href="detailProduct-ban.php" type="btn" class="btn btn-info">
-				        		Chi tiết
-				        	</a>
+				        <td class="prom-pro">17.905.000</td>
+				        <td class="num-pro">5</td>
+				        <td class="duyet-pro">
+				        	<button type="button" class="btn btn-danger">
+				        		<span class="fa fa-trash"></span>&nbsp;&nbsp;Xóa
+				        	</button>
 				        </td>
 				      </tr>
 
 				      <tr>
-				        <td>AP002</td>
+				        <td class="ma-pro">AP002</td>
 				        <td class="img-pro"><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh</td>
+				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
 				        <td class="price-pro">18.483.000</td>
-				        <td>17.905.000</td>
-				        <td>5</td>
-				        <td>12</td>
-				        <td>
-				        	<a href="detailProduct-ban.php" type="btn" class="btn btn-info">
-				        		Chi tiết
-				        	</a>
+				        <td class="prom-pro">-</td>
+				        <td class="num-pro">5</td>
+				        <td class="duyet-pro">
+				        	<button type="button" class="btn btn-danger">
+				        		<span class="fa fa-trash"></span>&nbsp;&nbsp;Xóa
+				        	</button>
 				        </td>
 				      </tr>
 				    </tbody>
 				  </table>
+
 			</div>
 		</div>
 
@@ -394,7 +275,8 @@
 
 
 
-	</div><!-- end wrapper -->
+
+	</div><!--end wrapper-->
 
 
 

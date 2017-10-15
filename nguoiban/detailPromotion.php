@@ -158,106 +158,41 @@
 
 		<div id="page-wrapper">
 			<div class="container-fluid">
-				<h1>Khuyến mãi</h1>
+				<h1>Chi tiết khuyến mãi</h1>
 				<hr>
 				<div class="row">
 					<div class="col-md-12 col-sm-12">
 						<ol class="breadcrumb">
 						  <li><a href="promotion-ban.php">Khuyến mãi</a></li>
-						  <li class="active"></li>
+						  <li class="active">Chi tiết khuyến mãi</li>
 						</ol>
 					</div>
 				</div>
 
-
-				<h3>Khuyến mãi - Tham gia ngay trước khi hết hạn</h3>
-
-				<!-- panel khuyến mãi -->
-			<!--	<div class="panel-promotion row">
-					<div class="col-md-3 col-sm-3" style="padding-left: 0px;">
-						<img src="../img-promotion/giamgia.jpg" width="220" height="280">
+				<h3>Deal Giá Sốc - Khuyến mãi chỉ duy nhất 2 ngày</h3>
+				<div class="panel-detailPromotion row">
+					<div class="col-md-4 col-sm-4">
+						<div class="row">
+							<img src="../img-promotion/flashsale.png" width="375" height="230">
+						</div>					
 					</div>
-					<div class="col-md-9 col-sm-9">
-						<h3 class="text-center">Mừng ngày phụ nữ Việt Nam</h3>
+					<div class="col-md-8 col-sm-8">						
 						<p>
-							Nhanh tay đặt phòng ngay bây giờ!!! Giảm ngay 10% giá tất cả các phòng trong tháng 4 này.
-								Để tạo điều kiện cho những khách đến Đà lạt vào tháng 4/2017 có một nơi nghĩ dưởng tốt nhất, Terracotta Hotel & Resort áp dụng chương trình khuyến mãi. Giảm giá 10% cho tất cả các loại phòng (kể cả các phòng thuộc villa như Premium hay Junior). 
-								Với quy mô khách sạn 4 sao và khung cảnh gần gũi thiên nhiên chúng tôi đảm bảo sẽ làm hài lòng quý khách khi đến với khách sạn của chúng tôi.
-								Terrcotta - Một điểm đến lý tưởng cho những ai yêu thích thiên nhiên và mong muốn tìm một nơi nghỉ dưỡng đẳng cấp đúng nghĩa.
+							Tham gia ngay, chương trình khuyến mãi cùng Mobile Store kéo dài từ 30/04/2017 đến ngày 02/05/2017. 
+							Để tham gia chương trình khuyến mãi, Nhà bán hàng cần giảm giá sản phẩm 5%.
+							<br>Khi lựa chọn tham gia chương trình này, Mobile có quyền cập nhật giá sản phẩm như Nhà bán hàng đã cam
+							kết và sử dụng mục đích chạy quản cáo cũng như chạy các chương trình khuyến mãi trên Mobile trong khoảng thời gian 2 ngày từ 30/04/2017 đến ngày 02/05/2017.
 						</p>
-						<p><b>Thời gian khuyến mãi:</b> Từ 20/03/2017 đến 25/03/2017</p>
-						<p><b>Giảm giá:</b> 8%.</p>
-						<p class="text-right" style="margin-top: -20px;"><button type="button" class="btn btn-warning btn-lg">Tham gia ngay</button></p>
-					</div>
-				</div> end panel khuyến mãi -->
-
-
-				<div class="col-md-4 col-sm-4 panel-promotion">
-					<div class="row">
-						<img src="../img-promotion/flashsale.png" width="351" height="156">
-					</div>					
-					<h4><b>Deal Giá Sốc - Khuyến mãi chỉ duy nhất 2 ngày</b></h4>
-					<div><b>Thời gian:</b> 30/4/2017 - 02/05/2017</div>
-					<div>Giảm giá: 5%.</div>
-					<div class="row">
-						<div class="col-sm-7">
-							Hạn đăng kí: 28/04/2017
-						</div>
-						<div class="col-sm-5 text-right" style="margin-top: -20px">
-							<a href="detailPromotion.php" type="button" class="btn btn-warning btn-block">Tham gia</a>
-						</div>
-					</div>
-				</div>
-				
-
-				<div class="col-md-4 col-sm-4 panel-promotion">
-					<div class="row">
-						<img src="../img-promotion/salebirthday.jpg" width="351" height="156">
-					</div>					
-					<h4><b>Deal Giá Sốc - Khuyến mãi chỉ duy nhất 2 ngày</b></h4>
-					<div><b>Thời gian:</b> 30/4/2017 - 02/05/2017</div>
-					<div>Giảm giá: 5%.</div>
-					<div class="row">
-						<div class="col-sm-7">
-							Hạn đăng kí: 28/04/2017
-						</div>
-						<div class="col-sm-5 text-right" style="margin-top: -20px">
-							<a href="detailPromotion.php" type="button" class="btn btn-warning btn-block">Tham gia</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-4 panel-promotion">
-					<div class="row">
-						<img src="../img-promotion/salebirthday.jpg" width="351" height="156">
-					</div>					
-					<h4><b>Deal Giá Sốc - Khuyến mãi chỉ duy nhất 2 ngày</b></h4>
-					<div><b>Thời gian:</b> 30/4/2017 - 02/05/2017</div>
-					<div>Giảm giá: 5%.</div>
-					<div class="row">
-						<div class="col-sm-7">
-							Hạn đăng kí: 28/04/2017
-						</div>
-						<div class="col-sm-5 text-right" style="margin-top: -20px">
-							<a href="detailPromotion" type="button" class="btn btn-warning btn-block">Tham gia</a>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="col-md-4 col-sm-4 panel-promotion">
-					<div class="row">
-						<img src="../img-promotion/salebirthday.jpg" width="351" height="156">
-					</div>					
-					<h4><b>Deal Giá Sốc - Khuyến mãi chỉ duy nhất 2 ngày</b></h4>
-					<div><b>Thời gian:</b> 30/4/2017 - 02/05/2017</div>
-					<div>Giảm giá: 5%.</div>
-					<div class="row">
-						<div class="col-sm-7">
-							Hạn đăng kí: 28/04/2017
-						</div>
-						<div class="col-sm-5 text-right" style="margin-top: -20px">
-							<a href="detailPromotion.php" type="button" class="btn btn-warning btn-block">Tham gia</a>
+						<div class="row">
+							<div class="col-md-5 col-sm-5">
+								<div><b>Thời gian:</b> 30/4/2017 - 02/05/2017</div>
+								<div><b>Hạn đăng kí:</b> 28/04/2017</div>
+								<p style="margin-top: 20px;"><a href="addProPromotion.php" type="button" class="btn btn-warning">Chọn sản phẩm để khuyến mãi</a></p>
+							</div>
+							<div class="col-md-7 col-sm-7">
+								<div><b>Sản phẩm khuyến mãi:</b> 43</div>
+								<div><b>Giảm giá:</b> 5%.</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -268,7 +203,9 @@
 
 
 
+
 	</div><!--end wrapper -->
+
 
 
 

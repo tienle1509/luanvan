@@ -292,14 +292,14 @@
 				</div> <!--end panel -->
 
 				<a href="addProduct.php" type="button" class="btn btn-success btn-lg"><span class="fa fa-plus-circle"></span>&nbsp;&nbsp;Thêm sản phẩm</a>
-				<h3>Sản phẩm mới</h3>				
+				<h2>Sản phẩm mới</h2>				
 
 				<table id="table-listProduct" class="table table-bordered table-hover">
 				    <thead>
 				      <tr>
 				        <th>Mã SP</th>
 				        <th>Hình ảnh</th>
-				        <th>Tên sản phẩm</th>
+				        <th class="th-name-pro">Tên sản phẩm</th>
 				        <th>Giá bán lẻ</th>
 				        <th>Giá khuyến mãi</th>
 				        <th>Số lượng</th>
@@ -308,13 +308,13 @@
 				    </thead>
 				    <tbody>
 				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
+				        <td>AP002</td>
+				        <td class="img-pro"><img src="../sanpham/galaxyj7_1.jpg"></td>
+				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh </td>
 				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">17.905.000</td>
-				        <td class="num-pro">5</td>
-				        <td class="duyet-pro">
+				        <td>17.905.000</td>
+				        <td>5</td>
+				        <td>
 				        	<span class="label label-warning">Chờ duyệt</span>
 				        </td>
 				     <!--   <td class="hanhdong-pro">
@@ -328,37 +328,37 @@
 				      </tr>
 				      
 				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
+				        <td>AP002</td>
+				        <td><img src="../sanpham/galaxyj7_1.jpg" width="80px" height="80px"></td>
+				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk</td>
 				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">-</td>
-				        <td class="num-pro">5</td>
-				        <td class="duyet-pro">
+				        <td>-</td>
+				        <td>5</td>
+				        <td>
 				        	<span class="label label-warning">Chờ duyệt</span>
 				        </td>
 				      </tr>
 
-				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
+				       <tr>
+				        <td>AP002</td>
+				        <td><img src="../sanpham/galaxyj7_1.jpg" width="80px" height="80px"></td>
+				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk</td>
 				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">17.905.000</td>
-				        <td class="num-pro">5</td>
-				        <td class="duyet-pro">
+				        <td>-</td>
+				        <td>5</td>
+				        <td>
 				        	<span class="label label-warning">Chờ duyệt</span>
 				        </td>
 				      </tr>
 
-				      <tr>
-				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
+				       <tr>
+				        <td>AP002</td>
+				        <td><img src="../sanpham/galaxyj7_1.jpg" width="80px" height="80px"></td>
+				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk</td>
 				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">-</td>
-				        <td class="num-pro">5</td>
-				        <td class="duyet-pro">
+				        <td>-</td>
+				        <td>5</td>
+				        <td>
 				        	<span class="label label-warning">Chờ duyệt</span>
 				        </td>
 				      </tr>

@@ -190,7 +190,7 @@
 				      <tr>
 				        <th>Mã SP</th>
 				        <th>Hình ảnh</th>
-				        <th>Tên sản phẩm</th>
+				        <th class="th-name-pro">Tên sản phẩm</th>
 				        <th>Giá bán lẻ</th>
 				        <th>Giá khuyến mãi</th>
 				        <th>Số lượng</th>
@@ -201,8 +201,8 @@
 				    <tbody>
 				      <tr>
 				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
+				        <td class="img-pro"><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
+				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh </td>
 				        <td class="price-pro">18.483.000</td>
 				        <td class="prom-pro">17.905.000</td>
 				        <td class="num-pro">5</td>
@@ -224,8 +224,8 @@
 				      
 				      <tr>
 				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
+				        <td class="img-pro"><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
+				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh </td>
 				        <td class="price-pro">18.483.000</td>
 				        <td class="prom-pro">-</td>
 				        <td class="num-pro">5</td>
@@ -241,8 +241,8 @@
 
 				      <tr>
 				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
+				        <td class="img-pro"><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
+				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh </td>
 				        <td class="price-pro">18.483.000</td>
 				        <td class="prom-pro">17.905.000</td>
 				        <td class="num-pro">5</td>
@@ -258,8 +258,8 @@
 
 				      <tr>
 				        <td class="ma-pro">AP002</td>
-				        <td><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
-				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
+				        <td class="img-pro"><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
+				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh</td>
 				        <td class="price-pro">18.483.000</td>
 				        <td class="prom-pro">-</td>
 				        <td class="num-pro">5</td>
