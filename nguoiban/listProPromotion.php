@@ -203,13 +203,13 @@
 				    </thead>
 				    <tbody>
 				      <tr>
-				        <td class="ma-pro">AP002</td>
+				        <td>AP002</td>
 				        <td class="img-pro"><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
 				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
 				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">17.905.000</td>
-				        <td class="num-pro">5</td>
-				        <td class="duyet-pro">
+				        <td>17.905.000</td>
+				        <td>5</td>
+				        <td>
 				        	<button type="button" class="btn btn-danger">
 				        		<span class="fa fa-trash"></span>&nbsp;&nbsp;Xóa
 				        	</button>
@@ -225,13 +225,13 @@
 				      </tr>
 				      
 				      <tr>
-				        <td class="ma-pro">AP002</td>
+				        <td>AP002</td>
 				        <td class="img-pro"><img src="../sanpham/galaxyj7_1.jpg" width="60px" height="60px"></td>
 				        <td class="name-pro">Điện thoại apple chính hãng sdfk dkjgh dfghk dskfjgh zdg kjgf skj</td>
 				        <td class="price-pro">18.483.000</td>
-				        <td class="prom-pro">-</td>
-				        <td class="num-pro">5</td>
-				        <td class="duyet-pro">
+				        <td>-</td>
+				        <td >5</td>
+				        <td>
 				        	<button type="button" class="btn btn-danger">
 				        		<span class="fa fa-trash"></span>&nbsp;&nbsp;Xóa
 				        	</button>

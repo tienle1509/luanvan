@@ -169,7 +169,7 @@
 					</div>
 				</div>
 
-				<h3>Danh sách sản phẩm chưa được duyệt</h3>
+				<h2>Danh sách sản phẩm chưa được duyệt</h2>
 				<div class="row">
 					<div class="col-md-12 col-sm-12">
 						<form id="form-searchProduct" class="form-horizontal" role="form">

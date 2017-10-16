@@ -207,7 +207,7 @@
 				  <thead>
 				    <th>Hình ảnh</th>
 				    <th>Tên sản phẩm</th>				    
-				    <th>Số lượng</th>
+				    <th class="num-detailOrder">Số lượng</th>
 				    <th class="text-center">Đơn giá</th>
 				    <th class="text-right">Thành tiền</th>
 				  </thead>
@@ -216,15 +216,7 @@
 				    	<img src="../sanpham/galaxyj7_1.jpg" width="80px" height="80px">
 				    </td>
 				    <td class="name-detailOrder">Điện thoại samsung galaxy j7 32GB chính hãng</td>
-				    <td class="num-detailOrder">
-				    	<select class="form-control">
-				    		<option>1</option>
-				    		<option>2</option>
-				    		<option>3</option>
-				    		<option>4</option>
-				    		<option>5</option>
-				    	</select>
-				    </td>
+				    <td class="num-detailOrder">2</td>
 				    <td class="price-detailOrder text-center">12,394,000</td>
 				    <td class="tong-detailOrder text-right">12,394,000</td>
 				  </tr>
@@ -234,15 +226,7 @@
 				    	<img src="../sanpham/galaxyj7_1.jpg" width="80px" height="80px">
 				    </td>
 				    <td class="name-detailOrder">Điện thoại samsung galaxy j7 32GB chính hãng</td>
-				    <td class="num-detailOrder">
-				    	<select class="form-control">
-				    		<option>1</option>
-				    		<option>2</option>
-				    		<option>3</option>
-				    		<option>4</option>
-				    		<option>5</option>
-				    	</select>
-				    </td>
+				    <td class="num-detailOrder">1</td>
 				    <td class="price-detailOrder text-center">12,394,000</td>
 				    <td class="tong-detailOrder text-right">12,394,000</td>
 				  </tr>
@@ -257,14 +241,9 @@
 					</div>
 				</div>
 
-				<div class="detailOrderRow2 row">
-					<div class="col-md-5 col-sm-5">
-						<a href="order.php">
-							<span class="fa fa-angle-double-left"></span>&nbsp;&nbsp;Về trang chủ
-						</a>
-					</div>
-					<div class="text-right submit-detailOrder col-md-7 col-sm-7">
-						<button type="button" class="btn btn-primary">Lưu thay đổi</button>	
+				<div class="detailOrderRow2">
+					<div class="text-right submit-detailOrder">
+						<a href="order.php" type="button" class="btn btn-primary btn-lg">Quay lại</a>	
 					</div>
 				</div>
 

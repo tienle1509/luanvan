@@ -51,7 +51,7 @@
 		     		<li><a class="active" href="order-admin.php"><span class="fa fa-list-alt"></span>&nbsp;&nbsp;Quản lí đơn hàng</a></li>
 		     		<li><a href=""><span class="fa fa-users"></span>&nbsp;&nbsp;Nhà bán hàng</a></li>
 		     		<li><a href=""><span class="fa fa-users"></span>&nbsp;&nbsp;Khách hàng</a></li>
-		     		<li><a href="khuyenmai.php"><span class="fa fa-bullhorn"></span>&nbsp;&nbsp;Quản lí khuyến mãi</a></li>
+		     		<li><a href=""><span class="fa fa-bullhorn"></span>&nbsp;&nbsp;Quản lí khuyến mãi</a></li>
 		     	</ul>
 		    </div>		    
 		  </div>
@@ -61,74 +61,20 @@
 
 		<div id="page-wrapper">
 			<div class="container-fluid">
-				<h1>Quản lí đơn hàng</h1>
+				<h1>Duyệt đơn hàng</h1>
 				<hr style="border: 1px solid #F9F9FF">
 				<div class="row">
 					<div class="col-md-12 col-sm-12">
 						<ol class="breadcrumb">
 						  <li><a href="home-admin.php">Quản lí đơn hàng</a></li>
-						  <li class="active"></li>
+						  <li class="active">Duyệt đơn hàng</li>
 						</ol>
 					</div>
 				</div>
 
-
-				<div class="row">
-					<!-- Đơn hàng chờ duyêt -->
-					<div class="col-md-3 col-sm-3">
-						<div class="panel panel-blue">
-						  <div class="panel-heading">
-						  	<div class="row text-center">
-							  	<img src="../img/icondonhang-admin.png">
-							  	<div class="huge">29</div>
-							</div>
-						  </div>
-						  <a href="duyetdh.php">
-							  <div class="panel-footer text-center">
-							   	Đơn hàng chưa duyệt
-							  </div>
-						  </a>
-						</div>
-					</div> <!-- end đơn hàng chờ duyêt -->	
-
-					<!-- Đơn hàng trong ngày -->
-					<div class="col-md-3 col-sm-3">
-						<div class="panel panel-yellow">
-						  <div class="panel-heading">
-						  	<div class="row text-center">
-							  	<img src="../img/iconcartadmin.png">
-							  	<div class="huge">29</div>
-							</div>
-						  </div>
-						  <a href="donhangtrongngay.php">
-							  <div class="panel-footer text-center">
-							   	Đơn hàng trong ngày
-							  </div>
-						  </a>
-						</div>
-					</div> <!-- end đơn hàng trong ngày -->	
+				<h2>Đơn hàng đang chờ duyệt</h2>			
 
 
-					<!-- Tất cả đơn hàng -->
-					<div class="col-md-3 col-sm-3">
-						<div class="panel panel-blue2">
-						  <div class="panel-heading">
-						  	<div class="row text-center">
-							  	<img src="../img/allorder-admin.png">
-							  	<div class="huge">29</div>
-							</div>
-						  </div>
-						  <a href="tatcadonhang.php">
-							  <div class="panel-footer text-center">
-							   	Tất cả đơn hàng
-							  </div>
-						  </a>
-						</div>
-					</div> <!-- end tất cả đơn hàng -->
-				</div> <!-- end panel-->
-
-
-				<h2>Đơn hàng mới</h2>
 
 				<table id="table-donhang-admin" class="table table-bordered table-hover">
 				    <thead>
@@ -140,7 +86,8 @@
 				        <th>Tên sản phẩm</th>
 				        <th>Hình thức thanh toán</th>
 				        <th>Tổng tiền</th>
-				        <th>Trạng thái</th>			        
+				        <th>Trạng thái</th>
+				        <th>Thao tác</th>
 				      </tr>
 				    </thead>
 				    <tbody>
@@ -160,7 +107,10 @@
 				        <td class="tongtien">12,057,000</td>
 				        <td>
 				        	<label class="label label-warning">Chờ duyệt</label>
-				        </td>
+				        </td>	
+				        <td>
+				        	<button type="button" class="btn btn-success">Phê duyệt</button>
+				        </td>			        				        
 				      </tr>
 				      
 				      <tr>
@@ -178,6 +128,9 @@
 				        <td class="tongtien">12,057,000</td>
 				        <td>
 				        	<label class="label label-warning">Chờ duyệt</label>
+				        </td>
+				        <td>
+				        	<button type="button" class="btn btn-success">Phê duyệt</button>
 				        </td>
 				      </tr>
 
@@ -198,6 +151,9 @@
 				        <td>
 				        	<label class="label label-warning">Chờ duyệt</label>
 				        </td>
+				        <td>
+				        	<button type="button" class="btn btn-success">Phê duyệt</button>
+				        </td>
 				      </tr>
 				    </tbody>
 				</table>
@@ -209,7 +165,8 @@
 
 
 
-	</div><!--end wrapper-->
+	</div><!-- end wrapper-->
+
 
 
 

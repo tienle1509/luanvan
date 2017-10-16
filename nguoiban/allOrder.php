@@ -398,9 +398,9 @@
 				        <th>Ngày giao</th>
 				        <th>Thông tin giao hàng</th>
 				        <th>Tên sản phẩm</th>
-				        <th>Hình thức thanh toán</th>
-				        <th>Tình trạng</th>
+				        <th>Hình thức thanh toán</th>				        
 				        <th>Tổng tiền</th>
+				        <th>Tình trạng</th>
 				        <th>Thao tác</th>
 				      </tr>
 				    </thead>
@@ -417,11 +417,11 @@
 				        	<label>Điện thoại samsung galaxy j7 32GB</label><br>1x12,075,000
 				        	<br><label>Điện thoại samsung galaxy j7 32GB</label> <br> 1x12,075,000
 				        </td>
-				        <td class="httt">Thanh toán khi nhận hàng</td>
+				        <td class="httt">Thanh toán khi nhận hàng</td>				        			        
+				        <td class="tongtien">12,057,000</td>
 				        <td class="tinhtrangdh">
 				        	<label class="label label-warning">Đang xử lí</label>
-				        </td>			        
-				        <td class="tongtien">12,057,000</td>
+				        </td>
 				        <td>
 				        	<a href="detailOrder.php" class="btn btn-info">Chi tiết</a>
 				        </td>
@@ -439,10 +439,10 @@
 				        	<label>Điện thoại samsung galaxy j7 32GB</label><br>1x12,075,000
 				        </td>
 				        <td class="httt">Thanh toán khi nhận hàng</td>
-				        <td class="tinhtrangdh">
-				        	<label class="label label-primary">Đang giao đi</label>
-				        </td>			        
 				        <td class="tongtien">12,057,000</td>
+				        <td class="tinhtrangdh">
+				        	<label class="label label-warning">Đang xử lí</label>
+				        </td>
 				        <td>
 				        	<a href="detailOrder.php" class="btn btn-info">Chi tiết</a>
 				        </td>
@@ -461,10 +461,10 @@
 				        	<br><label>Điện thoại samsung galaxy j7 32GB</label> <br> 1x12,075,000
 				        </td>
 				        <td class="httt">Thanh toán khi nhận hàng</td>
-				        <td class="tinhtrangdh">
-				        	<label class="label label-danger">Giao hàng thất bại</label>
-				        </td>			        
 				        <td class="tongtien">12,057,000</td>
+				        <td class="tinhtrangdh">
+				        	<label class="label label-warning">Đang xử lí</label>
+				        </td>
 				        <td>
 				        	<a href="detailOrder.php" class="btn btn-info">Chi tiết</a>
 				        </td>
@@ -483,10 +483,10 @@
 				        	<br><label>Điện thoại samsung galaxy j7 32GB</label> <br> 1x12,075,000
 				        </td>
 				        <td class="httt">Thanh toán khi nhận hàng</td>
-				        <td class="tinhtrangdh">
-				        	<label class="label label-success">Đã giao</label>
-				        </td>			        
 				        <td class="tongtien">12,057,000</td>
+				        <td class="tinhtrangdh">
+				        	<label class="label label-warning">Đang xử lí</label>
+				        </td>
 				        <td>
 				        	<a href="detailOrder.php" class="btn btn-info">Chi tiết</a>
 				        </td>

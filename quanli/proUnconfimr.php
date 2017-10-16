@@ -72,23 +72,7 @@
 					</div>
 				</div>
 
-				<h2>Sản phẩm đang chờ duyệt</h2>
-				<div class="row">
-					<div class="col-md-12 col-sm-12">
-						<form id="form-searchProduct" class="form-horizontal" role="form">
-							<div class="col-sm-2 form-group">
-							  	<input type="text" class="form-control" id="" placeholder="Mã sản phẩm">
-							</div>
-							<div class="col-sm-4">
-							  	<input type="text" class="form-control" id="" placeholder="Tên sản phẩm">
-							</div>	
-							<div class="col-sm-4 form-group" style="margin-right: 2px;">
-							  	<input type="text" class="form-control" id="" placeholder="Nhà bán hàng">
-							</div>	
-							<button type="button" class="btn btn-default"><span class="fa fa-search"></span>&nbsp;Tìm kiếm</button>
-						</form>
-					</div>
-				</div>
+				<h2>Sản phẩm đang chờ duyệt</h2>				
 
 
 				<table id="table-product" class="table table-bordered table-hover">

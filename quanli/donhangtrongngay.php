@@ -51,7 +51,7 @@
 		     		<li><a class="active" href="order-admin.php"><span class="fa fa-list-alt"></span>&nbsp;&nbsp;Quản lí đơn hàng</a></li>
 		     		<li><a href=""><span class="fa fa-users"></span>&nbsp;&nbsp;Nhà bán hàng</a></li>
 		     		<li><a href=""><span class="fa fa-users"></span>&nbsp;&nbsp;Khách hàng</a></li>
-		     		<li><a href="khuyenmai.php"><span class="fa fa-bullhorn"></span>&nbsp;&nbsp;Quản lí khuyến mãi</a></li>
+		     		<li><a href=""><span class="fa fa-bullhorn"></span>&nbsp;&nbsp;Quản lí khuyến mãi</a></li>
 		     	</ul>
 		    </div>		    
 		  </div>
@@ -67,7 +67,7 @@
 					<div class="col-md-12 col-sm-12">
 						<ol class="breadcrumb">
 						  <li><a href="home-admin.php">Quản lí đơn hàng</a></li>
-						  <li class="active"></li>
+						  <li class="active">Đơn hàng trong ngày</li>
 						</ol>
 					</div>
 				</div>
@@ -128,7 +128,34 @@
 				</div> <!-- end panel-->
 
 
-				<h2>Đơn hàng mới</h2>
+				<h2>Đơn hàng trong ngày</h2>
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<form id="form-searchOrder" class="form-horizontal" role="form">
+							<div class="col-sm-2 form-group">
+							  	<input type="text" class="form-control" id="" placeholder="Mã đơn hàng">
+							</div>
+							<div class="col-sm-3">
+							  	<input type="text" class="form-control" id="" placeholder="Tên khách hàng">
+							</div>	
+							<div class="col-sm-3 form-group">
+							  	<div class="input-group">
+							        <input class="form-control" type="text" id="Sdate" name="txtSDate" placeholder="Từ ngày" />
+							        	<span class="input-group-addon"><i class="fa fa-calendar"></i></span> 
+							    </div>
+							</div>
+							<div class="col-sm-3">
+							  	<div class="input-group">
+							        <input class="form-control" type="text" id="Edate" name="txtEDate" placeholder="Đến ngày" />
+							        	<span class="input-group-addon"><i class="fa fa-calendar"></i></span> 
+							    </div>
+							</div>				    
+							<button type="button" class="btn btn-default"><span class="fa fa-search"></span>&nbsp;Tìm kiếm</button>
+						</form>
+					</div>
+				</div>
+
+
 
 				<table id="table-donhang-admin" class="table table-bordered table-hover">
 				    <thead>
@@ -140,7 +167,9 @@
 				        <th>Tên sản phẩm</th>
 				        <th>Hình thức thanh toán</th>
 				        <th>Tổng tiền</th>
-				        <th>Trạng thái</th>			        
+				        <th>Trạng thái</th>	
+				        <th>Tình trạng</th>
+				        <th>Hành động</th>		        
 				      </tr>
 				    </thead>
 				    <tbody>
@@ -161,6 +190,12 @@
 				        <td>
 				        	<label class="label label-warning">Chờ duyệt</label>
 				        </td>
+				        <td>
+				        	<label class="label label-warning">Đang xử lí</label>
+				        </td>
+				        <td>
+				        	<a href="chitietdonhang.php" type="button" class="btn btn-info">Chi tiết</a>
+				        </td>
 				      </tr>
 				      
 				      <tr>
@@ -178,6 +213,12 @@
 				        <td class="tongtien">12,057,000</td>
 				        <td>
 				        	<label class="label label-warning">Chờ duyệt</label>
+				        </td>
+				        <td>
+				        	<label class="label label-warning">Đang giao đi</label>
+				        </td>
+				        <td>
+				        	<a href="chitietdonhang.php" type="button" class="btn btn-info">Chi tiết</a>
 				        </td>
 				      </tr>
 
@@ -198,9 +239,17 @@
 				        <td>
 				        	<label class="label label-warning">Chờ duyệt</label>
 				        </td>
+				        <td>
+				        	<label class="label label-warning">Đang xử lí</label>
+				        </td>
+				        <td>
+				        	<a href="chitietdonhang.php" type="button" class="btn btn-info">Chi tiết</a>
+				        </td>
 				      </tr>
 				    </tbody>
 				</table>
+
+
 			</div>
 		</div>
 
@@ -209,7 +258,7 @@
 
 
 
-	</div><!--end wrapper-->
+	</div><!-- end wrapper -->
 
 
 
